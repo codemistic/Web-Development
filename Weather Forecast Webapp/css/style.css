@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background:linear-gradient(90deg,#614385, #516395);
+    line-height: 1.5;
+    font-size: 125%;
+    display: flex;
+  }
+  
+  /*--------------------------------------- CARD ------------------------------------------*/
+  
+  .container {
+            position: relative;
+            background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+            padding: 0 1em 1em;
+            margin: 150px 500px 400px auto;
+            -webkit-filter: drop-shadow(0 1em 1em rgba(226, 91, 91, 0.1));
+            filter: drop-shadow(0 1em 1em rgba(226, 91, 91, 0.1));
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            overflow: hidden;
+}
+  
+  /*-------------------------------- FOR THE TILTED CARD------------------------------------ */
+  
+
+  
+  /* ------------------------------------------------------------------------------------------*/
+  
+  .content {
+    position: relative;
+    margin: 0 60px auto;
+    padding: 0 1em;
+  }
+  
+  h1 {
+    border-bottom: 4px solid rebeccapurple;
+    padding-bottom: 0.25em;
+    margin-bottom: 0.25em;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  }
+  
+  /*----------------------------------- INPUT BOX---------------------------------------*/
+  
+  .input {
+      width: 100%;
+      border: none;
+      outline: none;
+      font-size: 1.4rem;
+      height: 50px;
+      padding: 10px 10px;
+      text-align: center;
+      font-weight: bold;
+      background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+  
+  /*------------------------------------DETAILS----------------------------------------- */
+  
+  .main-weather {
+      display: none;
+      padding: 20px;
+      line-height: 2.2rem;
+      border-radius: 10px;
+      height: 30vh;
+      text-align: center;
+      color:  #23313E;
+      font-weight: bold;
+  }
+  
+  .temp {
+  
+      margin: 25px ;
+      font-size:40pt;
+      font-weight: 700;
+  }
+  
+  /*---------------------------------------------------------------------------------------*/
