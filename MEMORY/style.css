@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  background-color:rgb(107, 201, 60);
+}
+.heading{
+  font-size: 3rem;
+  color: aliceblue;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  height: 300px;
+  margin-left: 40%;
+  margin-top: 20%;
+
+
+}
+.marquee{
+  font-size: 5rem;
+}
