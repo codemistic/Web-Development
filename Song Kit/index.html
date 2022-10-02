@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Drumkit</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Data-key is a Attribute -->
+<div class="con">
+
+    <div data-key="65" class="key">
+        <kbd>A </kbd>
+        <span class='sound'>Sparkle</span>
+        
+    </div>
+    
+    <div data-key="83" class="key">
+        <kbd>S </kbd>
+        <span class='sound'>Kronicle</span>
+    </div>
+    
+    <div data-key="68" class="key">
+        <kbd>D </kbd>
+        <span class='sound'>The Improv</span>
+    </div>
+    
+    <div data-key="70" class="key" >
+        <kbd>F  </kbd>
+        <span class='sound'>NF Karaoke</span>
+    </div>
+    
+    <div data-key="71" class="key">
+        <kbd>G </kbd>
+        <span class='sound'>1 sec Music</span>
+    </div>
+
+    <div class="pause">
+        <span>Press P to Pause</span>
+    </div>
+</div>
+    
+    <audio data-key="65">
+        <source src="Audio/Sparkle.mp3">
+    </audio>
+
+    <audio data-key="83" src="Audio/Kronicle - 2 Minutes (No Copyright Music).mp3"></audio>
+    <audio data-key="68" src="Audio/Dj Quads - The Improv.mp3"></audio>
+    <audio data-key="70" src="Audio/NF-When I Grow Up (Karaoke).mp3"></audio>
+    <audio data-key="71" src="Audio/DBZ Dash Sound Effect.mp4"></audio>
+
+   src <script src="script.js"></script>
+</body>
+
+</html>

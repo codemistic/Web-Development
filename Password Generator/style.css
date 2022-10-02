@@ -1,0 +1,22 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    background-color: azure;
+}
+
+.box{
+    background-color: rgb(215, 79, 215);
+    width: 500px;
+    height: 500px;
+    margin: 100px auto;
+    box-shadow: 100px;
+}
+
+input{
+    padding: 20px;
+    height: 20px;
+    width: 50%;
+    border-radius: 10px;
+}
+ 
+*/
