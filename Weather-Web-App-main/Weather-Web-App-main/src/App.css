@@ -1,0 +1,153 @@
+html, body, #root {
+    font: 0.9rem sans-serif;
+     background: #222;
+    color: #1e2432;
+    height: 100%;
+    margin: 0;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+}
+
+.main-container {
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 11.5px );
+    -webkit-backdrop-filter: blur( 11.5px );
+    border-radius: 10px;
+    border: 2px solid rgba( 255, 255, 255, 0.18 );
+    color: white;
+    padding: 5em;
+    border-radius: 50px;
+    width: 100%;
+    max-width: 420px;
+    margin: 4em;
+    overflow: hidden;
+}
+
+.search {
+    outline: none;
+    align-items: center;
+  justify-content: center;
+    padding: 1.2rem;
+    border-radius: 50px;
+    border: none;
+    margin-bottom: 5%;
+    background: rgba( 0, 0, 0);
+    color: white;
+  font-family: inherit;
+  font-size: 105%;
+  width: calc(100% - 100px);
+  font-weight: bold;
+}
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    background: rgba( 0,0,0);
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+button:hover {
+    background: #789395;
+  }
+.city {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 8%;
+    border-radius: 20px;
+    background: rgb(0, 0, 0);
+ box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+ width: 80%;
+}
+
+
+.images{
+    height: 20px;
+    width: 100%;
+}
+p {
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.city-temp {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #8d8e91;
+    text-align: center;
+}
+.city-wind{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #e2e3e6;
+    text-align: center;
+}
+.humidity{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #e2e3e6;
+    text-align: center;
+}
+
+.pressure{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #e2e3e6;
+    text-align: center;
+}
+
+.city sup {
+    font-size: 0.5em;
+}
+
+.city-name {
+    font-size: 2em;
+}
+
+.city-name sup {
+    padding: 0.2em 0.6em;
+    margin-left: 0.2em;
+    border-radius: 30px;
+    color: #fff;
+    background: #ff8c00;
+}
+
+.city-icon {
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .search {
+        padding: 20px 15%;
+    }
+
+    .city {
+        padding: 40px 20%;
+    }
+}
