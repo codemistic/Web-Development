@@ -126,7 +126,7 @@
         flex-direction: column;
         width: 20rem;
         height: 16rem;
-        border: 0.1rem solid rgb(193, 61, 61);
+        /* border: 0.1rem solid rgb(193, 61, 61); */
         justify-content: center;
         color: black;
         align-items: center;
@@ -160,6 +160,7 @@
       .icon {
         margin-left: 1.3rem;
         margin-right: 1.3rem;
+        height: 100px;
       }
       section h2 {
         margin-top: 3rem;
@@ -174,19 +175,44 @@
         background-image: url(/background2.jpg);
         background-size: cover ;
         position: absolute;
-        height: 50%;
+        /* height: 50%; */
         width: 100%;
         z-index: -1;
         opacity: 0.9;
-       
+        filter: blur(6px);
+        position: relative;
       
       }
 
       .container2 {
         position: absolute;
+        margin-top: 64px;
       }
+
+      .sectionfood{
+        margin-top: 2rem;
+    /* border: 2px solid black; */
+    height: 375px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 69px;
+}
+    .main1{
+      position: relative;
+    top: 78px;
+    }
+
+    .center{
+      position: relative;
+      top: 75px;
+      display: flex;
+      justify-content: center;
+    }
+
+
       
-      
+
       
     </style>
   </head>
@@ -216,7 +242,7 @@
     </header>
 
 
-    <main>
+    <main class="main1">
          <h2>OUR SERVICES</h2>
          <div class="container">
             <div id="box">
@@ -234,7 +260,7 @@
          </div>
     </main>
 
-    <section>
+    <section class="sectionfood">
 
       <div class="container2">
       <h2>OUR CLIENTS</h2>
@@ -246,5 +272,12 @@
       <img src="icon6.png" alt="image"class="icon" id="icon6">
       </div>
     </section>
+
+    <hr style="position: relative; top:71px; width: 2000px; color: black" />
+    <footer  class="center">
+      <div>
+        copyright &copy; www.myonlineMeal.com.All rights reversed!..
+      </div>
+    </footer>
   </body>
 </html>
