@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#C2420D">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Generate CAPTCHA </title>
+<link rel="icon" type="image/x-icon" href="https://acharya-technologies.tk/img/logo.jpeg">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://acharya-technologies.tk/css/style.css">
+<link rel="stylesheet" href="https://acharya-technologies.tk/css/fonts.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="bg-orange-100 Gotu text-black dark:bg-black dark:text-white" align="center">
+<p align="center" class="py-1 Yatra text-xl w-screen text-center bg-orange-200 text-orange-600"> || जय श्रीराम 🚩 ||</p>
+<br>
+
+<!-- You Can Remove This if You Are Using This for Website till Next Comment-->
+<h1 class='text-md'>I am Omkar Kulkarni.<br>I am a <span class='work text-green-700'></span>.</h1>
+<h2>Please visit my <a class='Amita text-blue-500 text-xl' href='https://acharya-technologies.tk'>Website</a> 
+and<br>Give me a star on<a class='m-0 text-xl text-gray-800 dark:text-white fa fa-github' href='https://github.com/acharya-technologies/'></a>.</h2>
+<br><br>
+<p class='text-2xl'>CAPTCHA Generator<br><small class="text-lg"> for Login System.</small></p>
+<a class='text-xs underline text-blue-500' href="./index.html" download>Source Code</a><i class="text-xs text-blue-400"> (Open-Source)</i><br>
+<a class='text-xs underline text-blue-500' href="https://koutukvs.cf/uid">Practical Example</a>
+<!--Till Here-->
+<br>
+<div class="container mt-8 flex justify-evenly m-auto w-72" >
+<input type="text" id="preset" value="" class="text-center dark:border-green-500 focus:rounded border-orange-600 rounded-md bg-orange-200 dark:bg-gray-600 border-2 w-24" readonly>
+<i class="fa fa-refresh text-xl m-0 mr-4 hover:animate-bounce focus:mt-1" onclick="capt()"></i> 
+<input type="text" id="input"  value="" class="text-center dark:border-green-500 border-orange-600 focus:border-orange-600 border-2 rounded rounded-md bg-orange-50 dark:bg-gray-800 w-32"></div><br>
+<input id="captBtn" onclick="confirm()" type="button" value="Check Captcha" class="border-2 dark:border-green-500 border-orange-600 rounded px-3 Arima h-8 dark:bg-green-800 bg-orange-300 text-lg block m-auto"><br>
+<i class="text-red-500 Tangerine text-4xl font-bold " id="error"></i>
+</div>
+
+<a href="http://wa.me/918208607477/?text=Hii"><i class="fa fa-whatsapp text-6xl fixed bottom-4 right-4 text-green-500 "></i></a>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>let typed = new Typed('.work', {
+  strings: ["Cyber Security Aspirant", "Web Developer"],
+  typeSpeed: 50,contentType:'html',backSpeed:40,loop:true
+});
+</script>
+<script>
+
+document.ready = capt(); function capt(){ const 
+chars=["A","B","C","D","E","F","G","H","I","J","K","L","M", 
+       "N","O","P","Q","R","S","T","U","V","W","X","Y","Z",
+       "a","b","c","d","e","f","g","h","i","j","k","l","m", 
+       "n","o","p","q","r","s","t","u","v","w","x","y","z", 
+       "1","2","3","4","5","6","7","8","9","0","#","$"];
+let a = chars[Math.floor(Math.random() * 64)];
+let b = chars[Math.floor(Math.random() * 64)];
+let c = chars[Math.floor(Math.random() * 64)];
+let d = chars[Math.floor(Math.random() * 64)];
+let e = chars[Math.floor(Math.random() * 64)];
+
+preset.value = a + b + c + d + e;}
+function confirm(){
+	let val1 = preset.value;
+	let val2 = input.value;
+	if ( val1 == val2){
+		alert("Correct CAPTCHA..!");
+		error.innerHTML = "";
+		capt();
+		input.value=""}
+	else{ 
+		error.innerHTML = "Invalid &#160 Captcha";}}
+</script> </body> </html> 
