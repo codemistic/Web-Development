@@ -1,10 +1,3 @@
-<!-- 
-URL SHORTNER Designed and Developed by Sdobriyal
-Developer: Shubham Dobriyal
-Version: v1.0
-Facebook/shubham.dobriyal.06
-Github/sdobriyal
--->
 <?php include 'main.php'; ?>
 <!DOCTYPE html>
 <html>
@@ -24,7 +17,7 @@ Github/sdobriyal
             <input type="text" class="textarea" name="textarea" autocomplete="off" placeholder="Enter Your Link Here..." required>
             <button type="submit" class="sbtn" name="shrt">SHORT IT!</button>
         </form>
-        <div class="byline"><p>URL Shortner Designed and Developed by <a href="https://www.instagram.com/_shubham_dobriyal/">Sdobriyal</a></p></div>
-		<div class="Footer"><p>© TechBuddies All Rights Reserved.<a href="https://techbuddies.in/">Copyright</a></p></div>
+        <div class="byline"><p>URL Shortner</p></div>
+		<div class="Footer"><p>©<a href="https://t.me/untold_hacker">Untold Hacker</a> All Rights Reserved.<a href="https://creatoromod.000webhostapp.com">Copyright</a></p></div>
     </body>
 </html>
