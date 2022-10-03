@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hangman Game</title>
+</head>
+<body>
+    <h1>Hangman</h1>
+    <p>Find the hidden word - Enter a letter</p>
+    <p>Guess the word before the picture completes</p>
+
+    <div class="container">
+        <!-- Figure -->
+        <svg class="figure" height="280" width="230">
+            <line x1="20" y1="250" x2="100" y2="250"/>
+            <line x1="60" y1="50" x2="60" y2="250"/>
+            <line x1="60" y1="50" x2="140" y2="50"/>
+            <line x1="140" y1="50" x2="140" y2="80"/>
+            <circle cx="140" cy="100" r="20" class="figure-part"/>
+            <line x1="140" y1="120" x2="140" y2="180" class="figure-part"/>
+            <line x1="140" y1="150" x2="110" y2="130" class="figure-part"/>
+            <line x1="140" y1="150" x2="170" y2="130" class="figure-part"/>
+            <line x1="140" y1="180" x2="110" y2="200" class="figure-part"/>
+            <line x1="140" y1="180" x2="170" y2="200" class="figure-part"/>
+        </svg>
+
+        <div class="info">
+            <span class="wrong"></span>
+            <span class="wrong-letter"></span>
+        </div>
+    </div>
+
+    <!-- Here the random words will appear -->
+    <div class="word"></div>
+
+    <div class="popup-container">
+        <div class="popup">
+            <h3 class="message"></h3>
+            <button id="btn"></button>
+        </div>
+    </div>
+
+    <div class="notification">
+        <p>You have already entered this key</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
