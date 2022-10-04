@@ -1,0 +1,266 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #B0B6D0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 1rem;
+    margin: 150px 50px;
+    background-color: #FBFBFC;
+    height: 900px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    height: auto;
+    border-right: 10px solid white;
+    gap: 10px;
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: 100;
+    text-decoration: overline solid #0B1CD5;
+    padding: 10px;
+}
+
+.img {
+    width: 100%;
+    height: 900px;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.form {
+    display: none;
+    transform: scale(0);
+    opacity: 0;
+}
+
+.form.active {
+    display: flex;
+    transform: scale(1);
+    opacity: 1;
+    flex-direction: column;
+    gap: 10px;
+    animation: show 1s;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+input {
+    padding: 10px;
+    outline: none;
+    border: 1px solid #5E5763;
+    border-radius: 5px;
+    background-color: #FBFBFC;
+}
+
+.password,
+.email {
+    border: none;
+    padding: 20px;
+    width: 60%;
+}
+
+.email {
+    width: 100%;
+}
+
+.pass-reset {
+    border: 1px solid #B0B6D0;
+    padding: 0 5px;
+    border-radius: 10px;
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-between;
+    justify-items: baseline;
+    align-items: baseline;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.reset-password {
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+.remember-box {
+    border: none;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.remember-text {
+    font-size: 15px;
+}
+
+.remember {
+    margin-right: 15px;
+}
+
+.btn {
+    padding: 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all ease 0.3s;
+}
+
+.btn-login {
+    background-color: #4054D2;
+    color: #ffffff;
+    border-radius: 9px;
+}
+
+.btn-login:hover {
+    background-color: #0B1CD5;
+}
+
+.btn-gogle-auth {
+    background-color: #FBFBFC;
+    color: black;
+    border-radius: 9px;
+    border: 1px solid #B0B6D0;
+}
+
+.google {
+    margin-right: 10px;
+    color: red;
+    font-size: 15px;
+}
+
+p {
+    font-size: 15px;
+}
+
+.or {
+    color: #B0B6D0;
+    align-self: center;
+    text-align: center;
+}
+
+.or::before {
+    content: "────────────────────────";
+    margin-right: 10px;
+
+}
+
+.or::after {
+    content: "────────────────────────";
+    margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #3856d1;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+label {
+    font-size: 15px;
+}
+
+a:hover {
+    color: #07139C;
+}
+
+
+
+@media screen and (max-width: 810px){
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    .container {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        border-radius: 0;
+        width: 80%;
+        background: linear-gradient(to right, #FFECD2, #FCB69F);
+        width: 100%;
+        align-items: flex-start;
+        position: absolute;
+        height: 100%;
+    }
+    
+    .img {
+        display: none;
+        
+    }
+
+    .row {
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        border: 0;
+    }
+    .form {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .pass-reset {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        border: none;
+    }
+    .remember-box {
+        flex-direction: row;
+    }
+    .email, .password {
+        width: 100%;
+        border: 1px solid #5E5763;
+
+        margin-bottom: 10px;
+    }
+    .or {
+        width: 100%;
+    }
+    .or::before {
+        content: '';
+        padding: 0;
+        margin: 0;
+    }
+    .or::after {
+        content: '';
+        padding: 0;
+        margin: 0;
+    }
+}
