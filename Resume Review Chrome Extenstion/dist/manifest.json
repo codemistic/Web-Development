@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Resume Reviewer",
+  "description": "Review Github and LinkedIn profiles, Portfolio and Complete Resume",
+  "version": "1.0.0",
+  "icons": {
+    "16": "logo.svg",
+    "48": "logo.svg",
+    "128": "logo.svg"
+  },
+  "action": {
+    "default_title": "Review Resume And Complete Profile",
+    "default_popup": "popup.html",
+    "default_icon": "logo.svg"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.github.com/*"],
+      "js": ["contentScript.js"],
+      "css": ["contentScript.css"]
+    }
+  ],
+  "permissions": ["tabs", "https://.github.com/*"],
+  "options_page": "options.html"
+}
