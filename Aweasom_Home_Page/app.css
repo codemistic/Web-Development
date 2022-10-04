@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+}
+.icon {
+    height: 30px;
+    width: 160px;
+    margin: 5px;
+}
+.log_in {
+    color: hsl(322, 100%, 66%);
+    border:  hsl(322, 100%, 66%) solid 1px;
+    border-radius: 5pc;
+    padding: 5px 10px;
+    margin: 5px;
+}
+div .log_in:hover {
+    color: white;
+    background-color: hsl(322, 100%, 66%);
+}
+.wrapper {
+    text-align: center;
+    padding-top: 90px;
+    width: 80%;
+    margin: auto;
+}
+.main-heading {
+    color:  hsl(192, 100%, 9%);
+    font-size: 50px;
+}
+.explain {
+    width: 50%;
+    margin: auto;
+    padding-top: 20px;
+    color:  hsl(192, 100%, 9%);
+}
+.pink-button {
+    color: white;
+    margin: 45px auto;
+    padding: 18px;
+    width: 300px;
+    background-color:  hsl(322, 100%, 66%);
+    border-radius: 5pc;
+    box-shadow: 0 3px 5px hsl(192, 19%, 58%);
+}
+div .pink-button:hover {
+    transform: scale(.98);
+}
+.screen-mockups {
+    padding-top: 55px;
+    
+}
+
+.info-board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color:   hsl(192, 100%, 9%);
+    margin-top: 30px;
+   
+}
+.high-light-icon1 {
+    height: 40px;
+    width: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.high-light-icon2 {
+    height: 35px;
+    width: 42px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+.high-light {
+    font-size: 100px;
+}
+.com-form, .message-sent {
+    position: relative;
+    padding-top: 50px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    
+}
+
+.top {
+    
+    overflow: hidden;
+    
+    
+}
+.wrapper-wrapper {
+    margin: 0;
+    background-color: hsl(207, 100%, 98%);
+    outline:  hsl(207, 100%, 98%) solid 5px;
+}
+.grow {
+    width: 500px;
+    height: 400px;
+}
+.pallet {
+    display: flex;
+    justify-content: space-between;
+}
+.pallet-wrapper {
+    width: 85%;
+    margin: auto;
+}
+.pallet-paragraph{
+text-align: left;
+width: 500px;
+}
+.pallet-heading {
+padding-top: 120px;
+padding-bottom: 15px;
+}
+.second-pallet {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.last-offer {
+    padding-bottom: 80px;
+}
+.footer-wrapper {
+    background-color: hsl(192, 100%, 9%) ;
+    outline:   hsl(192, 100%, 9%)  solid 5px;
+    
+}
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+
+}
+.footer-box {
+    width: 400px;
+   
+    margin-bottom: 200px;
+    color:wheat;
+}
+.footer-para {
+    font-size: 13px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+.input[type=email] {
+    padding: 7px;
+  
+    border: solid 2px   hsl(192, 100%, 9%) ;
+    border-radius: 5px;
+    width: 250px;
+}
+.suscribe {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.sus-button {
+    background-color: hsl(322, 90%, 59%) ;
+    padding: 5px 30px 0 30px;
+    color: white;
+    font-size: 13px;
+    border-radius: 5px;
+}
+h3 {
+
+      font-size: 20px;
+    padding-bottom: 10px;
+}
+.f-wrapper {
+    width: 80%;
+    margin: auto;
+padding-top: 100px;
+}
+.icon-footer {
+    height: 40px;
+    width: 220px;
+    margin: 5px;
+    margin-bottom: 15px;
+}
+.foo-para {
+    font-size: 13px;
+}
