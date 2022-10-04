@@ -6,6 +6,6 @@
 ### Files description 🗄️
 ### style.css - Style for preloader
 ### index.html - index page(Add your own code 🗄️)
-### Demo - creatoromod.000webhost.com/preload.html
+### Demo - https://creatoromod.000webhost.com/preload.html
 ### Much images are added to show preloader🌀
 ### ---End---
