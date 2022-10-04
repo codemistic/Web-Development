@@ -1,0 +1,47 @@
+body {
+  background-color: #daebe2;
+  font-family: cursive;
+}
+.box {
+  background-color: white;
+  opacity: 0.9;
+  border: 1px solid green;
+  border-radius: 10px;
+  width: 500px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+h1 {
+  opacity: 0.7;
+  color: green;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+p {
+  font-size: 30px;
+  padding: 30px 0;
+  margin: 10px 0;
+  text-align: center;
+}
+li {
+  list-style: none;
+  display: inline;
+}
+li:first-child {
+  margin-left: 90px;
+}
+input {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 10px;
+  border: 2px solid green;
+  border-radius: 20px;
+}

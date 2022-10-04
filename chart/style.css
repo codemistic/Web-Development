@@ -1,0 +1,230 @@
+:root {
+    /* Color Theming */
+    --first-bg-color:  #252f3b; 
+    --second-bg-color: #1B2533;
+    --first-font-color: white;
+    --second-font-color: #21cd92; 
+    --overall-top-margin: 30px;
+    --dashboard-margin: 40px;
+    --nav-side-bar-margin-left: 20px;     
+    --border-radius: 10px;
+    --font-size-xs: 16px;
+    --font-size-medium: 28px;
+    --font-size-large: 48px;
+  }
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 1200px) {
+    .container{
+        grid-template-columns: 2fr 6fr;
+    }
+}
+
+/* CSS Styling Admin Dashboard Side Navbar */
+.sidebar {
+    height: auto;
+    background-color: var(--second-bg-color);
+    color: var(--first-font-color);
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+    margin-top: var(--overall-top-margin);
+    margin-bottom: 150px;
+    margin-left: var(--nav-side-bar-margin-left);
+}
+
+@media only screen and (max-width: 1200px) {
+    .logo{
+        height: 40px;
+        width: 40px;
+    }
+}
+
+img {
+    height: 100%;
+}
+
+.side-nav-header {
+    margin-left: var(--nav-side-bar-margin-left);
+    font-size: var(--font-size-xs);
+    color: var(--second-font-color);
+}
+
+.side-nav-elements {
+    margin-left: var(--nav-side-bar-margin-left);
+    font-size: var(--font-size-medium);
+}
+
+.material-icons {
+    font-size: var(--font-size-medium);
+    margin-right: 15px;
+}
+
+.material-icons:hover {
+    cursor: pointer;
+}
+
+.side-nav-element {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.main {
+    height: auto;
+}
+
+/* CSS Styling Admin Dashboard Header */
+.header {
+    background-color: var(--first-bg-color);
+    color: var(--first-font-color);
+    height: 10%;
+    border-top-right-radius: var(--border-radius);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-elements {
+    display: inline-flex;
+    padding-top: var(--overall-top-margin);
+    align-items: center;
+    margin-right: 50px;
+}
+
+.header-element{
+    margin-right: 40px;
+}
+
+.profile {
+    height: 20px;
+    width: 20px;
+}
+
+.profile-img {
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid white;
+}
+
+.dashboard {
+    color: var(--first-font-color);
+    height: 90%;
+    background-color: var(--first-bg-color);
+    border-bottom-right-radius: var(--border-radius);
+}
+
+.welcome_message {
+    display: block;
+    font-size: var(--font-size-medium);
+    margin-left: var(--dashboard-margin);    
+}
+
+.welcome_message_name {
+    color: var(--second-font-color);
+}
+
+.dashboard-header {
+    overflow: auto;
+    margin-left: var(--dashboard-margin);    
+    margin-top: -50px;
+    font-size: var(--font-size-large);
+    display: flex;
+    align-items: center;
+}
+
+
+.select-wrapper {
+    width: 180px;
+    margin-left: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.select-wrapper::before {
+    position: absolute;
+    content: "▼";
+    font-size: var(--font-size-xs);
+    right: 20px;
+    color: var(--second-font-color);
+  }
+
+#datepicker {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+
+    width: 100%;
+    height: 40px;
+    padding-left: 20px;
+    border-radius: 20px;
+    background-color: var(--second-bg-color);
+    font-size: var(--font-size-xs);
+    color: var(--first-font-color);    
+}
+
+#datepicker option {
+    color: #666;
+    background-color: transparent;
+  }
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 var(--dashboard-margin);
+    padding-bottom: 50px;
+    gap: 50px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .dashboard-cards{
+        grid-template-columns: 1fr;
+    }
+}
+
+.card {
+    width: 100%;   
+    background-color: var(--second-bg-color);
+    border-radius: 10px;
+    box-shadow:  10px 10px 10px #151d28;
+}
+
+.chart-canvas {
+    margin: 20px;
+    position: relative;
+    min-height: 250px;
+}
+
+.chart-options {
+    position: absolute;
+    right: 30px;
+    top: 14px;
+}
+
+#cashstreamEC {
+    background-color: transparent;
+    color: var(--second-font-color);
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+#cashstreamEC option {
+    color: #666;
+    background-color: transparent;
+  }
