@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="calculator">
+        <div id="display">
+            <p id="calculation">&ensp;</p>
+            <p id="result">&ensp;</p>
+        </div> 
+        <div id="buttons">
+            <div class="row">
+                <button class="teal function" id="ac">AC</button>
+                <button class="teal function" id="invert">±</button>
+                <button class="teal function" id="modulo">%</button>
+                <button class="pink function" id="divide">÷</button>
+            </div>
+            <div class="row">
+                <button class="number" data-key="7">7</button>
+                <button class="number" data-key="8">8</button>
+                <button class="number" data-key="9">9</button>
+                <button class="pink function" id="multiply">×</button>
+            </div>
+            <div class="row">
+                <button class="number" data-key="4">4</button>
+                <button class="number" data-key="5">5</button>
+                <button class="number" data-key="6">6</button>
+                <button class="pink function" id="subtract">-</button>
+            </div>
+            <div class="row">
+                <button class="number" data-key="1">1</button>
+                <button class="number" data-key="2">2</button>
+                <button class="number" data-key="3">3</button>
+                <button class="pink function" id="add">+</button>
+            </div>
+            <div class="row">
+                <button class="function" id="backspace" data-key="">⌫</button>
+                <button class="number" data-key="0">0</button>
+                <button class="number" data-key="." id="decimal">·</button>
+                <button class="pink function" id="equal">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
