@@ -1,0 +1,34 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: cursive;
+}
+
+body {
+	background: #f2f2f2;
+	overflow: auto;
+}
+
+h1{
+	text-align: center;
+	margin: 5%;
+	font-size: 3rem;
+	text-decoration: underline;
+}
+
+ul {
+	text-align: left;
+	padding-left: 10%;
+	padding: 7%;
+	font-size: 2rem;
+	list-style: circle;
+}
+
+li:hover{
+	color:red;
+	margin: 4%;
+	transition: 1.5s ease;
+	cursor: pointer;
+}
+
