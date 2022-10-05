@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "mumblers_demoregular";
+    color: #262626;
+    background-color: orange;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+    display: flex;
+}
+
+.notebook {
+    width: 600px;
+    min-height: 100vh;
+    padding-top: 20px;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.50);
+}
+
+.title {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.input-container {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.input-container i {
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: lightpink;
+}
+
+.input-container input {
+    font-family: inherit;
+    outline: 0;
+    border: 0;
+    width: 65%;
+    font-size: 1.5rem;
+    border-bottom: 3px solid lightgray;
+}
+
+#groceryItems {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 75%;
+    font-size: 1.5rem;
+}
+
+#groceryItems h2 {
+    cursor: pointer;
+}
+
+@media(max-width:768px) {
+    #groceryItems {
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width:480px) {
+    .title {
+        font-size: 1rem;
+    }
+    .input-container i {
+        font-size: 2rem;
+    }
+    .input-container input {
+        font-size: 1rem;
+    }
+    #groceryItems {
+        font-size: 0.9rem;
+    }
+}
