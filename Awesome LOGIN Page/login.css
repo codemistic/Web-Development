@@ -1,0 +1,160 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+body{
+	background-color: #071F30;
+
+	
+}
+
+
+.back-button{
+	color: white;
+	background-color: rgb(4, 132, 230);
+	box-shadow: 0 0 20px 5px hsla(0, 43%, 89%, 0.178);
+	position: relative;
+	top: 35px;
+	left:35%;
+	width: 80px;
+	height: 30px;
+	border-radius: 50px;
+	transition: .5s;
+	
+}
+
+.back-button a{
+	color: white;
+	text-decoration: none;	
+}
+
+.form-box
+{
+    width:380px;
+	height:520px;
+	position:relative;
+	margin:2% auto;
+	background:rgba(0,0,0,0.3);
+	padding:10px;
+    overflow: hidden;
+	border-radius: 16px;
+	position: relative;
+	top: 70px;
+	border: 1px solid;
+	border-top: 5px solid;
+	border-right: 5px solid;
+	border-color: #ff3c78;
+	box-shadow: 0 0 20px 9px hsla(0, 43%, 89%, 0.178);
+	
+}
+.button-box
+{
+	width:220px;
+	margin:35px auto;
+	position:relative;
+	box-shadow: 0 0 20px 9px hsla(0, 43%, 89%, 0.178);
+	border-radius: 30px;
+}
+.toggle-btn
+{
+	padding:10px 30px;
+	cursor:pointer;
+	background:transparent;
+	border:0;
+	outline: none;
+	position: relative;
+	color: rgb(233, 238, 238);
+	
+}
+#btn
+{
+	top: 0;
+	left:0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: #ff3c78;
+	border-radius: 30px;
+	transition: .5s;
+}
+.input-group-login
+{
+	top: 150px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-group-register
+{
+    top: 120px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-field
+{
+	width: 100%;
+	padding:10px 0;
+	margin:5px 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 1px solid #999;
+	outline:none;
+	background: transparent;
+}
+.submit-btn
+{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background:#ff3c78;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+	color: white;
+
+	border: 0px solid;
+	border-top: 3px solid;
+	border-right: 3px solid;
+	border-color: #ac89ffbe;
+	position: relative;
+	top: 20px;
+	
+}
+.check-box
+{
+	margin: 25px 10px 0px 0;
+}
+span
+{
+	color:#777;
+	font-size:12px;
+	bottom:68px;
+	position:absolute;
+}
+#login
+{
+	left:50px;
+}
+#login input
+{
+	color:white;
+	font-size:15;
+}
+#register
+{
+	left:450px;
+}
+#register input
+{
+	color:white;
+	font-size: 15;
+}
