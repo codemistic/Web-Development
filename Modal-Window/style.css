@@ -1,0 +1,85 @@
+/*Hi, everyone welcome to styling part of modal window*/
+/*First we will be implementing some basic styling to our page and then we will jump to the styling related to modal window*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 1rem;
+	box-sizing: border-box;
+}
+body{
+	font-family: sans-serif;
+	line-height: 1.5;
+	background: linear-gradient(to bottom right, gainsboro,blueviolet, lightcoral, lightcyan);
+	color: #333;
+	height: 100vh;
+	position: relative;
+	display: flex;
+	align-content: flex-start;
+	justify-content: center;
+}
+/*Styling show modal button*/
+.show-modal{
+	font-size: 2rem;
+	font-weight: 500;
+	padding: 2rem;
+	margin: 1rem;
+	border: none;
+	color: burlywood;
+	background: linear-gradient(to bottom left, wheat,whitesmoke,ghostwhite,wheat);
+	border-radius: 25px;
+}
+.show-modal:hover{
+	cursor: pointer;
+	font-weight: 600;
+	box-shadow: 2px 2px 2px gray; /*Not Working now, look after this later*/
+}
+/*Styling close button(X)*/
+.close-modal{
+	font-size: 2.5rem;
+	color: #333;
+	border: none;
+	background: none;
+	cursor: pointer;
+	position: absolute;
+	top: 0.4rem;
+	right: 2.3rem;
+}
+.modal-heading{
+	margin-bottom: 0.8rem;
+}
+.modal-discription{
+	font-size: 1.2rem;
+	font-weight: 500;
+	color: slategrey;
+}
+
+/*We have done the basic styling now we will be using CSS to make modal window working*/
+/*Classes to make modal work*/
+.hidden{
+	display: none;
+}
+.modal{
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+
+	/*Making a background box*/
+	background: whitesmoke;
+	padding: 3rem;
+	border-radius: 1rem;
+	box-shadow:0 2px 10px black;
+	z-index: 3;
+}
+.overlay{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	background-color: rgb(0, 0, 0,0.3);
+}
