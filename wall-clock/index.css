@@ -1,0 +1,77 @@
+
+ html {
+      background-size:cover;
+      font-family:'helvetica neue';
+      text-align: center;
+      font-size: 10px;
+}
+
+body {
+    margin: 0;
+    font-size: 2rem;
+    flex:1;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.clock{  
+    position: relative;
+    margin: auto;
+    height: 30vw;
+    width: 30vw; 
+    background: url(clock.png) no-repeat;
+    background-size: 100%;
+}
+
+#hour,#minute,#second{
+    position: absolute;
+    background: black;
+    border-radius: 10px; 
+    transform-origin: bottom;
+}
+
+#hour{
+    width: 1.8%;
+    height: 25%;
+    top: 25%;
+    left: 48.85%;
+    opacity: 0.8;  
+}
+#minute{
+    width: 1.6%;
+    height: 30%;
+    top: 19%;
+    left: 48.9%;
+    opacity: 0.8;  
+}
+#second{
+    width: 1%;
+    height: 40%;
+    top: 9%;
+    left: 49.25%;
+    opacity: 0.8; 
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

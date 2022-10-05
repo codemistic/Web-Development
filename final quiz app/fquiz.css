@@ -1,0 +1,91 @@
+body{
+	padding: 0;
+	margin: 0;	
+	width:100vw;
+	height: 100vh;
+	
+}
+
+.question-container{
+	margin: 10px;
+	padding: 5px;
+	width: 80vw;
+	height: 10vh;
+	background-color: #c7dddf;
+	font-size: x-large;
+	text-align: center;
+	
+}
+.result{
+	margin: 10px;
+	padding: 5px;
+	width:80vw;
+	height: 10vh;
+	text-align: center;
+	font-size: 50px;
+	
+}
+.option-container{
+	display: flex;
+	justify-content: space-around;
+	margin: 10px;
+	padding: 5px;
+	width: 80vw;
+	height: 20vh;
+	background-color: #e09b33;
+		
+}
+.option{	
+	padding: 10px;
+	width: 15vw;
+	height: 15vh;
+	font-size: larger;
+	background-color: lightskyblue;
+	border-radius: 25% 25% 25% 25%;
+
+}
+/* .option:hover{
+    font-size: 2rem;
+	background-color: rgb(251, 251, 62);
+
+} */
+.navigation{
+	width: 80vw;
+	height: 10vh;
+	margin: 10px;
+	padding: 5px;
+	display: flex;
+	justify-content: space-around;
+	background-color:#1b4e53;
+	color: white;
+
+}
+/* .evaluate{
+	width: 100px;
+	height: 60px;
+	background-color: green;
+	cursor: pointer;
+
+}
+.evaluate:hover{
+	background-color: greenyellow;
+	width:160px;
+	font-size: 2rem;
+
+} */
+.next{
+	width: 160px;
+	height: 60px;
+	background-color: rgb(95, 15, 15);
+	cursor: pointer;
+	color: white;
+
+}
+/* .next:hover{
+	background-color: rgb(212, 78, 78);
+	color: white;
+	width:160px;
+	height: auto;
+	font-size: 2rem;
+
+} */
