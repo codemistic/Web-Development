@@ -2,32 +2,11 @@
 <html lang="en">
 <head>
     <title>BMI Calculator</title>
-    
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-
-<style>
-
-    body{
-        background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0zNzNiYXRjaDE1LTIxNy0wMS5qcGc.jpg?s=wJHDTeUvB4lPPWtEbivZzXqqCANd4wmXUDZHldblyi4');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        height: 100vh;
-        position: relative;
-    }
-    header{
-        width: 100%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-    }
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-
-
 
 <header>
     <div class="container">
@@ -58,20 +37,6 @@
         </div>
     </div>
 </header>
-    <script>
-        function getbmivalue(){
-            var weight = document.getElementById('weight').value;
-            var height = document.getElementById('height').value;
-
-            height=height*12;
-            height=height*0.025; //Now height is in meter
-
-            var newbmivalue = weight/Math.pow(height,2);
-            newbmivalue=Math.round(newbmivalue);
-            document.getElementById('bmivalue').value=newbmivalue;
-        }
-
-    </script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
@@ -79,8 +44,8 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-    
 
+    <script src="index.js" charset="utf-8"></script>
 
 </body>
 </html>
