@@ -6,14 +6,14 @@
 }
 
 body {
-	background: #f2f2f2;
-	overflow: auto;
+	background-color: #A0F0CD;
+	overflow: hidden;
 }
 
 h1{
 	text-align: center;
 	margin: 5%;
-	font-size: 3rem;
+	font-size: 5rem;
 	text-decoration: underline;
 }
 
@@ -27,8 +27,13 @@ ul {
 
 li:hover{
 	color:red;
-	margin: 4%;
+	margin: 0.5%;
 	transition: 1.5s ease;
 	cursor: pointer;
 }
 
+.form-group {
+    color: #fff;
+    background-color: #9d3ed6;
+    border-color: #cfacea;
+}
