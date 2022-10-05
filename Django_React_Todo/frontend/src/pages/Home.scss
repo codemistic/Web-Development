@@ -1,0 +1,79 @@
+.Home_container {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+
+.Home_Add {
+  display: flex;
+  margin-top: 120px;
+  background: rgb(179, 197, 245);
+  padding: 40px 40px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0px 5px 8px rgb(139, 139, 139);
+  position: sticky;
+
+  input {
+    background: white;
+    color: black;
+    border: none;
+    padding: 10px;
+    border: 1px rgb(137, 105, 105) solid;
+  }
+
+  .Home_task-input {
+    input {
+      height: 40px;
+      width: 380px;
+      font-size: 16px;
+      border-right: none;
+    }
+
+    input:focus {
+      outline: none;
+    }
+  }
+
+  .Home_task-post {
+    border-radius: 6px;
+    button {
+      height: 40px;
+      width: 80px;
+      background: #36d9b6;
+      cursor: pointer;
+      border-radius: 0 6px 6px 0;
+    }
+  }
+}
+
+.Home_List {
+  width: 540px;
+  color: black;
+  box-shadow: 0px 20px 50px rgb(205, 44, 44);
+
+  .Home_list-tasks {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    background: white;
+    border-bottom: 1px solid black;
+    border-right: 2px solid rgb(142, 139, 181);
+    border-left: 2px solid rgb(142, 139, 181);
+
+    p,
+    strike {
+      background: white;
+      font-size: 20px;
+      color: black;
+    }
+  }
+
+  .Home_list_tasks-title {
+    background: white;
+  }
+}

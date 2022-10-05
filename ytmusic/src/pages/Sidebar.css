@@ -1,0 +1,59 @@
+.sidebar{
+    color:white;
+}
+
+.topbar ul{
+    font-weight: bolder;
+    margin-top: 65px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin-left: 150px;
+    justify-content: space-between;
+    width: 27vw;
+}
+
+.toplist ul:first-child li:first-child{
+    /* position: relative; */
+    height: 30px;
+    /* width: 100px; */
+    border-bottom: 1px solid white;
+
+}
+.songsList:first-child ul{
+    margin-top: 55px;
+    list-style-type: none;
+    margin-left: 130px;
+    display: flex;
+    flex-direction: column;
+}
+.songsList:first-child ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100px;
+    margin-left: 100px !important;
+}
+.songsList ul{
+    list-style-type: none;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+.singleSong img{
+    width: 35px;
+    height: 35px;
+}
+.single span{
+    margin-top: 0;
+    font-size: 5px !important;
+    font-weight: 200;
+}
+.singleSong{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: space-between;
+    width: 120px;
+}
