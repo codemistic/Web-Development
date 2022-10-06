@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
+
+
+
+#developers {
+  background: rgb(87, 123, 221);
+  background: linear-gradient(90deg, rgba(87, 123, 221, 1) 0%, rgba(252, 125, 33, 1) 46%, rgba(252, 125, 33, 1) 60%);
+
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+
+.card {
+  background-color: #161d27;
+  height: 23rem;
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.7);
+  color: white;
+  margin-left: 20px;
+  margin-top: 10px;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card__name {
+  margin-top: 15px;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.card__image {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 5px solid rgb(219, 120, 50);
+  margin-top: 20px;
+  box-shadow: 0 10px 50px rgba(252, 125, 33, 1);
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem 'Roboto Slab', sans-serif;
+  padding: 0.75em 2em;
+  letter-spacing: 0.05rem;
+  margin: 1em;
+  width: 13rem;
+}
+
+.btn:focus {
+  outline: 2px dotted #55d7dc;
+}
+
+#orange {
+  color: rgba(252, 125, 33, 1)
+}
+
+
+.social-icons {
+  padding: 0;
+  list-style: none;
+  margin: 0em;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin: 0.15em;
+  position: relative;
+  font-size: 1em;
+}
+
+.social-icons i {
+  color: #fff;
+  position: absolute;
+  top: 0.95em;
+  left: 0.96em;
+  transition: all 265ms ease-out;
+}
+
+.social-icons a {
+  display: inline-block;
+}
+
+.social-icons a:before {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  content: " ";
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  display: block;
+  background: linear-gradient(45deg, rgba(87, 123, 221, 1), rgba(252, 125, 33, 1));
+  transition: all 265ms ease-out;
+}
+
+.social-icons a:hover:before {
+  transform: scale(0);
+  transition: all 265ms ease-in;
+}
+
+.social-icons a:hover i {
+  transform: scale(2.2);
+  -ms-transform: scale(2.2);
+  -webkit-transform: scale(2.2);
+  color: rgba(252, 125, 33, 1);
+  background: -webkit-linear-gradient(45deg, rgba(87, 123, 221, 1), rgba(252, 125, 33, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 265ms ease-in;
+}

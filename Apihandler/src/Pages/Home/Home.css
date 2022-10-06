@@ -1,0 +1,45 @@
+.homeContainer {
+    background-color: #161527;
+    width: 100vw;
+    max-height: 150vh;
+
+}
+
+.grid {
+    display: grid;
+    /* align-content: space-around; */
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#landing {
+
+    display: flex;
+    justify-content: center;
+    margin-top: -150px;
+}
+
+
+/* @media only screen and (max-width: 1154px) {
+        .grid { 
+            grid-template-columns: repeat(3, minmax(200px, 1fr));
+            grid-gap: 25px;
+            }
+    }
+    @media only screen and (max-width: 861px) {
+        .grid { 
+            grid-template-columns: repeat(2, minmax(200px, 1fr));
+            grid-gap: 25px;
+            }
+    }
+    @media only screen and (max-width: 566px) {
+        .grid { 
+            grid-template-columns: repeat(1, minmax(200px, 1fr));
+            grid-gap: 25px;
+
+            margin-left: auto;
+            }
+    }
+    */
