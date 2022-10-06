@@ -1,0 +1,21 @@
+.Author_continer {
+  display: flex;
+}
+
+.author_list-container {
+  ul {
+    display: flex;
+    margin-top: 10px;
+
+    li {
+      p {
+        font-size: 20px;
+        color: rgb(185, 33, 33);
+      }
+    }
+  }
+}
+
+h2 {
+  margin-top: 10px;
+}
