@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>taj</title>
+  <style>
+    .taj{
+  margin-top: 50px;
+  width: 1190px;
+  height: 680px;;
+  position: relative;
+}
+.dome{
+  position: absolute;
+  left: 36%;
+  top:5%;
+  border-radius: 150px 150px 0 0;
+  background-color: black;
+  width: 300px;
+  height: 156px;
+}
+.window{
+  position: absolute;
+  width: 70px;
+  height: 100px;
+  background-color:whitesmoke;
+  left: 30%;
+  top: 40%;
+  border-radius: 35px 35px 0 0;
+  box-shadow: -108px 0 0 white,-108px 135px 0 white,0 135px 0 white,
+    490px 135px 0 white,490px 0 0 white,384px 135px 0 white,384px 0 0 white;
+}
+.dome:before{
+  content: '';
+  position: absolute;
+  width: 130px;
+  height: 70px;
+  background-color: transparent;
+  left: 29%;
+  top: 55%;
+  border-radius: 150px 150px 0 0;
+  box-shadow: -240px 8px 0 #000000,240px 8px 0 #000000;
+}
+.body{
+  position: absolute;
+  left: 38%;
+  top:28%;
+  background-color: black;
+  width: 260px;
+  height: 350px;
+}
+.door{
+   position: absolute;
+  left: 39%;
+  top:35%;
+  background-color: black;
+  z-index:1;
+  width: 236px;
+  height: 302px;
+  z-index: -1;
+  box-shadow: -244px 0 0 black,244px 0 0 black;
+}
+.gate{
+  position: absolute;
+  left: 40%;
+  top:35%;
+  background-color: white;
+  width: 213px;
+  height: 299px;
+  z-index: 1;
+  border-radius: 100px 100px 0 0;
+}
+.small-pillars{
+  position:absolute;
+  width: 10px;
+  height: 42px;
+  z-index: -1;
+  background-color: black;
+  left: 28%;
+  top: 29%;
+  box-shadow: -40px 0 0 black,40px 0 0 black,440px 0 0 black,480px 0 0 black,520px 0 0 black;
+}
+.base{
+  position: absolute;
+  width: 1170px;
+  height: 110px;
+  background-color: #000000;
+  left: 1%;
+  top: 79%;
+  
+}
+.minar{
+  position: absolute;
+  width: 60px;
+  height: 415px;
+  background-color: #000000;
+  top: 18%;
+  left: 2%;
+  border-radius: 30px 30px 0 0;
+  box-shadow: 1085px 0 0 #000000,95px 75px 0 -8px #000000,990px 75px 0 -8px  #000000;
+}
+.pointer{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #E91E63;
+  border-radius: 30px;
+  left: 47%;
+  top: 1%;
+  box-shadow: -235px 91px 0 #E91E63,245px 91px 0 #E91E63;
+}
+.pointer:before{
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #E91E63;
+  border-radius: 15px;
+  top: -16px;
+  left: 7px;
+  box-shadow: -234px 91px 0 #E91E63, 246px 91px 0 #E91E63;
+}
+.pointer:after{
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #E91E63;
+  border-radius: 10px;
+  top: -28px;
+  left: 9px;
+  box-shadow: -234px 90px 0 #E91E63, 246px 90px 0 #E91E63;
+}
+  </style>
+</head>
+<body>
+<div class="taj">
+  <div class="dome"></div>
+  <div class="door"></div>
+  <div class="gate"></div>
+  <div class="body"></div>
+  <div class="minar"></div>
+  <div class="window"></div>
+  <div class="small-pillars"></div>
+  <div class="base"></div>
+  <div class="pointer"></div>
+</div>
+</body>
+</html>
