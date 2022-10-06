@@ -1,6 +1,6 @@
 ### ---Body---
 ### Text to qr generator✅
-### Why Text to qr - To conver a normal text into advanced qr code
+### Why Text to qr - To convert a normal text into advanced qr code
 ### If you make this website then you can conver any text into qr 🥺
 ### So I added this code and it takes totally 1 hour for me to edit and test🧰
 ### Files and folder description 🗄️
