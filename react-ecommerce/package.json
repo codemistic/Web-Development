@@ -2,7 +2,7 @@
     "name": "react-ecommerce-butter",
     "version": "0.1.0",
     "description": "React Ecommerce app built with ButterCMS and Snipcart.",
-    "author": "Ashutosh K Singh",
+    "author": "Samson Kwaku Nkrumah",
     "license": "MIT",
     "dependencies": {
         "@chakra-ui/react": "^1.6.2",
