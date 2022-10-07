@@ -447,7 +447,7 @@ header .navbar ul li a:hover::before{
 
     html{
         font-size: 55%;
-
+        
     }
 
     header #menu{
@@ -461,13 +461,12 @@ header .navbar ul li a:hover::before{
     }
    header .navbar ul{
         flex-flow: column;
-        padding: 2rem;
+        padding:2rem;
 
     }
-
     header .navbar ul li {
         width:100%;
-        text-align: center;
+        text-align:center;
     }
     header .navbar ul li a{
         display:block;
@@ -486,7 +485,7 @@ header .navbar ul li a:hover::before{
      .fa-times{
         transform: rotate(180deg);
      }
-     header .navbar .nav-toggle{
+     header .navbar.nav-toggle{
         top:7.4rem;
      }
      
