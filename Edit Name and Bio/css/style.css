@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h1 {
+    color: #fff;
+    margin-bottom: 2rem;
+  }
+  
+  .container {
+    width: 20rem;
+    position: relative;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+  
+  .nameDiv {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+    font-size: 1rem;
+    padding: 0.3rem;
+    margin: 1rem;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+  
+  .nameDiv .name, .bioDiv .bio {
+    width: 100%;
+    color: #000;
+    font-size: 1rem;
+    min-height: 1.5rem;
+    padding-left: 0.5rem;
+  }
+  
+  .name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .bioDiv {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #fff;
+    font-size: 1rem;
+    padding: 0.3rem;
+    margin: 1rem;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+  
+  .bioDiv .bio {
+    min-height: 4rem;
+    font-size: 1rem;
+  }
+  
+  #editBtn {
+    width: 20%;
+    font-size: 1rem;
+    background-color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 0.3rem;
+    margin: 1rem;
+    margin-top: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+  
+  #editBtn:hover {
+    color: #fff;
+    background-color: royalblue;
+    border: 1px solid royalblue;
+  } 
+  
+  .page {
+    width: 100%;
+    min-height: 100%;
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+  }
+  
+  .closeBtn, .inputDiv, .saveDiv {
+    width: 100%;
+  }
+  
+  .closeBtn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  #saveBtn, #inputName, #inputBio {
+    font-size: 1rem;
+    font-family: sans-serif;
+    border-radius: 5px;
+    padding: 0.4rem 0.5rem;
+    border: none;
+    outline: none;
+  }
+  
+  #inputName {
+    margin-bottom: 0.4rem;
+  }
+  
+  #inputBio {
+    margin-top: 0.4rem;
+  }
+  
+  #saveBtn {
+    background-color: #fff;
+    margin-top: 0;
+    border: 1px solid gray;
+    cursor: pointer;
+  }
+  
+  #saveBtn:hover {
+    color: #fff;
+    background-color: royalblue;
+    border: 1px solid royalblue;
+  } 
+  
+  #close {
+    width: 12%;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: transform 0.1s ease-in;
+  }
+  
+  #close:hover {
+    transition: transform 0.2s ease-in;
+    transform: scale(1.1);
+    background-color: #595959;
+    border-radius: 5px;
+  }
+  
+  .inputDiv {
+    width: 100%;
+    min-height: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 420px) {
+  .container {
+    width: 90%;
+  }
+  }
+  

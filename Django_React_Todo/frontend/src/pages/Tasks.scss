@@ -1,0 +1,104 @@
+.Task_Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .Task_div {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 380px;
+    background: white;
+    border-radius: 15px;
+
+    .Task_cross {
+      display: flex;
+      justify-content: flex-end;
+      background: white;
+      margin-top: 10px;
+      margin-right: 20px;
+
+      p {
+        background: white;
+        font-size: 20px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+
+      svg {
+        background: white;
+      }
+    }
+  }
+
+  .Task_heading {
+    display: flex;
+    padding: 0 40px;
+    margin-top: 10px;
+    flex-direction: column;
+    background: white;
+    input {
+      background: white;
+      margin-bottom: 10px;
+      border: none;
+      border-bottom: 1px solid black;
+      font-size: 18px;
+      text-align: center;
+    }
+    input:focus {
+      outline: none;
+    }
+
+    button {
+      background: rgb(194, 104, 112);
+      width: 100%;
+      border: none;
+      font-size: 15px;
+      margin-top: 10px;
+      height: 35px;
+      border: 1px solid black;
+      &:hover {
+        cursor: pointer;
+        background: rgb(28, 184, 137);
+      }
+    }
+  }
+}
+
+.Task_controls {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  width: 100%;
+  background: white;
+  margin-top: 3px;
+
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    width: 100%;
+    height: 30px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  svg {
+    background: transparent;
+    color: white;
+  }
+
+  .delete_container {
+    background: rgb(199, 28, 28);
+    border: 1px solid black;
+    border-left: none;
+    &:hover {
+      background: rgb(255, 0, 0);
+    }
+  }
+}

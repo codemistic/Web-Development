@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>QR Code Generator</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        div img {
+            width: 10%;
+        }
+    </style>
+    <script src="qrcode.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Enter your link</h1>
+    </header>
+    <main>
+
+        <div id="code"></div>
+
+    </main>
+    <script>
+        let qrcode = new QRCode("code", {
+            text: "https://github.com/FelixFelicis555/QR-code-generator",
+            correctLevel: QRCode.CorrectLevel.H
+        });
+    </script>
+</body>
+
+</html>

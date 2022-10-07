@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container my-5 mx-auto">
+        <h1>Password Generator</h1>
+        <!-- <input type="text" id="password"> -->
+        <div class="input-group mb-3">
+            <input type="text" id="password" class="form-control" placeholder="Generated Password">
+            <button class="btn btn-outline-primary" onclick="generatePassword()" type="button" id="button-addon2">Generate</button>
+            <button class="btn btn-outline-danger" onclick="copyPassword()" type="button">Copy</button>
+          </div>
+
+          <label for="customRange2" class="form-label">Password Length</label>
+<input type="range" class="form-range" min="6" max="15" id="passLength">
+
+          <!-- <p class="range"></p> -->
+
+
+
+
+        <!-- <button type="button" class="btn btn-primary" onclick="generatePassword()">Generate Password</button>
+        <button type="button" class="btn btn-warning" onclick="copyPassword()">Copy Password</button> -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>

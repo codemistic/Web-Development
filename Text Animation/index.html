@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Text Reveal Animation</title>
+</head>
+<style>
+	@import url(
+'https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+		body{
+		font-family: Montserrat;
+		text-align: center;
+		color: #006600;
+		font-size: 34px;
+		padding-top: 40vh;
+		overflow: hidden;
+	}
+	div{
+		display: inline-block;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+	div:first-of-type{
+		animation: appear 6s infinite;
+	}
+	div:last-of-type{
+		animation: reveal 6s infinite;
+	}
+	div:last-of-type span{
+		font-size: 33px;
+		color: #808000;
+		animation: slide 6s infinite;
+	}
+	@keyframes appear{
+		0%{opacity: 0;}
+		20%{opacity: 1;}
+		80%{opacity: 1;}
+		100%{opacity: 0;}
+	}
+	@keyframes slide{
+		0%{margin-left:-800px;}
+		20%{margin-left:-800px;}
+		35%{margin-left:0px;}
+	100%{margin-left:0px;}
+	}
+	@keyframes reveal{
+		0%{opacity: 0; width: 0px;}
+		20%{opacity: 1; width: 0px;}
+		30%{width: 655px;}
+		80%{opacity: 1;}
+		100%{opacity: 0; width: 655px;}
+	}
+</style>
+<body>
+	<div>HACKTOBERFEST</div>
+	<div>
+		<span>Lets Contribute To Opensource !</span>
+	</div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scorekeeper</title>
+    <link rel="stylesheet" href="scorekeeper.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <div class="card">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                Score Keeper
+                            </p>
+                        </header>
+                        <div class="card-image">
+                            <figure class="image 2-by1"> <img
+                                    src="
+                            https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dGVubmlzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1000&q=60"
+                                    alt="sport image">
+                            </figure>
+                        </div>
+
+                        <div class="card-content">
+                            <div class="content">
+                                <!--display the score-->
+                                <h1 class="title is-1"><span id="P1Display">0</span> to <span id="P2Display">0</span>
+                                </h1>
+                                <div>
+                                    <p class="subtitle">Use the buttons below to keep score</p>
+                                </div>
+                               
+                                    <label for="playto" class="label is-large is-inline">Playing to: </label>
+                                    <div class="select is-rounded">
+                                        <select name="playto" id="playto">
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                        </select>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+
+                            <button class="button is-large is-primary card-footer-item" id='P1Button'> +1 Player 1
+                            </button>
+                            <button class="button is-large is-info card-footer-item" id='P2Button'> +1 Player 2
+                            </button>
+                            <button class="button is-large is-danger card-footer-item" id='Reset'> Reset </button>
+
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
