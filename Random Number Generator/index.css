@@ -1,0 +1,70 @@
+
+
+html {
+	height: 100%;
+	background: radial-gradient(circle, rgb(249, 255, 162) 20%, #ccc);
+	background-size: cover;
+}
+
+body {
+  font-family:  sans-serif;
+}
+form .options {
+    align-items: center;
+    justify-content: center;
+    left: 500px;
+}
+.generate {
+    /* Remove button styles */
+    border: none;
+    background: transparent;
+    outline: none;
+    overflow: none;
+  
+    /* Make 'clickable' */
+    cursor: pointer;
+}
+  
+.number {
+  text-shadow: 0 0 5px rgb(241, 251, 103);
+  
+  /* Make it big */
+  font-weight: 700;
+  font-size: 200px;
+
+  /* Center it */
+  width: 50%;
+  min-height: 50%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+div {
+    align-items: center;
+    margin-left: 32%;
+    
+}
+legend {
+    text-align: center;
+}
+.options {
+  background-color: rgb(14, 14, 14);
+  border-radius: 5px;
+  color: #efefef;
+  padding: 10px 20px;
+  position: absolute;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+} 
+  input label {
+    display: none;
+  }
+  
+ 
+  input {
+    background-color: #efefef;
+    padding: 10px;
+    margin: 5px 15px;
+  }
