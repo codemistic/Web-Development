@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* box-sizing: border-box; */
+    
+/* font-family: 'Roboto', sans-serif; */
+}
+
+
+
+.container{
+    height: 100vh;
+    width:100vw;
+    background-color: rgba(161, 60, 255, 0.986);
+    text-align: center;
+    margin: auto;
+}
+.container h1{
+    /* text-align: center;  */
+    font-size: 70px;
+}
+ input,textarea {
+     width: 80%;
+     font-size: 16px;
+     padding: 20px;
+     margin: 8px auto;
+     display: block;
+     border-radius: 18px;
+     
+ }
+ .btn{
+    padding: 15px;
+    border-radius: 8px;
+    margin:3px auto ;
+    font-size: 20px;
+    cursor: pointer;
+ }
+

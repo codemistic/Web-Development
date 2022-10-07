@@ -25,7 +25,7 @@ if(item.value != ""){
 else{
 
 	// Alert msg when value of box is "" empty.
-	alert("plz add a value to item");
+	alert("Please add an item in To-do list");
 }
 
 }
