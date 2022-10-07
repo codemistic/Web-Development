@@ -1,6 +1,6 @@
 # GithHub Profiles
 
-![Preview of GitHub Profiles](github_profiles.png)
+![Preview of GitHub Profiles](assets/github_profiles.png)
 
 ### A simple web app that can display basic details of a GitHub user by taking their username as input.
 
