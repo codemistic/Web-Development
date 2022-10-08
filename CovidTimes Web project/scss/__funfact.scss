@@ -1,0 +1,168 @@
+.funfact-one {
+    padding-top: 90px;
+    padding-bottom: 100px;
+    text-align: center;
+
+    &__virus-1,
+    &__virus-2 {
+        position: absolute;
+        top: calc(50% - 90.5px);
+        animation: virusMove 5s linear infinite;
+    }
+
+
+    &__virus-1 {
+        left: 15px;
+    }
+
+    &__virus-2 {
+        right: 15px;
+    }
+
+    .container {
+        position: relative;
+    }
+
+    h3 {
+        font-size: 150px;
+        font-weight: bold;
+        letter-spacing: -.02em;
+        line-height: 1em;
+        span {
+            position: relative;
+            display: inline-block;
+        background-image: linear-gradient(-90deg, #23e7ea 0%, #0a6ad6 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+
+            &::before {
+                content: '';
+                background-image: url(../images/shapes/funfact-line-1-1.png);
+                position: absolute;
+                bottom: 3px;
+                left: 0;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100% auto;
+                width: 104%;
+                height: 7px;
+                z-index: -1;
+            }
+
+        }
+
+    }
+
+    p {
+        margin: 0;
+        font-size: 40px;
+        font-weight: 300;
+        color: var(--thm-black);
+        margin-top: 30px;
+    }
+}
+
+
+/* funfact two */
+
+.funfact-two {
+    padding-top: 120px;
+    padding-bottom: 90px;
+    position: relative;
+
+    &__virus {
+        position: absolute;
+        right: 6%;
+        top: -10%;
+        z-index: 10;
+        -webkit-animation-duration: 12s;
+        animation-duration: 12s;
+        -webkit-perspective: 85px;
+        perspective: 85px;
+        -webkit-animation-name: bubbleMover;
+        animation-name: bubbleMover;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+    }
+
+    .container {
+        position: relative;
+    }
+
+    &__single {
+        text-align: center;
+        margin-bottom: 30px;
+        position: relative;
+
+        i {
+            color: var(--thm-black);
+            font-size: 64px;
+            line-height: 1em;
+            position: relative;
+
+            &::after {
+                content: '';
+                width: 81px;
+                height: 81px;
+                border-radius: 50%;
+                @include thmGradientTwo();
+                position: absolute;
+                top: calc(50% - 40.5px);
+                left: -40.5px;
+                transition: transform 500ms;
+            }
+
+            &::before {
+                position: relative;
+                z-index: 10;
+            }
+        }
+
+        &:hover {
+            i::after {
+                transform: translateY(-50%) translateX(0);
+            }
+        }
+
+        h3 {
+            margin: 0;
+            color: var(--thm-black);
+            font-size: 70px;
+            font-weight: bold;
+            line-height: 1em;
+            margin-top: 20px;
+            margin-bottom: 17px;
+        }
+
+        p {
+            margin: 0;
+            color: #848895;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 1em;
+        }
+    }
+
+    [class*=col]:not(:last-of-type) &__single {
+
+        &::after,
+        &::before {
+            content: '';
+            width: 1px;
+            height: 84px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color: #e6e9f2;
+        }
+
+        &::after {
+            bottom: auto;
+            top: 0;
+        }
+    }
+}
