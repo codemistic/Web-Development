@@ -1,0 +1,33 @@
+{% extends 'blog/base.html'%}
+{% load static%}
+{% block content%}
+<div class ="col-sm-10">
+    <h3 class="text-white mt-5">Contact</h3>
+    <center><h2 style="color: black">Fell Free to contact and verify our post's.....</center>
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+            <label for="inputName">Name</label>
+            <input type="text" class="form-control" id="inputName">
+            </div>
+
+
+         <div class="form-group col-md-6">
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control" id="inputEmail">
+        </div>
+        </div>
+         <div class="form-group">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress">
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+
+    </form>
+</div>
+{%endblock content%}
