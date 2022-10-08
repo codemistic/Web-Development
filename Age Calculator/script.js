@@ -1,17 +1,17 @@
-const months=[31,28,31,30,31,30,31,31,30,31,30,31];
+const months=[31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
 function ageCalc(){
-	let today=new Date();
-	let inputDate= new Date(document.getElementById("date").value);
+	let today = new Date();
+	let inputDate = new Date(document.getElementById("date").value);
 	let birthMonth,birthDate,birthYear;
-	let birthDetails={
+	let birthDetails = {
 		date:inputDate.getDate(),
 		month:inputDate.getMonth()+1,
 		year:inputDate.getFullYear()
 	}
-	let currentYear=today.getFullYear();
-	let currentMonth=today.getMonth()+1;
-	let currentDay=today.getDate();
+	let currentYear = today.getFullYear();
+	let currentMonth = today.getMonth()+1;
+	let currentDay = today.getDate();
 
    
 	leapChecker(currentYear);
@@ -22,47 +22,47 @@ function ageCalc(){
 		alert("Enter Valid Date");
 	   
 	}
-	birthYear=currentYear-birthDetails.year;
-	if(currentMonth>=birthDetails.month){
-		birthMonth=currentMonth-birthDetails.month;
+	birthYear = currentYear - birthDetails.year;
+	if(currentMonth >= birthDetails.month){
+		birthMonth = currentMonth - birthDetails.month;
 	}
 	else{
 		birthYear--;
-		birthMonth=12+currentMonth-birthDetails.month;
+		birthMonth = 12 + currentMonth - birthDetails.month;
 	}
-	if(currentDay>=birthDetails.date){
-		birthDate=currentDay-birthDetails.date;
+	if(currentDay >= birthDetails.date){
+		birthDate = currentDay-birthDetails.date;
 
 	}
 	else{
 		birthMonth--;
-		let days=months[currentMonth-2];
-		birthDate=days+currentDay- birthDetails.date;
-		if(birthMonth<0){
-			birthMonth=11;
+		let days = months[currentMonth-2];
+		birthDate = days + currentDay - birthDetails.date;
+		if(birthMonth < 0){
+			birthMonth = 11;
 			birthYear--;
 		}
 
 	}
 
-	display(birthDate,birthMonth,birthYear);
-	checkBirthday(birthDetails.date,birthDetails.month,birthDetails.year,currentDay,currentMonth,currentYear);
+	display(birthDate, birthMonth, birthYear);
+	checkBirthday(birthDetails.date, birthDetails.month, birthDetails.year, currentDay, currentMonth, currentYear);
 	
 }
-function display(bdate,bmonth,byear){
-	document.getElementById("years").textContent=byear;
-	document.getElementById("months").textContent=bmonth;
-	document.getElementById("days").textContent=bdate;
+function display(bdate, bmonth, byear){
+	document.getElementById("years").textContent = byear;
+	document.getElementById("months").textContent = bmonth;
+	document.getElementById("days").textContent = bdate;
 
 
 }
 
 function leapChecker(year){
-	if(year%4==0 || (year%100==0 && year%400==0)){
-		months[1]=29;
+	if(year%4 == 0 || (year%100 == 0 && year%400 == 0)){
+		months[1] = 29;
 	}
 	else{
-		months[1]=28;
+		months[1] = 28;
 	}
 
 
@@ -71,9 +71,9 @@ function leapChecker(year){
 
 	}
 function checkBirthday(bdate,bmonth,byear,currentDay,currentMonth,currentYear){
-	if(bdate==currentDay && bmonth===currentMonth && byear<currentYear){
+	if(bdate == currentDay && bmonth === currentMonth && byear<currentYear){
 		let  msg=document.getElementById("wish");
-		msg.className="bday";
+		msg.className = "bday";
 
 	}
 
