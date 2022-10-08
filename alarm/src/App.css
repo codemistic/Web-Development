@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+}
+
+
+
+body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(130,69,172);
+  background: linear-gradient(90deg, rgba(130,69,172,1) 0%, rgba(253,29,29,1) 52%, rgba(252,176,69,1) 100%);
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.mainbody{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
