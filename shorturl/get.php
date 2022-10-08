@@ -28,7 +28,7 @@
 if(isset($_POST['sub'])){
     $website = $_POST["url"];
 if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
-  $websiteErr = "Invalid URL";
+  $websiteErr = "Invalid URL: $website";
   echo "<center><h1>$websiteErr</h1></center>";
 }else{
 function password_generate($chars) 
