@@ -1,0 +1,98 @@
+/* CSS Reset & Global Styles */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(28, 231, 221);
+  transition: 0.8s all;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 1.5%;
+  color: #fff;
+}
+.container {
+  width: 300px;
+}
+.result {
+  width: 59.1%;
+}
+input {
+  padding: 25px;
+  color: rgb(87, 87, 87);
+  font-size: 1em;
+  cursor: pointer;
+  width: 70px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+
+.first-row,
+.second-row,
+.third-row,
+.fourth-row,
+.fifth-row {
+  margin-bottom: 3px;
+}
+input[type="button"] {
+  color: rgb(122, 122, 122);
+}
+input[type="text"] {
+  background-color: rgb(255, 255, 255);
+  width: 218px;
+}
+input[type="button"]:hover {
+  background-color: rgb(37, 35, 59);
+  color: #fff;
+}
+#clear {
+  color: #fff;
+  background-color: rgb(255, 25, 25);
+}
+button {
+  border: none;
+  background-color: rgb(41, 38, 38);
+  padding: 8px;
+  color: white;
+  margin: 2px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 4px;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  border: none;
+  background-color: rgb(41, 38, 38);
+  padding: 8px;
+  color: white;
+  margin: 2px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 4px;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+.bottom-buttons {
+  display: flex;
+  margin-left: -2.3px;
+}
+.fab {
+  font-size: 1.1em;
+  padding: 0 0.2em;
+}
