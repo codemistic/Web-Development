@@ -1,0 +1,14 @@
+.length-control-form {
+  text-align: center;
+  color: whitesmoke;
+  margin: 30px;
+}
+
+.length-control-form input {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 19px;
+  margin-left: 5px;
+  border-bottom: 1px solid #555;
+}

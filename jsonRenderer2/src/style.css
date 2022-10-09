@@ -1,0 +1,18 @@
+
+
+.jsonContainer{
+    display: flex;
+    padding: 1em;
+    flex: 45%;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    background-color: white;
+
+}
+
+.jsonContainer textarea {
+    padding: .75em;
+    width: 100%;
+    font-size: 1.1em;
+}
+

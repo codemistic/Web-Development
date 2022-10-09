@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Railway Ticket Booking</title>
+        <link rel="stylesheet" href="index.css"/>
+         
+    </head>
+
+    <body>
+    
+        <div class="main">
+            <h1 class="head">Railway Ticket reservation system</h1>
+          <div class="navigation"> <!-- abhinandan-->
+    		<ul>
+    		<li><a href="index.html" id="onlink">HOME</a></li>
+    		<li><a href="meal.html">MEALS</a></li>
+    		<li><a href="holiday.html">H PACKAGES</a></li>
+    		<li><a href="service.html">SERVICE</a></li>
+    		<li><a href="contact.html">CONTACT US</a></li>
+    		</ul>
+    		
+    	</div>
+        
+           
+      
+       <div class="booking">
+          <section>
+            
+            <h2 class="head1">Book</h2>
+            <h2 class="head2">Your</h2>
+            <h2 class="head3">Tickets</h2>
+            <h2 class="head4">Here</h2>
+           
+          <form><!-- abhinandan-->
+           <ul>
+               <b class="fsize"> From &emsp;<input type="text" placeholder="From [STN Code]"> </b> <br> <br>
+               <b class="fsize"> To &emsp;<input type="text" placeholder="To [STN Code]"> </b> <br> <br>
+               <b class="fsize">  Date&emsp;<input type="Date" placeholder="dd-mm-yy">  </b> <br>  <br>
+               <label class="fsize"><strong> Class </strong> </label>
+                   <select id="class" name="class">
+                    <option value="select">SELECT</option>    
+                    <option value="1AC">1AC</option>
+                    <option value="2AC">2AC</option>
+                    <option value="3AC">3AC</option>
+                     <option value="Sleeper">Sleeper</option>
+                     <option value="Chair">Chair</option> <br> 
+                    </select>
+              
+           </ul>
+            </form>
+            
+          <button class="submit" type="button" onclick="trainB()">Find Trains </button>
+
+    <div class="form-popup" id="bookTrain">
+    <div class="popup">
+    <h1>Due to Covid19 all trains are currently cancelled</h1> <br>
+    <h2>#stayhome</h2>
+    <h2>#staysafe</h2>
+    <button type="button" class="hide" onclick="trainC()">Close</button>
+    </div> </div>
+
+
+
+
+            </section>
+            
+       </div><!-- abhinandan-->
+      
+         <img class="img" src="img\home.jpg" alt="train" width="500" height="350" align="center" />    
+
+          <h1 class="holiday">HOLIDAYS</h1>
+
+          <img class="imgs" src="img\taj.jpg" alt="Taj Mahal"/>
+          <img class="imgs" src="img\temple.jpg" alt="Golden Temple"/>
+          <img class="imgs" src="img\tower.jpg" alt="Eiffel Tower"/>
+
+        </div>
+ <script src="main.js"></script>  
+    </body>
+</html>
+
+        
+          
+          
+           
+          
+            
+
+            
+       
