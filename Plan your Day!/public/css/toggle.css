@@ -1,0 +1,42 @@
+#header, #form, #datetime {
+    min-height: 5vh;
+    width: 100%;
+}
+
+#header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    min-height: 5vh;
+    width: 100%;
+}
+
+/* Animation */
+#title {
+    border-right: solid 3px rgba(0, 0, 0, 0.75);
+    white-space: pre;
+    overflow: hidden;     
+    letter-spacing: 0.20rem;
+    
+   
+  }
+  
+  /* Animation */
+#title {
+    animation: animated-text 2s steps(9,end) 0.5s 1 normal both,
+    animated-cursor 750ms steps(9,end) infinite;
+  }
+  
+  /* text animation */
+  
+  @keyframes animated-text{
+    from{width: 0%;}
+    to{width: 380px;}
+  }
+  
+
+  button:hover {
+    background-color: #001f29;
+}
