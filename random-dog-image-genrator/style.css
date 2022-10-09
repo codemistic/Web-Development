@@ -1,0 +1,94 @@
+body {
+    font-family: "Inconsolata", monospace;
+    text-align: center;
+    background: #ffcca4;
+    color: #a74a00;
+    letter-spacing: 0.25em;
+  }
+  
+  #wrapper {
+    text-align: center;
+    position: relative;
+  }
+  
+  h1 {
+    margin: 50px 0 75px 0;
+  }
+  
+  img {
+    border: 1px solid #a74a00;
+    border-radius: 15px;
+    width: 100%;
+    box-shadow: 2px 2px 5px #a74a00;
+  }
+  
+  #column {
+    display: inline-block;
+    width: 40%;
+    margin: 0;
+  }
+  
+  #btns {
+    margin: 50px 0 50px 0;
+  }
+  
+  #new-dog {
+    margin: 0 25px 0 0;
+    padding: 2px 10 2px 10;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 1em;
+    color: #a74a00;
+    background-color: #ffcca4;
+    border: 1px #a74a00 solid;
+    outline: none;
+    border-radius: 30px;
+  }
+  
+  #new-dog:hover {
+    color: #ffcca4;
+    background-color: #a74a00;
+    cursor: pointer;
+  }
+  
+  #dog-breed {
+    margin: 0 0 0 25px;
+    padding: 2px 0 2px 0;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 1em;
+    color: #a74a00;
+    background-color: #ffcca4;
+    border: 1px #a74a00 solid;
+    outline: none;
+    border-radius: 30px;
+  }
+  
+  #dog-breed {
+    cursor: pointer;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px 0 10px 0;
+    margin: 25px 0 0 0;
+    bottom: 0;
+    letter-spacing: 0.1em;
+  }
+  
+  a {
+    color: #a74a00;
+  }
+  
+  @media screen and (max-width: 850px) {
+    #column {
+      width: 100%;
+    }
+  }
+  
+  /*
+  Colors (From light to dark):
+  #FFCCA4
+  #FFAF70
+  #FF7100
+  #D96000
+  #A74A00
+  */
