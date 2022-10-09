@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding: 0;
+    background-color: white;
+}
+
+.container{
+    background-color: black;
+    width: 320px ;
+    height: 580px ;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.camera{
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.camera-dot{
+    position: relative;
+    top: 5px;
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    margin: auto;
+    border-radius: 50%;
+    
+}
+
+.menu{
+    background-color: greenyellow;
+    width: 100%;
+    height: 40px;
+}
+
+.circle{
+    position: relative;
+    top: 5px;
+    left: 10px;
+    border-radius: 50%;
+    background-color: #daa520;
+    width: 30px;
+    height: 30px;
+}
+
+.menu-bar{
+    
+    display: flex;
+    /* align-items: flex-end; */
+    justify-content: space-evenly;
+    background-color: greenyellow;
+    margin-top: -20px;
+    list-style: none;
+}
+
+.menu-bar li{
+    background-color: greenyellow;
+    margin-left: 30px;
+    /* justify-content: space-around; */
+}
+
+.calling-icon{
+    background-color: #708090;
+    height: 70%;
+}
+
+.icon-circle{
+    position: relative;
+    top: 40px;
+    background-color: white;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+.icon-body{
+    position: relative;
+    top: 60px;
+    background-color: white;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    width: 170px;
+    height: 180px;
+    margin: auto;
+}
+
+.end{
+    position: relative;
+    color: white;
+    margin: auto;
+    padding: 20px 0;
+    background-color: red;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+
+}
+
+.end-container{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    padding-top: 10px;
+    justify-content: space-around;
+
+}
+
+.end-container li{
+    color: white;
+    background-color: black;
+    list-style: none;
+}

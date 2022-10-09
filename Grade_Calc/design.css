@@ -1,0 +1,92 @@
+body{
+    background-color: rgba(0, 255, 255, 0.863);
+}
+.box{
+    background-color: rgba(0, 0, 0, 0.658);
+    width: 670px;
+    height: 380px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.521);
+    
+    
+    margin-left: 340px;
+    margin-top: 120px;
+    align-items: center;
+}
+.header{
+    
+    color: rgba(0, 255, 255, 0.863);
+    font-weight: 700;
+    font: bolder;
+    font-size: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 95px;
+
+            animation-name: sample;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+    
+}
+ @keyframes sample {
+    from{font-size: 1.5em; color: aqua;}
+    to{font-size: 1.5em; color: rgba(0, 255, 255, 0.658);}
+
+}
+
+ .vl{
+    position: absolute;
+    margin: 90px 80px;
+    
+    border-left: 2px  solid rgba(0, 255, 255, 0.863);
+    height: 110px;
+}
+.wrapper{
+    position: absolute;
+    margin: 65px 380px;
+    
+}
+input{
+    background-color:rgba(0, 0, 0, 0.00);
+    border: none;
+    font-size: 1.2em;
+    color: white;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+::placeholder{
+    color: white;
+}
+.app-form-button{
+    color: rgba(0, 255, 255, 0.671);
+    font: bolder;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    
+}
+hr{
+   
+    border: 0.3px solid  rgba(0, 255, 255, 0.116);
+}
+#showData{
+    color: white;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     margin-left: 85px;
+    
+}
+.saka{
+    color: teal;
+    margin-top: 95px;
+}
+.refresh{
+    background-color: teal;
+    border: none;
+    color: rgba(0, 255, 255, 0.76);
+    font-size: 1.2em;
+  border-radius: 5px;
+  padding: 2px;
+  cursor: pointer ;
+}

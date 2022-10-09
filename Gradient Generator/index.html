@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <title>Gradient-Generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-heading-div">
+            <h1 class="main-heading">Gradient Generator</h1>
+        </div>
+        <div class="color">
+            <input type="color" class="left-color" value="#ff9ce3" title="color1" />
+            <input type="color" class="right-color" value="#4ab3ff" title="color2" />
+        </div>
+        <div class="generate">
+            <input type="number" class="deg" placeholder="90" /><button type="button" class="rotate" onclick="change()">
+     Rotate Gradient
+    </button>
+        </div>
+        <div class="generate">
+            <button type="button" class="random">Generate Random Background</button>
+        </div>
+        <div class="css-code-div">
+            <p class="css-code">
+                background: linear-gradient(90deg, #ff9ce3, #4ab3ff);
+            </p>
+            &nbsp;&nbsp; <i class="fas fa-copy"></i>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

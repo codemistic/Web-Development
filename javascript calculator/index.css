@@ -1,0 +1,24 @@
+.container{
+    /* border: 2px solid red; */
+    text-align: center;
+    padding: 3% 5%;
+}
+.container input{
+    /* width: 0%; */
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    height: 30px;
+}
+table{
+    display: flex;
+    justify-content: center;
+}
+button{
+    font-size: 25px;
+    width: 46px;
+    border-radius: 7px;
+    background-color:antiquewhite;
+    cursor: pointer;
+}

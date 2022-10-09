@@ -1,0 +1,346 @@
+@import url(./variables.css);
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins:wght@200;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    overflow-x: hidden;
+}
+a,h2{
+    overflow: hidden;
+}
+body{
+    background-color: var(--background);
+
+}
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+}
+.navlist{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.navlist li{
+    list-style: none;
+}
+.navlist li a{
+    text-decoration: none;
+    color: var(--text);
+}
+
+.main-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+
+}
+.main-img img{
+    /* width: 80vw; */
+    /* height: 90vw; */
+    border-radius: 30px;
+}
+
+
+/* about */
+
+.about{
+    margin-top: 5rem;
+    font-family: sans-serif;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.about-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+.about-wrapper h1 {
+    text-align: center;
+    color:var(--text);
+
+}
+.about-container{
+    margin-top: 2rem;
+    display: flex;
+    width: 80vw;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aquamarine; */
+}
+.about-text{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.about-text h4{
+    color: var(--text);
+    font-size: 20px;
+    text-align: center;
+
+}
+.about-text p{
+    margin-top: 50px;
+    color: var(--text);
+    width: auto;
+    /* height: 300px; */
+}
+.about-img{
+    flex-basis: 50%;
+    margin-left: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-img img{
+    width: 300px;
+    border-radius: 50px;
+}
+
+/* members */
+.members{
+    margin-top: 5rem;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.members-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+}
+.card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+.members h1 {
+     /* text-align: center; */
+     align-self: center;
+}
+.members-card{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    color: var(--box);
+    background: var(--gradient-3);
+    box-shadow: 0px 7px 29px 0px rgba(5, 5, 225, 0.2);
+    border-radius: 15px;
+}
+.members-card img{
+    width: 200px;
+    border-radius: 50%;
+}
+
+/* Album */
+
+.albums{
+    margin-top: 5rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.albums-wrapper{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.album-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 300px;
+    width: 300px;
+    box-shadow: 0px 7px 29px 0px rgba(254, 49, 22, 0.2);
+
+}
+.album-box h2 {
+    /* margin-top: 30px; */
+}
+.album-box img {
+    width: 200px;
+    border-radius: 10px;
+}
+.divider{
+    color: rgba(0, 0, 0, 0.269);
+}
+
+.partner{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+.socials-wrapper{
+    margin-top: 2.5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80vw; 
+}
+.socials{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 250px;
+    padding: 3rem;
+    box-shadow: 0px 7px 29px 0px rgba(213, 38, 149, 0.2);
+}
+.socials img{
+    width: 100px;
+}
+.flw{
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: rgb(47, 47, 238);
+    color: #fff;
+    border-radius: 20px;
+}
+.flw:hover{
+    background-color: rgb(28, 28, 28);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    width: 100vw;
+}
+footer nav {
+    display: flex;
+    width: 100vw;
+    height: 30vh;
+}
+.footer-nav-list{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    /* justify-content: space-around; */
+}
+.footer-nav-list li a{
+    text-decoration: none;
+    color: var(--text);
+    margin: 0 20px;
+}
+.sm img {
+    width: 30px;
+}
+footer p {
+    text-align: center;
+    padding: 2rem;
+}
+
+
+/* media queries */
+@media only screen and (max-width: 1000px) {
+    .about-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-text{
+        width: 80vw;
+        flex-direction: column;
+    }
+    .about-img{
+        width: 80vw;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-img img {
+        margin-right: 15rem;
+    }
+}
+
+@media only screen and (max-width: 800px){
+  
+    nav{
+        flex-direction: column;
+    }
+    .navlist{
+        width: 100vw;
+    }
+    .navlist li a {
+        color:var(--box);
+        font-weight: 500;
+    }
+    .about-img img{
+        width: 70%;
+    }
+    .main-img img {
+        width: 90%;
+    }
+    .members-wrapper {
+        width: 100vw;
+    }
+    .card-wrapper{
+        width: 100vw;
+    }
+}
+@media only screen and (max-width: 600px){
+   
+    .albums-wrapper{
+        flex-direction: column;
+        width: 100vw;
+        align-items: center;
+    }
+    .socials-wrapper{
+        width: 100vw;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .partner h3{
+        font-size: 20px;
+        text-align: center;
+    }
+    .socials img{
+        width: 30px;
+    }
+    .socials{
+        justify-content: space-around;
+    }
+    .flw{
+        display: block;
+    }
+    .footer-nav-list{
+        display:none;
+    }
+   
+}
