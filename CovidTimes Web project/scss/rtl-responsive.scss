@@ -1,0 +1,35 @@
+@media(max-width: 1199px) {
+    .topbar-one__info {
+        margin-right: 0;
+        padding-right: 0;
+        
+        margin-left: 30px;
+        padding-left: 30px;
+
+    }
+    .about-five__moc {
+        right: auto;
+        left: -20%;
+    }
+}
+
+
+@media(max-width: 991px) {
+    .about-five__moc {
+        right: auto;
+        left: auto;
+    }
+    .testimonials-one__content {
+        padding-right: 0;
+    }
+}
+
+@media(max-width: 575px) {
+    
+    .about-four__image {
+        margin-left: 0;
+    }
+    .about-two__icon-single + .about-two__icon-single {
+        margin-right: 0;
+    }
+}

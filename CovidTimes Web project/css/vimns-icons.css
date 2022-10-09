@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'vimns-icons';
+  src:  url('../fonts/vimns-icons.eot?wz00rk');
+  src:  url('../fonts/vimns-icons.eot?wz00rk#iefix') format('embedded-opentype'),
+    url('../fonts/vimns-icons.ttf?wz00rk') format('truetype'),
+    url('../fonts/vimns-icons.woff?wz00rk') format('woff'),
+    url('../fonts/vimns-icons.svg?wz00rk#vimns-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="vimns-icon-"], [class*=" vimns-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'vimns-icons' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.vimns-icon-phone:before {
+  content: "\e900";
+}
+.vimns-icon-alert:before {
+  content: "\e901";
+}
+.vimns-icon-virus:before {
+  content: "\e902";
+}
+.vimns-icon-mask:before {
+  content: "\e903";
+}
+.vimns-icon-tick:before {
+  content: "\e904";
+}
+.vimns-icon-back:before {
+  content: "\e905";
+}
+.vimns-icon-front:before {
+  content: "\e909";
+}
+.vimns-icon-screw:before {
+  content: "\e906";
+}
+.vimns-icon-work:before {
+  content: "\e907";
+}
+.vimns-icon-mail:before {
+  content: "\e908";
+}
+.vimns-icon-infected:before {
+  content: "\e90a";
+}
+.vimns-icon-washing-hands:before {
+  content: "\e90b";
+}
+.vimns-icon-shopping-online:before {
+  content: "\e90c";
+}
+.vimns-icon-network:before {
+  content: "\e90d";
+}
+.vimns-icon-worldwide:before {
+  content: "\e90e";
+}
+.vimns-icon-family:before {
+  content: "\e90f";
+}
+.vimns-icon-grave:before {
+  content: "\e910";
+}

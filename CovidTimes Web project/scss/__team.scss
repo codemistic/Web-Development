@@ -1,0 +1,123 @@
+.team-one {
+    position: relative;
+
+    .container {
+        position: relative;
+        padding-top: 120px;
+        padding-bottom: 90px;
+    }
+
+    &__sep {
+        position: absolute;
+        top: 0;
+        left: 15px;
+        width: calc(100% - 30px);
+        height: 1px;
+        background-color: #e6e9f2;
+    }
+
+    &__single {
+        position: relative;
+        margin-bottom: 30px;
+        text-align: center;
+
+        h3 {
+            color: var(--thm-black);
+            font-size: 30px;
+            margin: 0;
+            line-height: 1em;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        p {
+            margin: 0;
+            color: #848895;
+            font-size: 14px;
+            line-height: 1em;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        &:hover .team-one__image::before {
+            perspective: 0px;
+            transform: rotate3d(0, 1, 0, 0);
+        }
+    }
+
+    &__image {
+        overflow: hidden;
+        position: relative;
+        border-radius: 5px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url(../images/shapes/team-hover-1-1.png);
+            background-position: bottom right;
+            background-repeat: no-repeat;
+            perspective: 400px;
+            transform: rotate3d(-1, 4, -1, 120deg);
+            transform-origin: right bottom;
+            transition: 500ms;
+        }
+
+        >img {
+            width: 100%;
+        }
+    }
+
+
+    &__social {
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+
+        a {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 16px;
+            @include thmGradientOne;
+            position: relative;
+
+            &::before {
+                position: relative;
+                z-index: 10;
+            }
+
+            &::after {
+                content: '';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-radius: 50%;
+                transform: scale(0);
+                transition: 500ms;
+                @include thmGradientTwo;
+            }
+
+            &:hover {
+                &::after {
+                    transform: scale(1);
+                }
+            }
+
+            +a {
+                margin-left: 10px;
+            }
+        }
+    }
+
+}
