@@ -1,0 +1,110 @@
+.topbar-one {
+    background-color: var(--thm-black);
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        border-right: 1px solid rgba($color: #fff, $alpha: .1);
+        padding-right: 60px;
+        margin-right: 60px;
+        padding-top: 37px;
+        padding-bottom: 37px;
+
+        h3,
+        p {
+            margin: 0;
+            line-height: 1em;
+        }
+
+        i {
+            font-size: 28px;
+            @include thmGradientTwo();
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-right: 20px;
+            position: relative;
+            top: 5px;
+        }
+
+        h3 {
+            color: #fff;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            a {
+                color: inherit;
+                transition: 500ms;
+                &:hover {
+                    color: var(--thm-primary);
+                }
+            }
+        }
+
+        p {
+            color: #9ea8c6;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+
+        a {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 16px;
+            @include thmGradientOne;
+            position: relative;
+
+            &::before {
+                position: relative;
+                z-index: 10;
+            }
+
+            &::after {
+                content: '';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-radius: 50%;
+                transform: scale(0);
+                transition: 500ms;
+                @include thmGradientTwo;
+            }
+
+            &:hover {
+                &::after {
+                    transform: scale(1);
+                }
+            }
+
+            +a {
+                margin-left: 10px;
+            }
+        }
+
+    }
+}

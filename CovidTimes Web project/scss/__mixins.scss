@@ -1,0 +1,16 @@
+@mixin thmGradientOne {
+    background-image: linear-gradient(-90deg, #0a6ad6 0%, #23e7ea 100%);
+}
+@mixin thmGradientTwo {
+    background-image: linear-gradient(90deg, #ffd240 0%, #fa9442 100%);
+}
+
+@mixin thmGradientBtnOne {
+    background-image: linear-gradient(-90deg, #0a6ad6 0%, #23e7ea 51%, #0a6ad6 100%);
+}
+@mixin thmGradientBtnTwo {
+    background-image: linear-gradient(90deg, #ffd240 0%, #fa9442 51%, #ffd240 100%);
+}
+@mixin thmGradientBtnOneReverse {
+    background-image: linear-gradient(-90deg, #23e7ea 0%, #0a6ad6 51%, #23e7ea 100%);
+}

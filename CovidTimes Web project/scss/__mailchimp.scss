@@ -1,0 +1,79 @@
+.mailchimp-one {
+    margin-top: -114px;
+    margin-bottom: -50px;
+    position: relative;
+    z-index: 11;
+
+    .inner-container {
+        border-radius: 5px;
+        @include thmGradientOne;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        &::before {
+            content: '';
+            opacity: .1;
+            @include thmGradientOne;
+            width: calc(100% - 40px);
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 100%;
+            border-radius: 5px;
+            z-index: -1;
+        }
+    }
+
+    &__icon {
+        position: relative;
+
+        i {
+            width: 155px;
+            @include thmGradientOne;
+            height: 164px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            display: block;
+            font-size: 50px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-right: 1px solid rgba($color: #fff, $alpha: .5);
+        }
+    }
+
+    &__form {
+        position: relative;
+        padding-left: 60px;
+        padding-right: 60px;
+        display: flex;
+        align-items: center;
+        flex: 1 1 100%;
+    }
+
+    &__input {
+        padding-right: 60px;
+        flex: 1 1 auto;
+
+        input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]) {
+            width: 100%;
+            display: block;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            font-weight: 500;
+            color: #fff;
+            background-color: transparent;
+            border-bottom: 3px solid rgba($color: #fff, $alpha: .2);
+            padding-bottom: 10px;
+        }
+
+        ::placeholder {
+            opacity: 1;
+            color: #fff;
+        }
+    }
+}

@@ -1,0 +1,137 @@
+body {
+  text-align: right;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.topbar-one__info {
+  padding-right: 0;
+  margin-right: 0;
+  margin-left: 60px;
+  padding-left: 60px;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 0;
+}
+
+.topbar-one__info i {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+.main-nav__two .inner-container {
+  padding-left: 0;
+  padding-right: 50px;
+}
+
+.main-nav__two .main-nav__navigation-box > li + li {
+  margin-left: 0;
+  margin-right: 65px;
+}
+
+.main-nav__main-navigation .main-nav__navigation-box > li > ul {
+  left: auto;
+  right: 0;
+}
+
+.main-nav__main-navigation .main-nav__navigation-box > li > ul > li > ul {
+  left: auto;
+  right: 100%;
+}
+
+.about-four__content {
+  text-align: right;
+}
+
+.about-four__image {
+  margin-right: 0;
+  margin-left: 50px;
+}
+
+.about-four__image::before {
+  left: 30px;
+  right: -30px;
+}
+
+.about-two__icon i {
+  margin-right: 0;
+  margin-left: 30px;
+}
+
+.about-two__icon-single + .about-two__icon-single {
+  margin-left: 0;
+  margin-right: 50px;
+}
+
+.about-five__moc {
+  right: auto;
+  left: -10%;
+}
+
+.about-one__list li {
+  padding-left: 0;
+  padding-right: 45px;
+}
+
+.about-one__list li > i {
+  left: auto;
+  right: 0;
+}
+
+.progress-one__box > span {
+  left: auto;
+  right: 0;
+}
+
+.testimonials-one__button-block {
+  left: auto;
+  right: 0;
+}
+
+.testimonials-one__image {
+  float: left;
+}
+
+.testimonials-one__qoute {
+  right: auto;
+  left: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.testimonials-one__content {
+  padding-right: 50px;
+  padding-left: 0;
+}
+
+@media (min-width: 992px) {
+  .footer-widget__about {
+    padding-right: 0;
+    padding-left: 80px;
+  }
+  .footer-widget__links {
+    margin-left: 0px;
+    padding-right: 0;
+    margin-right: -10px;
+    padding-left: 55px;
+  }
+  .footer-widget__contact {
+    padding-left: 0;
+    padding-right: 20px;
+  }
+  .footer-widget__social {
+    margin-left: 0;
+    margin-right: -20px;
+  }
+}
+
+.team-one__social a + a,
+.topbar-one__social a + a,
+.footer-widget__social a + a {
+  margin-left: 0;
+  margin-right: 10px;
+}
+/*# sourceMappingURL=rtl.css.map */
