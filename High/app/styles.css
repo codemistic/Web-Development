@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+@font-face {
+    font-family: "integralcf";
+    src: url(../assets//fonts/IntegralCF-MediumOblique.woff);
+    font-style: italic;
+    font-weight: bold;
+}
+
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --violet: hwb(256 16% 10%);
+
+    --ff-intergalcf: "integralcf";
+    --ff-cinzel: "Cinzel", serif;
+    --transition-300: 300ms ease;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-repeat: no-repeat;
+
+    background-image: linear-gradient(45deg, #fad0c4 0%, #ffd1ff 100%);
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+
+body {
+    width: min(90%, 1440px);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+span {
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    margin: 1.5em 0;
+}
+
+.logo {
+    font-family: var(--ff-intergalcf);
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: bold;
+    color: var(--violet);
+    letter-spacing: 1px;
+    border-bottom: 2px dotted transparent;
+    transition: var(--transition-300);
+    padding: 0 4px 0.2em;
+}
+
+.logo:is(:hover, :focus) {
+    border-bottom: 2px dotted var(--violet);
+}
+
+.quote-wrapper {
+    height: calc(100vh - 83.6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-container {
+    min-width: 500px;
+    max-width: 800px;
+    transform: translateY(-80px);
+    padding: 2em 3em;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.25rem;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    text-align: center;
+    line-height: 1.4em;
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 7px 29px rgba(100, 100, 111, 0.2);
+
+    overflow: hidden;
+}
+
+.quote-author {
+    font-weight: 600;
+    padding: 0.5em 0 0;
+}
+
+.quote-next {
+    background-color: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    padding: 0.35em 1em;
+    margin: 1.5em 0 0;
+    transition: var(--transition-300);
+    font-size: 1rem;
+    border-radius: 2px;
+    letter-spacing: 1px;
+    font-style: italic;
+    color: var(--black);
+}
+
+.quote-next:is(:hover, :focus) {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: var(--white);
+}
+
+@media (max-width: 600px) {
+    .quote-container {
+        min-width: 100%;
+        padding: 0.75em 1em;
+        font-size: 1.05rem;
+    }
+
+    .quote-next {
+        font-size: 0.9rem;
+        margin: 0.75em 0 0;
+    }
+}

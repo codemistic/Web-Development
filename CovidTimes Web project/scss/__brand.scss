@@ -1,0 +1,57 @@
+.brand-one__carousel img {
+    opacity: 0.3;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.brand-one__carousel img:hover {
+    opacity: 0.6;
+}
+
+.brand-one__carousel {
+    border-bottom: 1px solid #e6e9f2;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.brand-one {
+    position: relative;
+
+    &__shape {
+        position: absolute;
+        bottom: 0;
+        left: 3%;
+        -webkit-animation-duration: 8s;
+        animation-duration: 8s;
+        -webkit-perspective: 150px;
+        perspective: 150px;
+        -webkit-animation-name: bubbleMover;
+        animation-name: bubbleMover;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+    }
+}
+
+.brand-one__about-page {
+    .brand-one__carousel {
+        border-bottom: 0;
+    }
+}
+
+.brand-one__home-two .brand-one__carousel {
+    padding-top: 45px;
+    position: relative;
+    z-index: 33;
+}
+
+
+.brand-one__home-two {
+    position: relative;
+}
+.brand-one__home-two .brand-one__moc {
+    position: absolute;
+    top: -5%;
+    left: 0;
+}

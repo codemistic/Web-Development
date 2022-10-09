@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Assistant</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <script src="https://kit.fontawesome.com/f784174103.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="assistant">
+        <div class="assistant__toggle" onclick="handleOpen()">
+            <img src="https://avatars.dicebear.com/api/avataaars/2.svg" alt="" />
+        </div>
+        <div class="chatBox__container">
+            <div class="chatBox">
+                <div class="chatBox__head">
+                    <div class="chatBox__chatInfo">
+                        <img class="chatBox__avatar" src="https://avatars.dicebear.com/api/avataaars/2.svg" alt="" />
+                        <div class="chatBox__nyraInfo">
+                            <p>Nyra</p>
+                            <p>Your virtual assistant!</p>
+                        </div>
+                    </div>
+                    <i class="chatBox__closeBtn fas fa-times" onclick="handleClose()"></i>
+                </div>
+                <div class="chatBox__messages" ref={chatBox}>
+                    <p class="chatBox__welcomeMsg">This is Nyra, your very own personal assistant.<br /></p>
+                    <div class="chatBubble chatBubble__left">
+                        <p class="chatBubble__content">This is my message!</p>
+                        <p class="chatBubble__date">9:19 AM, 7th October, 2022</p>
+                    </div>
+                    <div class="chatBubble chatBubble__right">
+                        <p class="chatBubble__content">This is your message!</p>
+                        <p class="chatBubble__date">9:20 AM, 7th October, 2022</p>
+                    </div>
+                    <div class="chatBubble chatBubble__left">
+                        <p class="chatBubble__content">This is my message!</p>
+                        <p class="chatBubble__date">9:19 AM, 7th October, 2022</p>
+                    </div>
+                    <div class="chatBubble chatBubble__right">
+                        <p class="chatBubble__content">This is your message!</p>
+                        <p class="chatBubble__date">9:20 AM, 7th October, 2022</p>
+                    </div>
+                    <div class="chatBubble chatBubble__left">
+                        <p class="chatBubble__content">This is my message!</p>
+                        <p class="chatBubble__date">9:19 AM, 7th October, 2022</p>
+                    </div>
+                    <div class="chatBubble chatBubble__right">
+                        <p class="chatBubble__content">This is your message!</p>
+                        <p class="chatBubble__date">9:20 AM, 7th October, 2022</p>
+                    </div>
+                    <div class="chatBubble chatBubble__left">
+                        <p class="chatBubble__content">This is my message!</p>
+                        <p class="chatBubble__date">9:19 AM, 7th October, 2022</p>
+                    </div>
+                    <div class="chatBubble chatBubble__right">
+                        <p class="chatBubble__content">This is your message!</p>
+                        <p class="chatBubble__date">9:20 AM, 7th October, 2022</p>
+                    </div>
+                </div>
+                <form class="chatBox__newMessage">
+                    <i class="fas fa-microphone" onclick="listenSpeech()"></i>
+                    <input placeholder="Type your question." />
+                    <i class="chatBox__sendBtn fas fa-arrow-right"></i>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

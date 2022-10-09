@@ -1,0 +1,55 @@
+
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar.firstclass
+        ul
+            //- #logo 
+            //-     img(src="/static/logo.png")
+            //-     | HDA
+            li #[a(href = "/") Home]
+            li #[a(href = "/") About]
+            li #[a(href = "/") Services]
+            li #[a(href = "/") Class Info]
+            li #[a(href = "/") Contact Us]
+    
+    section#introSection 
+           section welcome to my dance academy
+
+    section#missionSection 
+           h2 Our Mission
+           div.card
+               h3 Dance Perfection
+               div.card-box
+                   div.card-img
+                       img(src="/static/1.png")
+                   div.card-content
+                       p this is best dance academy
+
+           div.card
+               h3 Dance the way you like
+               div.card-box
+                   div.card-img
+                       img(src="/static/2.png")
+                   div.card-content
+                       p you can take admission here
+
+           div.card
+               h3 Expert Teaching 
+               div.card-box
+                   div.card-img
+                       img(src="/static/3.png")
+                   div.card-content
+                       p admission are open now
+
+    section#sponsorsSection 
+           h2 our sponsors
+           div#sponsors
+               img(src="/static/4.png",alt="sponsor image")
+    footer#footer 
+           p Copyright 2019 DivyaAcademy.com | All Right Reserved
+    script
+      include ../static/index.js 

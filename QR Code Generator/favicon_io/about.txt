@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Handlee
+- Font Author: Copyright (c) 2011, Admix Designs (http://www.admixdesigns.com/) with Reserved Font Name Handlee.
+- Font Source: http://fonts.gstatic.com/s/handlee/v14/-F6xfjBsISg9aMakDmr6oilJ3ik.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

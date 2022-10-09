@@ -89,3 +89,17 @@
     text-decoration: line-through;
     opacity: 0.5;
   }
+
+  #time {
+    background-color:white;
+    cursor: pointer;
+    display: flex;
+    font-size : 24px; 
+    padding: 7px;
+    
+   
+  }
+
+  #time:hover {
+    cursor: text;
+  }

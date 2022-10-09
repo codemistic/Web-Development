@@ -1,0 +1,123 @@
+$bodyMarginTop: 5rem;
+$padding: 0.4rem;
+$width: 90%;
+$width_of_btnS: 1rem;
+$width_of_box: 4rem;
+$height: 4rem;
+$borderRadius: 5px;
+
+@mixin border_and_radius {
+  border: 2px solid gray;
+  border-radius: 5px;
+}
+
+@mixin border_outline_and_outline {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: grid;
+    place-items: center;
+    margin-top: $bodyMarginTop;
+    position: relative;
+  }
+  
+  h1 {
+    width: $width;
+    position: absolute;
+    top: -3.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  
+  #inputFile {
+    @include border_and_radius;
+    font-size: 1rem;
+    margin-top: 1rem;
+    padding: $padding;
+    outline: none;
+  }
+
+  .add_And_Display_Btn_Div {
+    margin-top: 0.4rem;
+    padding: $padding;
+
+    .btnScr {
+      @include border_outline_and_outline;
+      width: 4rem;
+      background: green;
+      color: #fff;
+      padding: $padding;
+      border-radius: $borderRadius;
+      transition: all 0.2s ease-in;
+    }
+    
+    .btnScr:hover {
+      transition: all 0.2s ease-in;
+      transform: translateY(-1px);
+      box-shadow: 2px 2px 15px 1px #888888;
+    }
+  }
+  
+  .container {
+    @include border_and_radius;
+    width: $width;
+    min-height: 20rem;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    padding: $padding;
+
+    .que {
+      height: $height;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      margin: 0 0.25rem 0.25rem 0.25rem;
+
+      .box {
+        @include border_and_radius;
+        width: $width_of_box;
+        height: $height;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .btnS {
+        @include border_outline_and_outline;
+        width: $width_of_btnS;
+        color: gray;
+        background: transparent;
+        position: absolute;
+        top: 0;
+        right: 0.1rem;
+        transition: transform 0.2s ease-in;
+      }
+      
+      .btnS:hover {
+        transition: transform 0.2s ease-in;
+        transform: scale(1.1);
+      }
+
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  

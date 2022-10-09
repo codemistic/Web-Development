@@ -1,0 +1,19 @@
+{
+  "name": "discuss",
+  "version": "1.0.0",
+  "description": "Chat application",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Athul Joy",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.29.4",
+    "socket.io": "^2.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}

@@ -1,0 +1,103 @@
+.video-one {
+    margin-top: -120px;
+    position: relative;
+    padding-bottom: 140px;
+
+    &__box {
+        position: relative;
+
+        &::after {
+            content: '';
+            width: calc(100% - 60px);
+            height: 100%;
+            background-color: var(--thm-black);
+            opacity: 0.1;
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 5px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 5px;
+            background-color: var(--thm-black);
+            opacity: 0.4;
+            transition: 500ms ease;
+        }
+
+        >img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        &:hover::before {
+            opacity: 0.8;
+        }
+    }
+
+    &__content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-inner {
+            position: relative;
+            text-align: center;
+            z-index: 15;
+        }
+    }
+
+    &__video-btn {
+        position: relative;
+        border-radius: 50%;
+        width: 114px;
+        height: 114px;
+        @include thmGradientBtnTwo;
+        background-size: 200% auto;
+        transition: 500ms;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 30px;
+        color: #fff;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            left: -15px;
+            right: -15px;
+            bottom: -15px;
+            border: 2px dashed rgba($color: #fff, $alpha: .3);
+            border-radius: 50%;
+        }
+
+        &:hover {
+            background-position: right;
+            color: #fff;
+        }
+    }
+
+    h3 {
+        margin: 0;
+        color: #fff;
+        font-weight: bold;
+        font-size: 70px;
+    }
+}

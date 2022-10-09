@@ -1,0 +1,42 @@
+{
+	"name": "client",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@date-io/date-fns": "^2.14.0",
+		"@material-ui/core": "^4.11.4",
+		"@material-ui/icons": "^4.11.2",
+		"@material-ui/pickers": "^3.3.10",
+		"@material-ui/styles": "^4.11.4",
+		"axios": "^0.27.2",
+		"bootstrap": "^4.6.0",
+		"cra-template": "1.2.0",
+		"file-saver": "^2.0.5",
+		"react": "^17.0.0",
+		"react-bootstrap": "^1.6.0",
+		"react-dom": "^17.0.0",
+		"react-scripts": "^5.0.1",
+		"reactstrap": "^8.9.0"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	}
+}

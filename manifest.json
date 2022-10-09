@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "Codechef",
+    "description": "",
+    "version": "0.0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.codechef.com/submit/*"
+            ],
+            "js": [
+                "contentScript.js"
+            ],
+            "all_frames": true
+        }
+    ],
+    "background": {
+        "service_worker": "background.js",
+        "persistent": true
+    },
+    "permissions": [
+        "webRequest",
+        "storage",
+        "activeTab",
+        "tabs",
+        "notifications"
+    ],
+    "host_permissions": [
+        "https://www.codechef.com/submit/*"
+    ]
+}

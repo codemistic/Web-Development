@@ -1,0 +1,284 @@
+.banner-one {
+    background-color: #0a1c4f;
+    position: relative;
+    padding-bottom: 210px;
+    padding-top: 308px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(../images/background/banner-1--1-bg.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: .06;
+    }
+
+    .container {
+        position: relative;
+    }
+
+    &__moc {
+        position: absolute;
+        top: 0;
+        right: 0;
+        animation: planeMove2 5s ease-in infinite;
+    }
+
+    &__content {
+        h3 {
+            margin: 0;
+            font-size: 75px;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 26px;
+
+            span {
+                display: inline-block;
+                line-height: 1em;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    width: 100%;
+                    height: 7px;
+                    background-image: url(../images/shapes/banner-1-line.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    top: 95%;
+                    left: 0;
+                }
+            }
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 36px;
+            font-weight: 500;
+            color: #fff;
+            opacity: .6;
+            margin: 0;
+            margin-bottom: 44px;
+        }
+    }
+
+    &__btn {
+        @include thmGradientBtnOne();
+    }
+
+    &__video {
+        display: inline-block;
+        position: absolute;
+        top: -110px;
+        right: -70px;
+
+        >img {
+            border-radius: 50%;
+            box-shadow: 0px 0px 80px 0px rgba(0, 0, 0, 0.2);
+
+        }
+
+        &-btn {
+            width: 192px;
+            height: 192px;
+            border-radius: 50px;
+            @include thmGradientBtnTwo;
+            border: 27px solid var(--thm-black);
+            display: block;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: calc(68% - 96px);
+            left: calc(4% - 96px);
+            color: #fff;
+            font-size: 40px;
+            background-size: 200% auto;
+            transition: 500ms;
+
+            &:hover {
+                color: #fff;
+                background-position: right;
+            }
+        }
+    }
+}
+
+/* slider one */
+
+.slider-one__wrapper {
+    margin-top: -73px;
+    position: relative;
+    &::before {
+        content: '';
+        width: 100%;
+        height: 154px;
+        background-image: url(../images/shapes/banner-2-bg-shape.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        z-index: 20;
+        background-size: 100%;
+    }
+}
+
+.slider-one__video-btn {
+    width: 192px;
+    height: 192px;
+    @include thmGradientBtnOneReverse();
+    background-size: 200% auto;
+    border: 27px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    position: absolute;
+    left: 29%;
+    bottom: 6%;
+    z-index: 33;
+    transition: 500ms;
+
+    &:hover {
+        color: #fff;
+        background-position: right;
+    }
+}
+
+[class*=slider-one__slide-] {
+    padding-top: 250px;
+    padding-bottom: 320px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--thm-black);
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--thm-black);
+        opacity: 0.7;
+    }
+
+    .container {
+        position: relative;
+    }
+}
+
+.slider-one__content .anim-elm {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+}
+
+
+
+.slider-one__content h3 {
+    margin: 0;
+    font-size: 100px;
+    line-height: 1em;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 40px;
+
+    span {
+        font-size: 130px;
+        position: relative;
+        display: inline-block;
+        line-height: 1em;
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 100%;
+            height: 7px;
+            background-image: url(../images/shapes/banner-2-line.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 95%;
+            left: 0;
+        }
+    }
+}
+
+/* animating on active */
+
+.slider-one__carousel .active .slider-one__content p {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s;
+}
+
+.slider-one__carousel .active .slider-one__content h3 {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.slider-one__carousel .active .slider-one__content .thm-btn {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+
+/* slider one nav */
+
+.slider-one {
+    position: relative;
+}
+
+
+[class*=slider-one__nav-] {
+    border-radius: 50%;
+    background-color: #fff;
+    width: 65px;
+    height: 65px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-size: 22px;
+    color: var(--thm-black);
+    opacity: 0.2;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    position: absolute;
+    top: calc(50% - 32.5px);
+    z-index: 11;
+    cursor: pointer;
+}
+
+[class*=slider-one__nav-]:hover {
+    opacity: 1;
+}
+
+.slider-one__nav-left {
+    right: 2%;
+}
+.slider-one__nav-right {
+    left: 2%;
+}

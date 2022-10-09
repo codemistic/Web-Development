@@ -1,0 +1,62 @@
+.clock {
+  border: 10px solid black ;
+  border-radius: 50%;
+  height: 20rem;
+  width: 20rem;
+  display: flex;
+  align-content: center;
+    
+    align-content: center;
+    align-items: center;
+ 
+}
+ 
+html {
+  background-size: cover;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding-top: 10%;
+    background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=5);
+}
+
+.secondhand {
+   
+    width: 50%;
+    height: 5px;
+    color: black;
+    background-color: black;
+    border-radius: 2px;
+    transform: rotate(90deg);
+    transform-origin: 100%;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    /* z-index: 1; */
+
+}
+
+.hourhand {
+    width: 45%;
+    height: 7px;
+    color:chocolate;
+    background-color:black;
+    border-radius: 2px;
+    transform: rotate(-90deg);
+    /* transform-origin: 100%; */
+    transform-origin: left;
+    
+ 
+    /* float: left; */
+    /* z-index: 3; */
+
+}
+.second {
+    background-color: chartreuse;
+    transform: rotate(30deg);
+}
+
+.clock {
+    background-color:rgba(0, 110, 255, 0.3 );
+    
+}

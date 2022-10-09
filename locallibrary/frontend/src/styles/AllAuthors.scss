@@ -1,0 +1,29 @@
+.AllAuthors_container {
+  display: flex;
+}
+
+.AllAuthor_author-name {
+  ul {
+    margin-top: 10px;
+    display: flex;
+  }
+
+  p {
+    font-size: 20px;
+    color: gray;
+  }
+
+  .author_dob {
+    color: white;
+  }
+}
+
+.light {
+  p {
+    color: rgb(58, 54, 54);
+  }
+
+  .author_dob {
+    color: black;
+  }
+}

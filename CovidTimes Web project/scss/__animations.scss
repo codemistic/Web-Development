@@ -1,0 +1,118 @@
+@keyframes planeMove2 {
+	0% {
+		-webkit-transform: translateX(0px);
+		transform: translateX(0px);
+	}
+
+	25% {
+		-webkit-transform: translateX(5px);
+		transform: translateX(5px);
+	}
+
+	50% {
+		-webkit-transform: translateX(10px);
+		transform: translateX(10px);
+	}
+
+	75% {
+		-webkit-transform: translateX(5px);
+		transform: translateX(5px);
+	}
+
+	100% {
+		-webkit-transform: translateX(0px);
+		transform: translateX(0px);
+	}
+}
+
+@keyframes virusMove {
+	0% {
+		transform: rotate(0deg) translateZ(0px);
+	}
+
+	25% {
+		transform: rotate(90deg) translateZ(20px);
+	}
+
+	50% {
+		transform: rotate(180deg) translateZ(30px);
+	}
+
+	75% {
+		transform: rotate(90deg) translateZ(20px);
+	}
+
+	100% {
+		transform: rotate(0) translateZ(0px);
+	}
+}
+
+@keyframes bubbleMover {
+	0% {
+		-webkit-transform: translateY(0px) translateX(0) rotate(0);
+		transform: translateY(0px) translateX(0) rotate(0);
+	}
+
+	30% {
+		-webkit-transform: translateY(30px) translateX(50px) rotate(15deg);
+		transform: translateY(30px) translateX(50px) rotate(15deg);
+		-webkit-transform-origin: center center;
+		transform-origin: center center;
+	}
+
+	50% {
+		-webkit-transform: translateY(50px) translateX(100px) rotate(45deg);
+		transform: translateY(50px) translateX(100px) rotate(45deg);
+		-webkit-transform-origin: right bottom;
+		transform-origin: right bottom;
+	}
+
+	80% {
+		-webkit-transform: translateY(30px) translateX(50px) rotate(15deg);
+		transform: translateY(30px) translateX(50px) rotate(15deg);
+		-webkit-transform-origin: left top;
+		transform-origin: left top;
+	}
+
+	100% {
+		-webkit-transform: translateY(0px) translateX(0) rotate(0);
+		transform: translateY(0px) translateX(0) rotate(0);
+		-webkit-transform-origin: center center;
+		transform-origin: center center;
+	}
+}
+
+@keyframes featureImgBounce {
+	0% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	100% {
+		-webkit-transform: translateY(-30px);
+		transform: translateY(-30px);
+	}
+}
+
+@keyframes roundRound {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	25% {
+		transform: rotate(15deg);
+	}
+
+	50% {
+		transform: rotate(30deg);
+	}
+
+	75% {
+		transform: rotate(15deg);
+	}
+
+	100% {
+		transform: rotate(0);
+	}
+
+}
