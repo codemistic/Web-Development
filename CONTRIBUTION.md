@@ -1,8 +1,8 @@
 # CONTRIBUTION GUIDE
 
-If you are new to open-source contribution and don't know how to get started, don't worry, this is a deatiled step by step guide to help you make your first contribution.
+If you are new to open-source contribution and don't know how to get started, don't worry, this is a detailed step-by-step guide to help you make your first contribution.
 
-Before heading any further, open terminal and run `git --version` to make sure that git is installed on your machine, if not, install it from [here](https://git-scm.com/downloads).
+Before heading any further, open your terminal and run `git --version` to make sure that git is installed on your machine. If it is not, install it from [here](https://git-scm.com/downloads).
 
 ## Fork this repository
 
@@ -15,7 +15,7 @@ Now, to clone this repository to your local machine, copy the url of the forked 
 Now, open a terminal and run the following command:
 
 ```
-git clone <copied- url>
+git clone <copied-url>
 ```
 Here, replace `<copied-url>` with the url of the forked repository you just copied.
 
@@ -36,18 +36,18 @@ You can run `git branch` command to check your branch status.
 
 ## Make changes
 
-Now you are all set to make changes. For that you can use any text editor, but I will recommend using Vs Code as it feature rich and easy to use. If VS Code is already installed on your machine, run the following command:
+Now you are all set to make changes. For that you can use any text editor, but I will recommend using VS Code as it feature rich and easy to use. If VS Code is already installed on your machine, run the following command:
 
 ```
 code .
 ```
 It will open all the files in VS Code.
 
-After making the changes, run `git status` command. It will show you all the changes you have made.
+After making the changes, run the `git status` command. It will show you all the changes you have made.
 
 ## Commit those changes
 
-Now, before commiting the changes you will have to add those changes to the branch you created. For that run the following command:
+Now, before commiting the changes you will have to add them to the branch you created. For that run the following command:
 ```
 git add .
 ````
@@ -68,7 +68,7 @@ Replace `<your-branch-name>` with the name of the branch you created earlier.
 
 ## Submit the pull request
 
-Now open your browser, here you will see a notification. Juslt click on **compare & pull request**.
+Now open your browser, where you will see a notification. Just click on **compare & pull request**.
 
 Now submit the pull request.
 

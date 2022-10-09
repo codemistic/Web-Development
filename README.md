@@ -1,4 +1,4 @@
-<h1 align="centre">
+<h1 align="center">
     <b>Web Developement</b>
 </h1>
 
@@ -8,13 +8,13 @@
 [![GitHub PRs](https://img.shields.io/github/issues-pr/codemistic/Web-Development?style=social&logo=github)](https://github.com/codemistic/Web-Development/pulls)           [![GitHub forks](https://img.shields.io/github/forks/codemistic/Web-Development?logo=git)](https://github.com/codemistic/Web-Development/network)                        
 
 
-Steps to contribute in this repository
+Steps to contribute to this repository:
 
     1. Fork this repo
     2. Create a new folder/directory for your projects
     3. Add useful code for the open-source community
-    4. Make pull request
-    5. Now, it time for review (Don't worry, our team we will review your Pull Request(PR) within few hours.
+    4. Make a pull request
+    5. Now, it time for review (Don't worry, our team we will review your Pull Request(PR) within a few hours.
 
 ## Maintainers (Our Team for HacktoberFest)
 
