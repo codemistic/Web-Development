@@ -1,0 +1,29 @@
+{
+	"name": "resume-builder",
+	"version": "1.0.0",
+	"description": "Resume Builder Application using ReactJS(frontend) and NodeJS(backend)",
+	"main": "server.js",
+	"scripts": {
+		"client-install": "npm install --prefix client",
+		"start": "node server.js",
+		"server": "nodemon server.js",
+		"client": "npm start --prefix client",
+		"dev": "concurrently \"npm run server\" \"npm run client\"",
+		"heroku-postbuild": "cd client && npm install && npm run build"
+	},
+	"author": "Saurav",
+	"license": "MIT",
+	"dependencies": {
+		"body-parser": "^1.20.0",
+		"concurrently": "^7.2.0",
+		"express": "^4.18.1",
+		"html-pdf": "^3.0.1"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.16"
+	},
+	"engines": {
+		"npm": "8.5.0",
+		"node": "16.15.0"
+	}
+}
