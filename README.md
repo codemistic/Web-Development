@@ -1,60 +1,70 @@
-<h1 align="centre">
-    <b>Web Developement</b>
-</h1>
+# Getting Started with Create React App
 
-<a href="https://github.com/codemistic/Web-Development/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/codemistic/Web-Development?color=2b9348"></a>
-<a href="https://github.com/codemistic/Web-Development/blob/master/LICENSE"><img src="https://img.shields.io/github/license/codemistic/Web-Development?color=2b9348" alt="License Badge"/></a>
-<a hreaf="https://github.com/codemistic/Web-Development/issues"><img src="https://img.shields.io/github/issues/codemistic/Web-Development?color=pink&logo=github"/></a>
-[![GitHub PRs](https://img.shields.io/github/issues-pr/codemistic/Web-Development?style=social&logo=github)](https://github.com/codemistic/Web-Development/pulls)           [![GitHub forks](https://img.shields.io/github/forks/codemistic/Web-Development?logo=git)](https://github.com/codemistic/Web-Development/network)                        
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Available Scripts
 
-Steps to contribute in this repository
+In the project directory, you can run:
 
-    1. Fork this repo
-    2. Create a new folder/directory for your projects
-    3. Add useful code for the open-source community
-    4. Make pull request
-    5. Now, it time for review (Don't worry, our team we will review your Pull Request(PR) within few hours.
+### `npm start`
 
-## Maintainers (Our Team for HacktoberFest)
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-<table>
-<tr>
-    <td align="center" style="word-wrap: break-word; width: 200.0; height: 200.0">
-        <a href=https://linktr.ee/gantavyamalviya>
-            <img src=https://avatars.githubusercontent.com/u/39916680?v=4 width="200;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Gantavya Malviya/>
-            <br />
-            <sub style="font-size:14px"><b>Gantavya Malviya</b></sub>
-        </a>
-    </td>
-    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/TKirtan>
-            <img src=https://avatars.githubusercontent.com/u/38884247?v=4 width="200;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" />
-            <br />
-            <sub style="font-size:14px"><b>Kirtan</b></sub>
-        </a>
-    </td>
-    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/Adarsh-jaiss>
-            <img src=https://avatars.githubusercontent.com/u/96974600?v=4 width="200;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Adarsh jaiswal/>
-            <br />
-            <sub style="font-size:14px"><b>Adarsh jaiswal</b></sub>
-        </a>
-    </td>
-        
-</tr>
-</table>
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## Top Contributors
-Update in progress....
+### `npm test`
 
-### Thanks for visiting!
-### Regards,
-### Team CodeMistic
-[![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/company/codemistic/)](https://www.linkedin.com/company/codemistic/)
-[![Twitter](https://img.shields.io/badge/-Twitter-%231DA1F2.svg?style=flat-square&logo=twitter&logoColor=white&link=https://www.twitter.com/codemistic/)](https://www.twitter.com/codemistic/)
-[![Instagram](https://img.shields.io/badge/-Instagram-red?style=flat-square&logo=Instagram&logoColor=white&link=https://www.instagram.com/codemistic.in/)](https://www.instagram.com/codemistic.in/)
-[![GitHub](https://img.shields.io/badge/-Github-%23100000.svg?&style=flat-square&logo=github&logoColor=white&link=https://www.github.com/codemistic/)](https://www.github.com/codemistic/)
-[![views](https://komarev.com/ghpvc/?username=codemistic&label=Profile%20views&color=0e75b6&style=flat)](https://github.com/codemistic)
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-<a href="https://telegram.me/codemistic"><img alt="Custom badge for codemistic Group" src="https://img.shields.io/endpoint?style=for-the-badge&amp;url=https%3A%2F%2Frunkit.io%2Fdamiankrawczyk%2Ftelegram-badge%2Fbranches%2Fmaster%3Furl%3Dhttps%3A%2F%2Ft.me%2Fcodemistic"></a>
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
