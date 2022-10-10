@@ -1,0 +1,14 @@
+{
+    "name": "speechrecognition",
+    "version": "1.0.0",
+    "description": "A simple Speech Recognition app using Web Speech API",
+    "main": "scripts.js",
+    "scripts": {
+      "start": "browser-sync start --directory --server --files \"*.css, *.html, *.js\""
+    },
+    "author": "Rahul Karda",
+    "license": "ISC",
+    "devDependencies": {
+      "browser-sync": "^2.12.5 <2.23.2"
+    }
+  }
