@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<link rel="icon" type="image/x-icon" href="./img/newFavicon.png">
+  <title>File Converter</title>
+</head>
+<body>
+
+  <nav class="navbar bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./img/newFavicon.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+       File Converter
+      </a>
+      <h3>Convert any image into pdf</h3>
+      <a class="navbar-brand" href="https://github.com/abhirk247/Image_Into_pdf-Converter.git" target="_blank">
+        <img src="./img/github.svg" alt="Logo" width="50" height="34" class="d-inline-block align-text-top">
+      
+      </a>
+    </div>
+  </nav>
+  
+  <div class="container">
+    
+ 
+  <div class="card" style="width: auto;">
+  
+    <img src="./img/image-regular.svg"  id="showImg" class="card-img-top" alt="...">
+    <div class="card-body">
+    
+       <div class="file-input">
+      <input type="file" id="file" class="file" onchange="loadImg(event)" accept=".png, .jpg, .jpeg">
+      <label for="file">
+        Select file
+        <p class="file-name"></p>
+      </label>
+    </div>
+      <h3 class="card-text">Upload your photo here</h3>
+     
+       <button class="bn30" onclick="pdfDown()">Image to Pdf</button> 
+    </div>
+  </div>
+</div>
+
+
+
+  
+  
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha512-cLuyDTDg9CSseBSFWNd4wkEaZ0TBEpclX0zD3D6HjI19pO39M58AgJ1SjHp6c7ZOp0/OCRcC2BCvvySU9KJaGw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <script src="script.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
