@@ -1,4 +1,4 @@
-#Language Translator
+###Language Translator
 
 ##Features
 1. This Tranlator supports 50+ languages.
