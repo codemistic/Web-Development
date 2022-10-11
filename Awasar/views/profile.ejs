@@ -1,0 +1,81 @@
+<div class="profile_body">
+  <%- include('partials/header') %>
+  <div
+    id="add-job"
+    class="container mt-3 py-5"
+    style="background-color: transparent"
+  >
+    <h3 class="ms-3">Profile</h3>
+    <form
+      action="/profile"
+      method="post"
+      class="row gy-2 gx-3 mt-3 ms-2 align-items-center"
+    >
+      <div class="col-lg-4 col-md-6">
+        <label for="username" class="profile_label">E-Mail</label>
+        <div class="input-group">
+          <div class="input-group-text">@</div>
+          <input
+            type="email"
+            class="form-control"
+            name="username"
+            id="username"
+            placeholder="<%=user.username %>"
+            autocomplete="off"
+            readonly
+          />
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <label for="name" class="profile_label">Full Name</label>
+        <div class="input-group">
+          <div class="input-group-text">
+            <i class="bi bi-person-badge-fill"></i>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            name="name"
+            id="name"
+            placeholder="<%=user.name %>"
+            autocomplete="off"
+          />
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <label for="number" class="profile_label">Mobile Number</label>
+        <div class="input-group">
+          <div class="input-group-text"><i class="bi bi-phone-fill"></i></div>
+          <input
+            type="tel"
+            class="form-control"
+            name="number"
+            id="number"
+            placeholder="<%=user.number %>"
+            autocomplete="off"
+          />
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <label for="location" class="profile_label">Location</label>
+        <div class="input-group">
+          <div class="input-group-text"><i class="bi bi-geo-alt-fill"></i></div>
+          <input
+            type="text"
+            class="form-control"
+            name="location"
+            id="location"
+            placeholder="<%=user.location %>"
+            autocomplete="off"
+          />
+        </div>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary submit_btn_addJob">
+          Save Changes
+        </button>
+      </div>
+    </form>
+  </div>
+  <%- include('partials/footer') %>
+</div>

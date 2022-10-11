@@ -1,0 +1,101 @@
+<div class="add_jobs_body">
+  <%-include('partials/header')%>
+  <div
+    id="add-job"
+    class="container mt-3 py-5"
+    style="background-color: transparent"
+  >
+    <h3 class="ms-3" style="color: #ffff">Add Job</h3>
+    <form
+      action="/add-job"
+      method="post"
+      class="row gy-2 gx-3 mt-3 ms-2 align-items-center"
+    >
+      <div class="col-lg-4 col-md-6">
+        <label for="position" class="add_job_label" style="color: #ffff"
+          >Position</label
+        ><input
+          type="text"
+          class="form-control"
+          name="position"
+          id="position"
+          placeholder="Software Engineer"
+          autocomplete="off"
+          required
+        />
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <label for="company" class="add_job_label">Company</label>
+        <div class="input-group">
+          <div class="input-group-text"><i class="bi bi-building"></i></div>
+          <input
+            type="text"
+            class="form-control"
+            name="company"
+            id="company"
+            placeholder="Google"
+            autocomplete="off"
+            required
+          />
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <label for="location" class="add_job_label">Location</label>
+        <div class="input-group">
+          <div class="input-group-text"><i class="bi bi-geo-alt-fill"></i></div>
+          <input
+            type="text"
+            class="form-control"
+            name="jobLocation"
+            id="location"
+            placeholder="Banglore"
+            autocomplete="off"
+            required
+          />
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <label for="status" class="add_job_label">Status</label
+        ><select class="form-select" name="status" id="status">
+          <option value="Pending" selected>Pending</option>
+          <option value="Online-Assessment">Online Assessment</option>
+          <option value="Interview">Interview</option>
+          <option value="Offered">Offered</option>
+          <option value="Declined">Declined</option>
+        </select>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <label for="job-type" class="add_job_label">Job-Type</label
+        ><select class="form-select" name="jobType" id="job-type">
+          <option value="Full-Time" selected>Full-Time</option>
+          <option value="Internship">Internship</option>
+          <option value="Remote">Remote</option>
+          <option value="Part-Time">Part-Time</option>
+          <option value="Contract">Contract</option>
+        </select>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <label for="date" class="add_job_label">Date</label>
+        <div class="input-group">
+          <div class="input-group-text">
+            <i class="bi bi-calendar-date-fill"></i>
+          </div>
+          <input
+            type="date"
+            class="form-control"
+            name="date"
+            id="date"
+            autocomplete="off"
+            required
+          />
+        </div>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary submit_btn_addJob">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+  <%-include('partials/footer')%>
+</div>

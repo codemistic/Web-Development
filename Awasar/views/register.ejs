@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awasar | an Opportunity</title>
+    <link rel="preload" href="/spotlight_happy.jpg" as=" image" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico?v=2" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <style>
+        body {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="registerPage">
+        <div class="row justify-content-center align-content-center content">
+            <div class="col-auto">
+                <div class="container border rounded-2 border-dark pt-4 pb-3 register"
+                    style="background-color: transparent">
+                    <div class="text-center"><a class="navbar-brand" href="/"><img
+                                src="../images/android-chrome-192x192.png" alt=""
+                                class="align-text-center mb-1" />Awasar </a></div>
+                    <h2 class="ms-3 mt-4" style="text-align: center">Fill your details!</h2>
+                    <form action="/register" method="post" class="row gy-2 gx-3 ms-2 align-items-center">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="input-group">
+                                <div class="input-group-text"><i class="bi bi-person-badge-fill"></i></div><input
+                                    type="text" class="form-control inp large_font" name="name" id="name"
+                                    placeholder="Enter Your Name" autocomplete="off" />
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="input-group">
+                                <div class="input-group-text"><i class="bi bi-phone-fill"></i></div><input type="tel"
+                                    class="form-control inp large_font" name="number" id="number"
+                                    placeholder="Enter Your Mobile Number" autocomplete="off" />
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="input-group">
+                                <div class="input-group-text">@</div><input type="email"
+                                    class="form-control large_font inp" name="username" id="username"
+                                    placeholder="Enter Your Email" autocomplete="off" required />
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="input-group">
+                                <div class="input-group-text"><i class="bi bi-geo-alt-fill"></i></div><input type="text"
+                                    class="form-control inp large_font" name="location" id="location"
+                                    placeholder="Enter Your Location" autocomplete="off" />
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="input-group">
+                                <div class="input-group-text"><i class="fa-solid fa-key">🗝️</i></div><input
+                                    type="password" class="form-control inp large_font" name="password" id="password"
+                                    placeholder="Enter Your Password" autocomplete="off" required />
+                            </div>
+                        </div>
+                    </form>
+                    <div class="col-12"><button type="submit" class="btn btn-success register_btn">Register</button>
+                    </div>
+                    </form>
+                    <hr class="ms-3" />
+                    <div class="text-center gsign register_gsign"><a href="/auth/google" class="google text-danger"><i
+                                class="bi bi-google"></i>Sign Up with Google </a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
