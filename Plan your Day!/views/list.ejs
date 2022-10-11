@@ -1,0 +1,31 @@
+<%- include("header") -%>
+<link rel="stylesheet" href="css/toggle.css"> 
+
+<div class="box" id="heading">
+  <h1> <%= listTitle %> </h1>
+</div>
+
+
+<div class="box">
+
+  <% newListItems.forEach(function(item) { %>
+  <form acion="/delete" method="post" name="itemname" onchange="this.form.submit()">
+    <div class="item">
+      <input type="checkbox" name="checkbox" value="<%= item._id %>">
+        <p><%=  item.name %></p>
+      </div>
+  </form>
+
+  <% }) %>
+
+  <form class="item" action="/" method="post">
+    <input type="text" name="newItem" placeholder=" Add new task" autocomplete="off">
+    <button type="submit" name="list" value="<%= listTitle %>">+</button>
+  </form>
+</div>
+
+  <p id="date"> <%= kindOfDay %> </p>
+
+
+
+<%- include("footer") -%>
