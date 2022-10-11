@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="parent">
+      <div class="controlArea">
+        <h2>CONTROL:</h2>
+        <div class="colorControl">
+          <h3 class="sectionHeading">Colors</h3>
+          <div class="CS">
+            <span>Background: </span
+            ><input type="color" class="colorSwatch" name="" id="BGCOLOR" />
+          </div>
+          <div class="CS">
+            <span>Font: </span
+            ><input type="color" class="colorSwatch" name="" id="FCOLOR" />
+          </div>
+          <div class="CS">
+            <span>Border: </span
+            ><input type="color" class="colorSwatch" name="" id="BRCOLOR" />
+          </div>
+        </div>
+        <div class="sizeControl">
+          <h3 class="sectionHeading">Size</h3>
+          <div class="CS">
+            <span>Border: </span
+            ><input type="number" class="sizePad" min="0" name="" id="BRSIZE" />
+          </div>
+          <div class="CS">
+            <span>Font: </span
+            ><input type="number" class="sizePad" min="0" name="" id="FSIZE" />
+          </div>
+        </div>
+        <div class="sizeControl bsParent">
+          <h3 class="sectionHeading">Border Style</h3>
+          <div class="CS">
+            <input
+              type="radio"
+              class="borderStyle"
+              name="borderStyle"
+              value="dotted"
+            /><span>dotted</span>
+          </div>
+          <div class="CS">
+            <input
+              type="radio"
+              class="borderStyle"
+              name="borderStyle"
+              value="dashed"
+            /><span>dashed</span>
+          </div>
+          <div class="CS">
+            <input
+              type="radio"
+              class="borderStyle"
+              name="borderStyle"
+              value="solid"
+              checked
+            /><span>solid</span>
+          </div>
+          <div class="CS">
+            <input
+              type="radio"
+              class="borderStyle"
+              name="borderStyle"
+              value="double"
+            /><span>double</span>
+          </div>
+          <div class="CS">
+            <input
+              type="radio"
+              class="borderStyle"
+              name="borderStyle"
+              value="groove"
+            /><span>groove</span>
+          </div>
+          <div class="CS">
+            <input
+              type="radio"
+              class="borderStyle"
+              name="borderStyle"
+              value="ridge"
+            /><span>ridge</span>
+          </div>
+          <div class="CS">
+            <input
+              type="radio"
+              class="borderStyle"
+              name="borderStyle"
+              value="inset"
+            /><span>inset</span>
+          </div>
+          <div class="CS">
+            <input
+              type="radio"
+              class="borderStyle"
+              name="borderStyle"
+              value="outset"
+            /><span>outset</span>
+          </div>
+          <div class="CS">
+            <input
+              type="radio"
+              class="borderStyle"
+              name="borderStyle"
+              value="none"
+            /><span>none</span>
+          </div>
+        </div>
+        <div class="sizeControl marginParent">
+          <h3 class="sectionHeading">Margin</h3>
+          <div class="CS">
+            <span>Top: </span
+            ><input type="number" class="sizePad" min="0" name="" id="TMARGIN" />
+          </div>
+          <div class="CS">
+            <span>Right: </span
+            ><input type="number" class="sizePad" min="0" name="" id="RMARGIN" />
+          </div>
+          <div class="CS">
+            <span>Bottom: </span
+            ><input type="number" class="sizePad" min="0" name="" id="BMARGIN" />
+          </div>
+          <div class="CS">
+            <span>Left: </span
+            ><input type="number" class="sizePad" min="0" name="" id="LMARGIN" />
+          </div>
+        </div>
+        <div class="sizeControl marginParent">
+          <h3 class="sectionHeading">Padding</h3>
+          <div class="CS">
+            <span>Top: </span
+            ><input type="number" class="sizePad" min="0" name="" id="TPADDING" />
+          </div>
+          <div class="CS">
+            <span>Right: </span
+            ><input type="number" class="sizePad" min="0" name="" id="RPADDING" />
+          </div>
+          <div class="CS">
+            <span>Bottom: </span
+            ><input type="number" class="sizePad" min="0" name="" id="BPADDING" />
+          </div>
+          <div class="CS">
+            <span>Left: </span
+            ><input type="number" class="sizePad" min="0" name="" id="LPADDING" />
+          </div>
+        </div>
+        <div class="sizeControl bRadParent">
+          <h3 class="sectionHeading">Border-Radius</h3>
+          <div class="CS">
+            <span>Top-Left: </span
+            ><input type="number" class="sizePad" min="0" name="" id="TLRADIUS" />
+          </div>
+          <div class="CS">
+            <span>Top-Right: </span
+            ><input type="number" class="sizePad" min="0" name="" id="TRRADIUS" />
+          </div>
+          <div class="CS">
+            <span>Bottom-Right: </span
+            ><input type="number" class="sizePad" min="0" name="" id="BRRADIUS" />
+          </div>
+          <div class="CS">
+            <span>Bottom-Left: </span
+            ><input type="number" class="sizePad" min="0" name="" id="BLRADIUS" />
+          </div>
+        </div>
+        <p><b>Note:</b> All values above are measured in px</p>
+      </div>
+      <div class="outputArea">
+        <h2>OUTPUT:</h2>
+        <div class="display">
+            <div class="copyToClipboard">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
+            </div>
+          <button id="btn">Button</button>
+        </div>
+        <p style="text-align: right;">Made by <b><a style="text-decoration: none;" href="https://github.com/dollykumari9798">Dolly Kumari</a></b> </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<ul></ul>
