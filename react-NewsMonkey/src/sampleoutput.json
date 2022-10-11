@@ -1,0 +1,267 @@
+
+{
+    "status": "ok",
+    "totalResults": 38,
+    "articles": [
+        {
+        "source": {
+        "id": null,
+        "name": "YouTube"
+        },
+        "author": null,
+        "title": "Stephen A.: Game 7 will define Jayson Tatum and Jaylen Brown for YEARS TO COME | SportsCenter - ESPN",
+        "description": null,
+        "url": "https://www.youtube.com/supported_browsers?next_url=https:%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DmMMxbvJN2TE",
+        "urlToImage": null,
+        "publishedAt": "2022-05-29T03:58:11Z",
+        "content": null
+        },
+        {
+        "source": {
+        "id": "cbs-news",
+        "name": "CBS News"
+        },
+        "author": null,
+        "title": "More than 3,500 flights canceled so far over Memorial Day weekend - CBS News",
+        "description": "More than 1,500 flights were canceled as of 9:50 p.m. EDT Saturday, according to flight tracking website FlightAware.",
+        "url": "https://www.cbsnews.com/news/memorial-day-weekend-travel-flight-cancellations/",
+        "urlToImage": "https://cbsnews2.cbsistatic.com/hub/i/r/2022/05/28/341e9ba4-dca8-42db-8cda-5dfc0adab77c/thumbnail/1200x630/ab0367d9d15b8051150f01ad33523e6c/memorial-day-weekend-flight-cancelations.jpg",
+        "publishedAt": "2022-05-29T03:06:00Z",
+        "content": "Airline travelers are not only facing sticker shock this Memorial Day weekend, the kickoff to the summer travel season. They're also dealing with a pileup of flight cancellations. More than 1,500 fl… [+2317 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "New York Post"
+        },
+        "author": "Jack Morphet",
+        "title": "Neighbor blasts Uvalde School Police Chief Pete Arredondo as 'a coward' in wake of massacre - New York Post ",
+        "description": "The Texas cop under scrutiny for his response to the Uvalde schools massacre stayed out of site under police protection Saturday — while a heated neighbor slammed him as a “coward.&#822…",
+        "url": "https://nypost.com/2022/05/28/uvalde-school-police-chief-pete-arredondo-is-a-coward-neighbor/",
+        "urlToImage": "https://nypost.com/wp-content/uploads/sites/2/2022/05/newspress-collage-22453800-1653790449882.jpg?quality=75&strip=all&1653776156&w=1024",
+        "publishedAt": "2022-05-29T02:36:00Z",
+        "content": "The Texas cop under scrutiny for how he handled the response to the Uvalde school massacre stayed out of sight under police protection Saturday — while an angry neighbor slammed him as a “coward.” … [+2198 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "TMZ"
+        },
+        "author": "TMZ Staff",
+        "title": "Lance Bass Posts Uvalde Victim Dance Video To Go Viral Posthumously - TMZ",
+        "description": "The NSYNC singer is trying to put a spotlight on one Uvalde victim in particular who was a big fan of @dontoliver and who had dreams of going viral. Now, her family asks people help make it happen to honor her memory.",
+        "url": "https://www.tmz.com/2022/05/28/lance-bass-uvalde-victim-dance-video-help-go-viral-posthumously/",
+        "urlToImage": "https://imagez.tmz.com/image/6e/16by9/2018/08/07/6ed6c0da6c8f5e93a0b2d1b6d1688ed6_xl.jpg",
+        "publishedAt": "2022-05-29T00:27:00Z",
+        "content": "Lance Bass is shedding a light on one of the Uvalde victims whose wish was to go viral on TikTok -- something her family is hoping to achieve in the wake of her tragic death. The NSYNC singer repost… [+1678 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "DAZN News US"
+        },
+        "author": null,
+        "title": "Gervonta Davis vs. Rolly Romero live updates, results, highlights - dazn.com",
+        "description": "One of the most ferocious boxers returns for his 2022 debut.",
+        "url": "https://www.dazn.com/en-US/news/boxing/gervonta-davis-vs-rolly-romero-live-updates-results-highlights/1ar60gdlbomuwzvywsmegy083",
+        "urlToImage": "https://images.daznservices.com/di/library/DAZN_News/a7/90/gervonta-davis-rolly-romero-052722-amandawestcottshowtime-ftr_a8l9paat7asa1g4j1mx5i3mbo.jpg?t=255699425&quality=100&h=300",
+        "publishedAt": "2022-05-29T00:16:52Z",
+        "content": "The feud between Gervonta Davis and Rolando Romero is as real as it gets. Every form of trash talk and offensive comments have come out of their respective mouths when talking about one another.  Th… [+911 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "BBC News"
+        },
+        "author": "https://www.facebook.com/bbcnews",
+        "title": "Why scientists are also watching animal YouTube videos - BBC",
+        "description": "Those viral moments of unusual animal behaviour provide valuable insight for researchers as well.",
+        "url": "https://www.bbc.com/news/science-environment-61609679",
+        "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/7E80/production/_124948323_mediaitem124948321.jpg",
+        "publishedAt": "2022-05-28T23:58:24Z",
+        "content": "By Victoria GillScience correspondent, BBC News Image source, Chester Zoo Image caption, Online videos are providing researchers with more evidence of elephants' intelligence What do Asian elephan… [+6501 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "BBC News"
+        },
+        "author": "https://www.facebook.com/bbcnews",
+        "title": "Atiku Abubakar: Former Nigeria VP picked as opposition presidential candidate - BBC",
+        "description": "Atiku Abubakar beats other candidates to lead the Peoples Democratic Party into February's poll.",
+        "url": "https://www.bbc.com/news/world-africa-61611081",
+        "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/8719/production/_124958543_atikuabubakar2.jpg",
+        "publishedAt": "2022-05-28T23:29:22Z",
+        "content": "Image caption, Mr Abubakar has been contesting elections in Nigeria since 1993 Atiku Abubakar, former Nigerian vice-president, will lead the main opposition Peoples Democratic Party (PDP) into next … [+2458 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "YouTube"
+        },
+        "author": null,
+        "title": "Elon Musk Weighs In on Johnny Depp vs. Amber Heard Trial - E! News",
+        "description": "Elon Musk breaks his silence about ex-GF Amber Heard and Johnny Depp as their defamation trial concludes. See the Tesla CEO's revealing tweet!",
+        "url": "https://www.youtube.com/watch?v=4E9h-XbClds",
+        "urlToImage": "https://i.ytimg.com/vi/4E9h-XbClds/maxresdefault.jpg",
+        "publishedAt": "2022-05-28T23:20:39Z",
+        "content": null
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "The Guardian"
+        },
+        "author": "Gloria Oladipo, Edward Helmore",
+        "title": "‘Too much fear, too much grief’: Biden to visit Uvalde amid scrutiny of police response to shooting - The Guardian US",
+        "description": "Kamala Harris calls for ban on assault weapons after attending last funeral of those killed in Buffalo attack",
+        "url": "https://amp.theguardian.com/us-news/2022/may/28/texas-school-shooting-biden-harris-gun-control",
+        "urlToImage": null,
+        "publishedAt": "2022-05-28T23:00:00Z",
+        "content": "Texas school shootingKamala Harris calls for ban on assault weapons after attending last funeral of those killed in Buffalo attack Joe Biden lamented too much violence, too much fear, too much grief… [+4671 chars]"
+        },
+        {
+        "source": {
+        "id": "the-verge",
+        "name": "The Verge"
+        },
+        "author": "Emma Roth",
+        "title": "Star Wars: Knights of the Old Republic II is coming to Switch - The Verge",
+        "description": "Star Wars: Knights of the Old Republic II is set to arrive on the Nintendo Switch on June 8th. The game will come with some performance enhancements and Restored Content DLC.",
+        "url": "https://www.theverge.com/2022/5/28/23145825/star-wars-knights-old-republic-ii-sith-lords-nintendo-switch-restored-content-dlc",
+        "urlToImage": "https://cdn.vox-cdn.com/thumbor/YwY_yfcWtXUxWzNTtVxrAfGW0X4=/49x0:2112x1080/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/23594515/starwars_old_republic.jpg",
+        "publishedAt": "2022-05-28T22:18:57Z",
+        "content": "Arriving on June 8th"
+        },
+        {
+        "source": {
+        "id": "cnn",
+        "name": "CNN"
+        },
+        "author": "Paradise Afshar, CNN",
+        "title": "Two people were killed and three are missing after a boating accident in coastal Georgia county - CNN",
+        "description": "Two people were killed and three others are missing after two boats collided Saturday morning on the Wilmington River, in Georgia's coastal Chatham County, officials said.",
+        "url": "https://www.cnn.com/2022/05/28/us/savannah-georgia-boating-accident-two-dead/index.html",
+        "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/220528162835-01-savannah-georgia-boating-accident-screengrab-super-tease.jpeg",
+        "publishedAt": "2022-05-28T21:39:00Z",
+        "content": "(CNN)Two people were killed and three others are missing after two boats collided Saturday morning on the Wilmington River, in Georgia's coastal Chatham County, officials said. The two boats were tr… [+1065 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "New York Post"
+        },
+        "author": "Angela Barbuti",
+        "title": "'Top Gun: Maverick' starring Tom Cruise tops the domestic box office - New York Post ",
+        "description": "“Top Gun: Maverick” came out with guns blazing on Friday.",
+        "url": "https://nypost.com/2022/05/28/tom-cruises-top-gun-maverick-wins-domestic-box-office/",
+        "urlToImage": "https://nypost.com/wp-content/uploads/sites/2/2022/05/newspress-collage-22451963-1653771872706.jpg?quality=75&strip=all&1653757564&w=1024",
+        "publishedAt": "2022-05-28T21:22:00Z",
+        "content": "Top Gun: Maverick came out with guns blazing at the domestic box office on Friday. The sequel, starring Tom Cruise reprising his 1986 role as Captain Pete “Maverick” Mitchell alongside Miles Teller,… [+425 chars]"
+        },
+        {
+        "source": {
+        "id": "newsweek",
+        "name": "Newsweek"
+        },
+        "author": "Natalie Colarossi",
+        "title": "Lithuanian Citizens Pool $4.7M to Buy Advanced Drone for Ukraine's Military - Newsweek",
+        "description": "Lithuania has strongly condemned Russia's invasion and has expressed fears that the war could soon expand into its own country.",
+        "url": "https://www.newsweek.com/lithuanian-citizens-pool-47m-buy-advanced-drone-ukraines-military-1711163",
+        "urlToImage": "https://d.newsweek.com/en/full/2047683/lithuanians-raise-money-drone.jpg",
+        "publishedAt": "2022-05-28T20:31:10Z",
+        "content": "Hundreds of Lithuanian citizens rallied together to raise nearly $5 million to purchase an advanced military drone for Ukraine to use in its ongoing war against Russia. The fundraiser was completed … [+2631 chars]"
+        },
+        {
+        "source": {
+        "id": "associated-press",
+        "name": "Associated Press"
+        },
+        "author": "Yuras Karmanau",
+        "title": "Russia takes small cities, aims to widen east Ukraine battle - The Associated Press",
+        "description": "KRAMATORSK, Ukraine (AP) — As Russia asserted progress in its goal of seizing the entirety of contested eastern Ukraine, President Vladimir Putin tried Saturday to shake European resolve to punish his country with sanctions and to keep supplying weapons that …",
+        "url": "https://apnews.com/article/russia-ukraine-nato-government-and-politics-bd1fdfb32f9449a203591ddb4308c3fa",
+        "urlToImage": "https://storage.googleapis.com/afs-prod/media/321c2e2108f94e119975c255d01a4593/3000.jpeg",
+        "publishedAt": "2022-05-28T20:26:15Z",
+        "content": "KRAMATORSK, Ukraine (AP) As Russia asserted progress in its goal of seizing the entirety of contested eastern Ukraine, President Vladimir Putin tried Saturday to shake European resolve to punish his … [+8086 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "The Cincinnati Enquirer"
+        },
+        "author": "Bobby Nightengale, The Enquirer",
+        "title": "Tommy Pham suspended after slapping Joc Pederson, text message - The Cincinnati Enquirer",
+        "description": "Tommy Pham was suspended three games for slapping Giants outfielder Joc Pederson during batting practice. It stemmed from a fantasy football league.",
+        "url": "https://www.cincinnati.com/story/sports/mlb/reds/2022/05/28/tommy-pham-suspended-after-slapping-joc-pederson-over-fantasy-football/9979223002/",
+        "urlToImage": "https://www.gannett-cdn.com/presto/2022/04/24/PCIN/0ebcae16-ba64-4729-8356-4a95947380e2-042422RedsCardinals_18.jpg?auto=webp&crop=4381,2465,x0,y0&format=pjpg&width=1200",
+        "publishedAt": "2022-05-28T20:25:28Z",
+        "content": "Tommy Pham was suspended for three games, retroactive to Friday, after he slapped San Francisco Giants outfielder Joc Pederson during Friday’s batting practice. “I slapped Joc,” Pham said. “He did s… [+5170 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "YouTube"
+        },
+        "author": null,
+        "title": "How The Lakers Decided On Darvin Ham & His Next Steps - Lakers Nation",
+        "description": "We dive into how the Lakers came to hire Darvin Ham and what comes next...Subscribe To The Lakers Nation Podcast! Apple Podcasts: https://podcasts.apple.com/...",
+        "url": "https://www.youtube.com/watch?v=l_6Ai2tDGXw",
+        "urlToImage": "https://i.ytimg.com/vi/l_6Ai2tDGXw/maxresdefault.jpg",
+        "publishedAt": "2022-05-28T20:24:39Z",
+        "content": null
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "The Times of Israel"
+        },
+        "author": null,
+        "title": "Gaza terror factions at odds over response to Jerusalem Day march — report - The Times of Israel",
+        "description": "8 rockets test-fired from Gaza into the sea; Israeli air defenses still bolstered, but IDF officials tell southern community leaders no escalation expected from Hamas-run enclave",
+        "url": "https://www.timesofisrael.com/gaza-terror-factions-at-odds-over-response-to-jerusalem-day-march-report/",
+        "urlToImage": "https://static.timesofisrael.com/www/uploads/2022/05/F210531AM09-1024x640.jpg",
+        "publishedAt": "2022-05-28T20:23:00Z",
+        "content": "Palestinian terror group Hamas and other terror factions based in the Palestinian enclave are reportedly at odds over how to respond to the annual Jerusalem Day flag march through the Muslim Quarter … [+3519 chars]"
+        },
+        {
+        "source": {
+        "id": "cbs-news",
+        "name": "CBS News"
+        },
+        "author": "Alex Sundby",
+        "title": "Texas school shooting timeline: Law enforcement official gives detailed description of deadly attack on Robb Elementary School, police response - CBS News",
+        "description": "A top law enforcement official provided the most detailed description yet of what happened during the deadly Texas school shooting.",
+        "url": "https://www.cbsnews.com/news/texas-school-shooting-timeline-robb-elementary-school-attack/",
+        "urlToImage": "https://cbsnews3.cbsistatic.com/hub/i/r/2022/05/27/1a8806a8-6113-4343-8f36-476ad8552d63/thumbnail/1200x630g2/78b6c969188be6a1a30c3febc6dd83ee/texas-school-shooting-2022-05-27t123953z.jpg",
+        "publishedAt": "2022-05-28T20:14:00Z",
+        "content": "A top law enforcement official provided the most detailed description yet Friday of what happened during this week's school shooting in Uvalde, Texas, when a gunman killed 19 children and two teacher… [+4994 chars]"
+        },
+        {
+        "source": {
+        "id": "google-news",
+        "name": "Google News"
+        },
+        "author": null,
+        "title": "Forest Service finds it was responsible for largest fire in New Mexico history - The Hill",
+        "description": null,
+        "url": "https://news.google.com/__i/rss/rd/articles/CBMihQFodHRwczovL3RoZWhpbGwuY29tL3BvbGljeS9lbmVyZ3ktZW52aXJvbm1lbnQvMzUwNDk2My1mb3Jlc3Qtc2VydmljZS1maW5kcy1pdC13YXMtcmVzcG9uc2libGUtZm9yLWxhcmdlc3QtZmlyZS1pbi1uZXctbWV4aWNvLWhpc3Rvcnkv0gGJAWh0dHBzOi8vdGhlaGlsbC5jb20vcG9saWN5L2VuZXJneS1lbnZpcm9ubWVudC8zNTA0OTYzLWZvcmVzdC1zZXJ2aWNlLWZpbmRzLWl0LXdhcy1yZXNwb25zaWJsZS1mb3ItbGFyZ2VzdC1maXJlLWluLW5ldy1tZXhpY28taGlzdG9yeS9hbXAv?oc=5",
+        "urlToImage": null,
+        "publishedAt": "2022-05-28T20:08:00Z",
+        "content": null
+        },
+        {
+        "source": {
+        "id": "the-washington-post",
+        "name": "The Washington Post"
+        },
+        "author": "Timothy Bella, Adela Suliman",
+        "title": "Cruz confronted at restaurant over gun control after Uvalde shooting - The Washington Post",
+        "description": "Hours earlier, Cruz took to the stage at the NRA’s annual meeting in Houston, where he joined former president Donald Trump in rejecting proposals for new restrictions and calling instead for more school security or mental health screenings.",
+        "url": "https://www.washingtonpost.com/politics/2022/05/28/ted-cruz-nra-uvalde-heckled-restaurant/",
+        "urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/P4YCGGW6DYI6ZPBVVEOQVFESHM.jpg&w=1440",
+        "publishedAt": "2022-05-28T20:02:00Z",
+        "content": "Placeholder while article actions load Sen. Ted Cruz (R-Tex.) was heckled at a Houston restaurant on Friday night, following his speech at the National Rifle Associations convention, in which he bro… [+7631 chars]"
+        }
+        ]
+    }
