@@ -1,0 +1,37 @@
+#divEvents {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  height: 400px;
+  max-width: 60rem;
+  padding: 1rem 0;
+  overflow-y: auto;
+}
+
+#olEvents {
+  font-size: 87.5%;
+}
+
+#divBottom {
+  height: 0px;
+}
+
+code {
+  font-size: 100%;
+}
+
+/* handle the sticky hover problem on touch devices */
+
+@media (hover: none) {
+  /* set button hover style to match non-hover */
+  .btn-outline-primary:hover {
+    color: #007bff;
+    background-color: transparent;
+    background-image: none;
+    border-color: #007bff;
+  }
+  /* set button focus style to match hover */
+  .btn-outline-primary:focus {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+}
