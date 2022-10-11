@@ -1,0 +1,42 @@
+.container{
+	padding-top: 2%;
+}
+.ans{
+	float: left;
+	padding-top: 2%;
+}
+.top{
+	display: grid;
+}
+.pp{
+	text-align: center;
+	padding-top: 1%;
+	
+}
+.board{
+	float: right;
+}
+.row{
+	padding-left: 20%;
+	width: 80%;
+	height: 12vh;
+}
+.col:hover {
+	background: #a0a7b0;
+}
+.even{
+	background: rgb(122 120 147);
+}
+.odd{
+	background: rgb(59 59 74);
+}
+.shade{
+	background: black;
+}
+@media screen and (max-width:768px){
+	.row{
+	padding-left: 20%;
+	width: 80%;
+	height: 5vh;
+	}
+}

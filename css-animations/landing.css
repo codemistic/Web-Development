@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+   font-family: sans-serif;
+   background-color: #12475f;
+   color: white;
+   text-align: center;
+   line-height:1.6;
+}
+
+.container{
+  max-width: 900px;
+  text-align: center;
+  margin:auto;
+  padding:0 30px;
+}
+
+#showcase{
+  height: 300px;
+}
+
+#showcase h1{
+  font-size: 50px;
+  position: relative;
+  animation:  heading;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes heading {
+  0%{
+    top:-50px;
+  }
+  100%{
+    top:200px;
+  }
+}
+
+#content{
+  position: relative;
+  animation: content;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes content {
+  0%{
+    left: -1000px;
+  }
+  100%{
+    left: 0px;
+  }
+}
+.btn{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding:12px;
+  margin-top: 15px;
+  border: white 1px solid;
+  opacity: 0;
+  animation-name:  button;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+
+
+@keyframes button {
+  0%{
+     opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}

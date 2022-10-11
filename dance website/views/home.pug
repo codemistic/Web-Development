@@ -1,0 +1,54 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+     style 
+        include ../static/style.css
+
+block content
+    nav#navbar.firstclass
+        ul
+            //- #logo 
+            //-     img(src="/static/logo.png")
+            //-     | HDA
+            li #[a(href = "/") Home]
+            li #[a(href = "/") About]
+            li #[a(href = "/") Services]
+            li #[a(href = "/") Class Info]
+            li #[a(href = "/contact") Contact Us]
+    
+    section#introSection 
+           section welcome to my dance academy
+
+    section#missionSection 
+           h2 Our Mission
+           div.card
+               h3 Dance Perfection
+               div.card-box
+                   div.card-img
+                       img(src="/static/1.png")
+                   div.card-content
+                       p this is best dance academy
+
+           div.card
+               h3 Dance the way you like
+               div.card-box
+                   div.card-img
+                       img(src="/static/2.png")
+                   div.card-content
+                       p you can take admission here
+
+           div.card
+               h3 Expert Teaching 
+               div.card-box
+                   div.card-img
+                       img(src="/static/3.png")
+                   div.card-content
+                       p admission are open now
+
+    section#sponsorsSection 
+           h2 our sponsors
+           div#sponsors
+               img(src="/static/4.png",alt="sponsor image")

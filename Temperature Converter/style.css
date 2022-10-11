@@ -1,0 +1,57 @@
+* {
+    font-family: sans-serif;
+    font-size: 30pt;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border: 0;
+    margin: 10px;
+  }
+  
+  input {
+    margin-right: 0;
+    background-color: #222;
+    outline: none;
+  }
+  
+  span {
+    padding: 9px;
+    background-color: #222;
+  }
+  div.spanalign{
+    align-items: center;
+    text-align: center;
+  }
+  b {
+    display: inline-block;
+    width: 40px;
+    margin-left: 0px;
+    background-color: #222;
+  }
+  option { 
+    align-items: center;
+    text-align: center;
+  }
+  legend { 
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  input: focus {
+    outline: none;
+  }
+  
+  /* form {
+    margin: 10px;
+  }
+  
+  form {
+    cellspacing: 0;
+    cellpadding: 0;
+    border: 0;
+    font-family: sans-serif;
+  }
+  
+  fieldset {
+    width: 500 px;
+  } */

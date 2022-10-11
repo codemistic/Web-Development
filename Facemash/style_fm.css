@@ -1,0 +1,169 @@
+/* (0) CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* HEADER */
+
+header h1 {
+    color: white;
+    background-color: maroon;
+    font-size: 4.5rem;
+}
+
+/* SECTION */
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+#quote {
+    font-size: 1.7rem;
+    margin: 0.5rem 0;
+}
+
+#choose {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
+#main {
+    display: flex;
+    justify-content: space-between;
+}
+
+#rnkSpace {
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+}
+
+#rnkBox{
+    box-shadow: 0 0 0.5rem 0;
+    display: none;
+}
+
+#rnkList{
+    height: 10rem;
+    width: 8rem;
+    margin: auto;
+    padding: 0 2.2rem;
+    overflow: auto;
+}
+
+#picsContainer {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+#picsContainer img {
+    height: 14rem;
+    width: 14rem;
+    margin: 0.5rem;
+    box-shadow: 0 0 0.5rem 0;
+}
+
+#picsContainer img:hover{
+    opacity: 0.85;
+    cursor: pointer;
+}
+
+#categorySpace {
+    margin: 0.5rem;
+    font-size: 1.3rem;
+}
+
+#categoryBox{
+    display: none;
+}
+
+#categoryBox ul{
+    box-shadow: 0 0 0.5rem 0;
+    height: fit-content;
+    width: 8rem;
+    margin: auto;
+    list-style: none;
+}
+
+#categoryBox ul li{
+    margin: 0.5rem auto;
+}
+
+#categoryBox ul li:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+/* buttons */
+
+#clrBtn, #rnkBtn, #categoryBtn {
+    width: fit-content;
+    margin: 0.5rem auto;
+    font-size: 1.2rem;
+    box-shadow: 0 0 0.2rem 0;
+}
+
+#clrBtn:hover, #rnkBtn:hover, #categoryBtn:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+/* media queries */
+@media only screen and (max-width: 920px){
+    #quote{
+        font-size: 1.4rem;
+    }
+    #main{
+        flex-direction: column;
+    }
+    #picsContainer{
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 510px){
+    #picsContainer img{
+        width: 12rem;
+        height: 12rem;
+    }
+}
+@media only screen and (max-width: 460px){
+    #picsContainer img{
+        width: 10rem;
+        height: 10rem;
+    }
+}
+@media only screen and (max-width: 400px){
+    header h1{
+        font-size: 3rem;
+    }
+    #picsContainer img{
+        width: 8rem;
+        height: 8rem;
+    }
+}
+@media only screen and (max-width: 350px){
+    header h1{
+        font-size: 3rem;
+    }
+    #picsContainer{
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 320px){
+    #picsContainer{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 250px){
+    header h1{
+        font-size: 2rem;
+    }
+}

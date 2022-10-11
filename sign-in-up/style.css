@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(81, 98, 226);
+}
+.login{
+    width: 360px;
+    height: min-content;
+    padding: 20px;
+    border-radius: 10px;
+    background:#ffff;
+
+}
+.login h1{
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 36px;
+}
+.login .form-group{
+    margin-top: 10px;
+}
+.login form input[type="submit"]{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.invalid-feedback{
+    color: red;
+}
+.sign-up-link{
+    margin-top: 10px;
+}
+.sign-up{
+    width: 360px;
+    height: min-content;
+    padding: 20px;
+    border-radius: 10px;
+    background:#ffff;
+}
+.sign-up .form-group{
+    margin-top: 10px;
+}
+.sign-up .form input[type="submit"]{
+    margin-top: 50px;
+    font-size: 20px;
+}
+.sign-in-link{
+    margin-top: 10px;
+}

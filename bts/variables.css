@@ -1,0 +1,24 @@
+/* css variables */
+:root {
+    --gradient-1: linear-gradient(to bottom right, rgb(107, 107, 255), blue);
+  
+    --gradient-2: linear-gradient(
+      to bottom right,
+      rgb(80, 80, 255),
+      rgb(253, 119, 119)
+    );
+  
+    --gradient-3: linear-gradient(
+      to bottom right,
+      rgb(255, 145, 248),
+      rgb(224, 16, 96)
+    );
+  
+    --gradient-4: linear-gradient(to bottom right, #2af598, #009efd);
+    --blue: #4642ff;
+    --background: #c792df;
+    --box: #070707e0;
+    --secondary: #d0c4df;
+    --text: #dddddf;
+    --text-1:#ffffff;
+  }

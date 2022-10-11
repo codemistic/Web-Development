@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  /* background-color: rgb(255, 255, 209); */
+  background: #9796f0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fbc7d4,
+    #9796f0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fbc7d4,
+    #9796f0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+nav.navbar {
+  border-bottom: 5px solid rgb(230, 137, 137);
+}
+
+nav.navbar a.navbar-brand {
+  font-family: "Comfortaa", cursive;
+  font-size: 25px;
+}
+
+nav.navbar a.nav-link {
+  font-family: "Didact Gothic", sans-serif;
+}
+
+div.head {
+  text-align: center;
+  margin-top: 40px;
+}
+
+hr.style-two {
+  border: 0;
+  height: 1.2px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+div.head h5.copy {
+  font-family: "Bodoni Moda", serif;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+div.head h1.three {
+  margin-top: 80px;
+  font-family: "Comfortaa", cursive;
+}
+
+div.head div.two {
+  margin-top: 50px;
+  width: 100%;
+  border: 1.5px solid black;
+  border-radius: 30px;
+  /* background-color: rgb(221, 255, 244); */
+  background: #74ebd5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #acb6e5,
+    #74ebd5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #acb6e5,
+    #74ebd5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+div.head h1.less {
+  margin-bottom: 30px;
+  font-family: "Goldman", cursive;
+}
+
+div.head div.card button.btn {
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+div.head div.card div.card-body div.one input#title,
+div.head div.card div.card-body div.one textarea#addTxt {
+  width: 90%;
+  outline: none;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+div.head div.card div.card-body div.one input#title:focus,
+div.head div.card div.card-body div.one textarea#addTxt:focus {
+  outline: none;
+}
+
+div.head div.card div.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div.head div.form-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.head div.form-check input{
+  margin-right: 180px;
+}
+
+div.head div.form-check label {
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+h1#next {
+  margin-top: 20px;
+  font-family: "Comfortaa", cursive;
+}
+
+div#notes {
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: bisque;
+  padding: 50px 0px;
+  border: 5px solid rgb(245, 129, 129);
+}
+
+div#notes div.card {
+  margin: 15px 15px;
+  border: 1.5px solid black;
+  border-radius: 15px;
+  background: #c9d6ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #e2e2e2,
+    #c9d6ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #e2e2e2,
+    #c9d6ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+div#notes div.card h5 {
+  font-family: "Noticia Text", serif;
+  font-size: 28px;
+}
+
+div#notes div.card p.card-text {
+  font-family: "Rokkitt", serif;
+  font-size: 20px;
+}
+
+div#notes div.card h6.card-text {
+  font-family: "Rokkitt", serif;
+  font-size: 20px;
+}

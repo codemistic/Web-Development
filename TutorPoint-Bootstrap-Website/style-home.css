@@ -1,0 +1,121 @@
+*
+{
+    margin: 0;
+}
+header{
+    background-image: url(header.jpg);
+    height: 700px;
+}
+.navbar
+{
+    padding: 20px;
+    margin: auto;
+}
+.nav-item
+{
+    padding: 10px;
+    text-align: center;
+}
+.navbar-brand
+{
+    padding-left: 30px;
+    padding-right: 180px;
+    font-size: 28px;
+}
+#navbarSupportedContent.collapse.navbar-collapse
+{
+    padding-right: 80px;
+}
+.jumbotron,h1{
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+    font-size: 50px;
+}
+.row-1
+{
+    padding-left: 260px;
+    padding-top: 80px;
+    margin: 0;
+}
+input{
+    padding: 10px;
+    border: 0;
+    width: 280px;
+}
+button.btn.btn-danger
+{
+    border-radius: 0;
+    width: 150px;
+    margin-right: 35px;
+}
+section.categories-section.spad
+{
+    background-color: lightgray;
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.card{
+    border: 0;
+    padding: 10px;
+    background-color: lightgray;
+}
+.card-text
+{  
+    font-weight: bold;
+}
+.card-body
+{
+    background-color: lightgray;
+}
+.card-body:hover{
+    background-color: rgb(250, 78, 78);
+    color: white ;
+}
+.card-img-top
+{
+    height: 250px;
+}
+
+div.row{
+    background-color: white;
+    width: 1080px;
+    padding-top: 40px;
+    padding-right:20px;
+    padding-left: 80px;
+    padding-bottom: 40px;
+    margin: auto;
+}
+.search-course-outer
+{
+    background-color: rgb(250, 78, 78);
+    padding: 100;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    height: 350px;
+}
+input,input.last-s
+{
+    background-color: rgb(230, 242, 253);
+    padding: 15px;
+}
+div.col-lg-10.offset-lg-1
+{
+    margin: 0;
+    padding: 0;
+}
+.footer
+{
+    background-color: yellowgreen;
+}
+a{text-decoration: none}
+h5{
+    color: rgb(83, 82, 82);
+    font-weight: bold;
+}
+#hov:hover{
+    color: rgb(250, 78, 78);
+}

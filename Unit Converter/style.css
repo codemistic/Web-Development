@@ -1,0 +1,52 @@
+body{
+    background-color: gainsboro;
+    width: 100vw;
+    margin: auto;
+    height: 70vh;
+}
+
+header{
+    background-color: #6943FF;
+    padding: 5%;
+    text-align: center;
+}
+h1{
+    color: white;
+}
+
+#input-el{
+    width: 15%;
+    height: 4rem;
+    padding: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid white;
+}
+
+#conv-btn{
+    margin-top: 13px;
+    padding:2% 4% 2% 4%;
+    background-color: white;
+    border-radius: 3%;
+    border: none;
+}
+
+#content{
+    display: grid;
+    text-align: center;
+}
+
+.unit{
+    background-color: white;
+    margin: auto;
+    margin-top: 17px;
+    width: 90vw;
+}
+
+h3{
+    color: #5A537B;
+    font-size: 20px;
+}

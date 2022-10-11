@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  padding: 0 10px;
+  min-height: 100vh;
+  align-items: center;
+  /* background: #FFC4C4; */
+  /* background: #34d5db; */
+  justify-content: center;
+}
+
+.video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.wrapper{
+  height: 265px;
+  max-width: 410px;
+  background: #fff;
+  
+  /* border: 5px solid #9CFF2E; */
+  border-radius: 7px;
+  padding: 20px 25px 0;
+  transition: height 0.2s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.wrapper.active{
+  height: 530px;
+}
+header h1{
+  font-size: 21px;
+  font-weight: 500;
+}
+header p{
+  margin-top: 5px;
+  color: #575757;
+  font-size: 16px;
+}
+.wrapper .form{
+  margin: 20px 0 25px;
+}
+.form :where(input, button){
+  width: 100%;
+  height: 55px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  transition: 0.1s ease;
+}
+.form input{
+  font-size: 18px;
+  padding: 0 17px;
+  border: 1px solid #999;
+}
+.form input:focus{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+.form input::placeholder{
+  color: #999;
+}
+.form button{
+  color: black;
+  /* color: #fff; */
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 17px;
+  /* background: #FFCACA; */
+  background: #E1FFB1;
+}
+.form button:hover{
+  background-color: #c8ea91;
+}
+.qr-code{
+  opacity: 0;
+  display: flex;
+  padding: 33px 0;
+  border-radius: 5px;
+  align-items: center;
+  pointer-events: none;
+  justify-content: center;
+  border: 1px solid #ccc;
+}
+.wrapper.active .qr-code{
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.5s 0.05s ease;
+}
+.qr-code img{
+  width: 170px;
+}
+@media (max-width: 430px){
+  .wrapper{
+    height: 255px;
+    padding: 16px 20px;
+  }
+  .wrapper.active{
+    height: 510px;
+  }
+  header p{
+    color: #696969;
+  }
+  .form :where(input, button){
+    height: 52px;
+  }
+  .qr-code img{
+    width: 160px;
+  }  
+}
+
+/* @media (max-aspect-ratio:16/9){
+  .video{
+    width: 100px;
+    height: 70px;
+  }
+} */

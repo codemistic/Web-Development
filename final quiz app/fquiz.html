@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="fquiz.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-purple-500 to-pink-500">
+    <div class="flex items-center justify-center h-screen">
+
+
+	<div class="panel">
+		<div class="result bg-red-100">
+
+		</div>
+		
+        <h1 class="flex justify-center text-6xl question-container" id="question">Question will come here </h1>
+
+        <div class="flex mt-2 w-full h-40 option-container">
+			
+            <button class="bg-orange-600 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 cursor-pointer mx-4 px-4 w-3/12 h-28 mt-2  option" id="op1" onclick="">
+                option1
+              </button>
+              <button class="bg-orange-600 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 cursor-pointer mx-4 w-3/12 h-28 mt-2 option" id="op2">
+                option2
+              </button>
+	
+			 
+            <button class="bg-orange-600 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 cursor-pointer mx-4 w-3/12 h-28 mt-2 option" id="op3">
+                option3
+              </button>
+			
+            <button class="bg-orange-600 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 cursor-pointer mx-4 w-3/12 h-28 mt-2 option" id="op4">
+                option4
+              </button>
+			
+		</div>
+        <div class="flex mt-2 w-full md:h-28 lg:32 bg-cyan-800 space-x-5/6 justify-center navigation">
+	
+            <button class="bg-green-500 hover:bg-green-600 text-gray-800 font-bold py-2 px-4 rounded-r cursor-pointer mx-4 w-3/12 h-20 mt-2 text-slate-200 evaluate">
+                Evaluate
+              </button>
+			
+            <button class="bg-red-500 hover:bg-red-600 text-gray-800 font-bold py-2 px-4 rounded-r cursor-pointer mx-32 w-3/12 h-20 mt-2 mr-4 text-slate-200 shadow-cyan-500/50 next ">
+                Next
+              </button>
+			
+		</div>
+	</div>
+	<script src="fquiz.js"></script>
+</div>
+<!-- cout<<count<< endl ; -->
+</body>
+</html>

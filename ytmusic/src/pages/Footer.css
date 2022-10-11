@@ -1,0 +1,58 @@
+.footer{
+    position: absolute;
+    width: 100vw;
+    height: 10vh;
+    background: #212121;
+    bottom: 0;
+}
+.controls{
+    margin-left: 10px;
+    direction: flex;
+    flex-direction: row;   
+    width: 20   0px;
+    justify-content: space-between; 
+}
+.controls-icons{
+    margin-top: 25px;
+    font-size: 28px;
+    margin-left: 10px;
+    color: white;
+}
+.duration{
+    margin-top: -28px;
+    color: white;
+    margin-left: 150px;    
+}
+
+.current-song{
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+.current-song span{
+    color: white;
+    margin-left: 400px;
+    margin-top: -30px;
+}
+
+.actions{
+    display: flex;
+    flex-direction: row;
+    margin-left: 57vw;
+    color: white;
+    margin-top: -35px;
+    width: 120px;
+    font-size: 28px;
+    justify-content: space-between;
+}
+.sound{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin-left: 85vw;
+    margin-top: -25px;
+    font-size: 20px;
+    justify-content: space-between;
+    width: 150px;
+
+}

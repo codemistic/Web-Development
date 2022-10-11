@@ -1,0 +1,39 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: cursive;
+}
+
+body {
+	background-color: #A0F0CD;
+	overflow: hidden;
+}
+
+h1{
+	text-align: center;
+	margin: 5%;
+	font-size: 5rem;
+	text-decoration: underline;
+}
+
+ul {
+	text-align: left;
+	padding-left: 10%;
+	padding: 7%;
+	font-size: 2rem;
+	list-style: circle;
+}
+
+li:hover{
+	color:red;
+	margin: 0.5%;
+	transition: 1.5s ease;
+	cursor: pointer;
+}
+
+.form-group {
+    color: #fff;
+    background-color: #9d3ed6;
+    border-color: #cfacea;
+}

@@ -1,0 +1,62 @@
+/* CSS RESET  */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.con{
+    height: 100vh;
+    /* border:  2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.con::before{
+    content: "";
+    position: absolute;
+    background: url(mic.jpg);
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+.pause{
+  
+    font-size: 20px;
+    border: 2px solid rgb(199 252 7 / 36%);
+    position: absolute;
+    top: 200px;
+    right: 682px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #332c33e6;
+}
+.pause span{
+    color: white;
+}
+
+
+
+.key{
+    cursor: pointer;
+    color: white;
+    font-weight: bolder;
+    border: 2px solid gray;
+    font-size: 1.7em;
+    padding: 10px 10px;
+    background-color: #332c334d;
+    margin: 10px 40px;
+    transition: all 0.5s;
+}
+kbd{
+    text-align: center;
+    display: block;
+    font-size: 0.8em;
+}
+
+.playing{
+    transform: scale(1.3);
+border: 3px solid rgb(199, 252, 7);
+
+}
