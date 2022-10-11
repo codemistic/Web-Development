@@ -1,62 +1,75 @@
-.clock {
-  border: 10px solid black ;
-  border-radius: 50%;
-  height: 20rem;
-  width: 20rem;
-  display: flex;
-  align-content: center;
-    
-    align-content: center;
-    align-items: center;
- 
-}
- 
-html {
-  background-size: cover;
+/* Layout */
+.main {
     display: flex;
-    align-content: center;
+    padding: 2em;
+    height: 90vh;
     justify-content: center;
-    align-content: center;
-    align-items: center;
-    padding-top: 10%;
-    background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=5);
+    align-items: middle;
+}
+body{
+  background: linear-gradient(90deg,#141E30,#243B55,#FFFACD);
+}
+.clockbox,
+#clock {
+    width: 100%;
 }
 
-.secondhand {
-   
-    width: 50%;
-    height: 5px;
-    color: black;
-    background-color: black;
-    border-radius: 2px;
-    transform: rotate(90deg);
-    transform-origin: 100%;
-    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
-    /* z-index: 1; */
-
+/* Clock styles */
+.circle {
+    fill: #DEB887;
+    stroke: #2F4F4F;
+    stroke-width: 15;
+    stroke-miterlimit: 10;
 }
 
-.hourhand {
-    width: 45%;
-    height: 7px;
-    color:chocolate;
-    background-color:black;
-    border-radius: 2px;
-    transform: rotate(-90deg);
-    /* transform-origin: 100%; */
-    transform-origin: left;
-    
- 
-    /* float: left; */
-    /* z-index: 3; */
-
+.mid-circle {
+    fill: #2F4F4F;
 }
-.second {
-    background-color: chartreuse;
-    transform: rotate(30deg);
+.hour-marks {
+    fill: none;
+    stroke: #000;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
 }
 
-.clock {
-    background-color:rgba(0, 110, 255, 0.3 );
-    
+.hour-arm {
+    fill: none;
+    stroke: #000;
+    stroke-width: 17;
+    stroke-miterlimit: 10;
 }
+
+.minute-arm {
+    fill: none;
+    stroke: #000;
+    stroke-width: 11;
+    stroke-miterlimit: 10;
+}
+
+.second-arm {
+    fill: none;
+    stroke: #000;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+}
+
+/* Transparent box ensuring arms center properly. */
+.sizing-box {
+    fill: none;
+}
+
+/* Make all arms rotate around the same center point. */
+/* Optional: Use transition for animation. */
+#hour,
+#minute,
+#second {
+    transform-origin: 300px 300px;
+    transition: transform .5s ease-in-out;
+}
+.created{
+  font-family: ;
+  font-style: italic;
+  color:  #CCFFCC;
+  text-align: center;
+}
+/* coded by Imran */
