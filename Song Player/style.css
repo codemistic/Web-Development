@@ -1,0 +1,109 @@
+
+body {
+  background-color: #222738;
+}
+* {
+    margin: 0;   /*m:0*/  
+    padding: 0;   /*p:0*/
+}
+nav{
+  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Varela Round', sans-serif; */
+
+}
+nav ul{
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  height: 42px;
+  background-color: black;
+  color: white;
+  
+}
+
+nav ul li{
+  padding: 0 10px;
+}
+
+.container{
+  min-height: 72vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  font-family: 'Varela Round', sans-serif;
+  margin: 23px auto;
+  width: 70%;
+  border-radius: 12px;
+  padding: 16px;
+  background-image: url('Spotify Clone/bg.jpg');
+  background-size: cover;
+  
+}
+
+.brand img{
+  width: 35px;
+  padding: 0 8px;
+
+}
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3rem;  
+}
+.bottom{
+  position: sticky;
+  height: 80px;
+  background-color: black;
+  bottom: 0;
+  display: flex;
+  justify-content: center;  /* read about this*/
+  align-items: center;     /* read about this*/
+  flex-direction: column;
+  color: white;
+}
+.icons{
+  color: white;
+  margin-top: 8px;
+}
+.icons i{
+  cursor: pointer;
+}
+#myProgressBar{
+  width: 90vw;
+  cursor: pointer;
+}
+.songItemContainer{
+  margin-top: 34px;
+}
+.songItem{
+  display: flex;
+  height: 45px;
+  background-color: white;
+  color: black;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 34px;
+  margin: 15px 0 ;
+}
+.songItem img{
+  width: 45px;
+  margin: 0 23px 0;
+  border-radius: 34px;
+}
+.timeStamp{
+  margin: 0 23px 0;
+}
+.timeStamp i{
+  cursor: pointer;
+}
+.songInfo{
+  position: absolute;
+  left: 11vh;
+  font-family: 'Varela Round', sans-serif;
+}
+.songInfo img {
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
