@@ -1,0 +1,91 @@
+
+body,html{
+   height: 100%;
+   margin: 0;
+   font: 400 15px/1.8 'Lato', sans-serif;
+}
+h1{
+    position: absolute;
+    margin-top: 40px;
+}
+
+header{
+    width: 250px;
+    margin: auto;
+    padding:20px auto 20px auto;
+    color: #111;
+    text-align: center; 
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.bgimg-1,.bgimg-2,.bgimg-3,.bgimg-4{
+    position: relative;
+    opacity: 0.65;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;;
+    background-attachment: fixed;
+}
+
+.bgimg-1{
+    background-image: url("pexels-craig-adderley-1724198.jpg");
+    min-height: 100%;
+}
+
+.bgimg-2{
+    background-image: url("pexels-rovenimagescom-949587.jpg");
+    min-height: 400px;
+}
+
+.bgimg-3{
+    background-image: url("pexels-pixabay-144241.jpg");
+    min-height: 400px;
+}
+
+.bgimg-4{
+    background-image: url("pexels-craig-adderley-1546901.jpg");
+    min-height: 100%;
+}
+
+.caption{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+.caption span.border{
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 7px;
+}
+
+.bgimg-2 .caption,.bgimg-3 .caption{
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+.demo{
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+    color: #777;
+    padding: 50px 80px;
+}
+
+.small-box{
+    position: relative;
+    padding: 50px;
+    text-align: center;
+    background-color: #282E34;
+    color: #fff;
+    font-size: 20px;
+}
+
