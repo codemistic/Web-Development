@@ -1,0 +1,30 @@
+.app__main {
+    display: flex;
+}
+
+.app__login {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.app__login>button{
+    border: none;
+    font-size: 24px;    
+    background-color: rgb(67, 130, 244);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+
+.app__login>button:hover{
+    cursor: pointer;
+    background-color: rgb(49, 94, 179);
+    transform: scale(1.1);
+}
+
+body{
+    overflow-x: hidden; /* Hide vertical scrollbar */
+}
