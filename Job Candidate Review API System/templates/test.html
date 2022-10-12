@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+    <h2 id="pop"></h2>
+    {% for applicant in applicants %}
+    {{applicant.sop}}
+    <h3>Sup</h3>
+    {% endfor %}
+    <button onclick="get()">GET</button>
+    <button onclick="post()">POST</button>
+</body>
+ <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> --> 
+<script>
+    function get(){
+        // Make a request for a user with a given ID
+        var t= "";
+        axios.get('/job_apply/jobprofiles')
+        //axios.get('/job_apply/applications')
+        .then(function (response) {
+            // handle success
+            console.log(response);
+            // console.log(response.data[0]);
+            for(var i=0;i<response.data.length; i++){
+                console.log(response.data[i]);
+                 t+=response.data[i].email+" ";
+            }
+            document.getElementById('pop').innerHTML = t;
+        })
+        .catch(function (error) {
+            // handle error
+            console.log(error);
+        })
+        .then(function () {
+            // always executed
+        })
+    }
+    function post(){
+        axios.post('/job_apply/jobprofiles/', 
+        {
+            first_name: "vinod",
+            last_name: "raj",
+            email: "vinodraj@gmail.com",
+            password: "vinodmeena"
+        },{headers:{"Content-Type" : "application/json"}})
+        //     axios.post(
+        // 'https://reqres.in/api/register',
+        // {
+        //     email: 'eve.holt@reqres.in',
+        //     password: 'pistol'
+        // })
+        .then(function (response) {
+            // handle success
+            console.log(response);
+        })
+        .catch(function (error) {
+            // handle error
+            console.log(error.response.data);
+        })
+        .then(function () {
+            // always executed
+        });
+    }
+
+</script>
+</html>

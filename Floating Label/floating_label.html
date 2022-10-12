@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Label</title>
+    <style>
+        body{
+            background-color: gray;
+            margin: 50px;
+        }
+        .input-container{
+            width: 280px;
+            position: relative;
+            align-items: center;
+        }
+        .label{
+            position: absolute;
+            left: 10px;
+            top: 14px;
+            transition: all 0.2s;
+            padding: 0 2px;
+            z-index: 1;
+            color: #b3b3b3;
+        }
+        .text-input{
+            padding: 0.8rem;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #2f2c45;
+            background: #272530;
+            border-radius: 5px;
+            font-size: 18px;
+            outline: none;
+            transition: all 0.3s;
+            color: #fff;
+        }
+        .label::before{
+            content: "";
+            height: 5px;
+            background: #272530;
+            position: absolute;
+            left: 0px;
+            top: 10px;
+            width: 100%;
+            z-index: -1;
+        }
+        .text-input:focus{
+            border: 2px solid #7e4ccb;            
+        }
+        .text-input:focus+.label, .filled{
+            top: -10px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .text-input::placeholder{
+            font-size: 16px;
+            opacity: 0;
+            transition: all 0.3s;
+        }
+        .text-input:focus::placeholder{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="input-container">
+        <input type="text" name="username" id="username" class="text-input" autocomplete="off" placeholder="Enter your username" required>
+        <label for="username" class="label">Username</label>
+    </div>
+
+    <script>
+        const inputs= document.querySelectorAll('.text-input');
+        inputs.forEach(element=>{
+            element.addEventListener("blur",(event)=>{
+                if(event.target.value != '')
+                    event.target.nextElementSibling.classList.add('filled')
+                else
+                    event.target.nextElementSibling.classList.remove('filled')
+            })
+        })
+    </script>
+</body>
+</html>

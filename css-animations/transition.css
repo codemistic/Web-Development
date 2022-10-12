@@ -1,0 +1,19 @@
+body{
+  background: #333;
+}
+
+.box{
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin: auto;
+  top: 200px;
+  background: white;
+  transition-property: background,border-radius;
+  transition-duration: 2s;
+}
+
+.box:hover{
+  background:red;
+  border-radius: 50%;
+}

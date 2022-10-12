@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 style="color: #ffffff"class="text-center mb-3">{% block title %} Welcome to Linkcito {% endblock %}</h1>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <form method="post" action="{{url_for('index')}}">
+            <div class="form-floating mb-3">
+                <input type="text" name="url" id="url"
+                    placeholder="Enter looooooooooooong URL" class="form-control"
+                    value="{{ request.form['url'] }}" autofocus></input>
+                <label style="color: #242424" for="url">URL</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" name="custom_id" id="custom_id"
+                    placeholder="Want to customise? (optional)" class="form-control"
+                    value="{{ request.form['custom_id'] }}"></input>
+                <label style="color: #242424" for="custom_id">Custom Short ID</label>
+            </div>
+
+            <div class="form-group text-center">
+                <button style="background-color: #F95B5C !important; border-color: #F95B5C !important" 
+                type="submit" class="btn btn-lg btn-primary">Shorten</button>
+            </div>
+            </form>
+
+            {% if short_url %}
+            <hr>
+            <h5 class="text-center" style="color: #ffffff">This is your short URL:</h5 style="color:">
+            <div class="text-center"><a style="color:#f8f9fa"href="{{ short_url }}" target="_blank">{{ short_url }}</a></div>
+            {% endif %}
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+{% endblock %}

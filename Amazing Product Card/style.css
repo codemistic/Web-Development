@@ -1,0 +1,191 @@
+body{
+    background-color: rgb(54, 54, 54)
+}
+.cardcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 130px;
+}
+.cardcontainer .card{
+    background-image: url("background_nike.jpg");
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* filter: blur(2px); */
+    width: 250px;
+    height: 360px;
+    object-fit: fill;
+    overflow: hidden;
+    position: relative;
+}
+.cardcontainer .card .container{
+    display: grid;
+}
+.cardcontainer .card .container .shoecircle{
+    position: relative;
+    height: 225px;
+    overflow: hidden;
+}
+.cardcontainer .card .container .shoecircle .circle{
+    z-index: 9;
+    margin: 18px; /* for demo purpose  */
+    height: 100px;
+   
+}
+.cardcontainer .card .container .shoecircle .circle i{
+    color: #de3434;
+    font-size: 270px;
+    margin-left: 80px;   
+}
+
+.container.change i{
+    color: #00C3C0;
+}
+
+.cardcontainer .card .container .shoecircle .shoe{
+    margin-top: 45px;
+    width: 100%;
+    height: 100%;            
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: drop-shadow(2px 2px 5px rgb(199, 197, 197));
+    /* transition: 1s; */
+}
+
+.c
+
+.container.change .img1{
+    transform: translateX(-50rem) rotate(45deg); 
+}
+
+.img2{
+    /* width: 100px; */
+    position: absolute;
+    top: 20px;
+    right: -185px;
+}
+
+.cardcontainer .card .container h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 22px;
+    margin-bottom: 90px;
+}
+.cardcontainer .card .container .colors{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.cardcontainer .card .container .colors .color-1, .color-2, .color-3, .color-4{
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    background: red;
+    cursor: pointer;
+}
+.color-1{
+    background: #FF0625;
+    margin-right: 8px;
+    margin-left: 3px;
+    box-shadow: 0px 1px 2px #ff8a97 0.5;
+}
+.color-2{
+    background: #00C3C0;
+    margin-right: 8px;
+    box-shadow: 0px 1px 2px #abfffe 0.5;
+}
+.color-3{
+    background: #C1F417;
+    margin-right: 8px;
+    box-shadow: 0px 1px 2px #d7f37b 0.5;
+}
+.color-4{
+    background: #007EFF;
+    margin-right: 8px;
+    box-shadow: 0px 1px 2px #a5b9ce 0.5;
+}
+.data .size{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.data .size li{
+    list-style: none;
+    padding: 4px;
+}
+.data .size a{
+    display: block;
+    background-color: white;
+    text-decoration: none;
+    padding : 3px;
+    font-size: 12px;
+    border-radius: 3px;
+    font-weight: bold;
+    color: black;
+}
+.data .size a:hover{
+    background-color: #ee5353;
+}
+.shoecircle, .circle, .shoe, .data, .colors, h2, .but, i{
+    transition: 0.5s;
+}
+.card:hover .shoe{
+    transform: translateY(-70px) rotate(-7deg);
+}
+.card:hover .circle{
+    width: 200px;
+    height: 500px;
+    font-size: 100px;
+    transform: translateY(-30px);
+}
+.greenblue:hover~.shoe,
+.red:hover~.shoe,
+.yellow:hover~.shoe 
+.blue:hover~.shoe{
+  visibility: hidden;
+}
+.card:hover .circle i{
+    transform: translate(-50px, -30px);
+    font-size: 400px;
+}
+.card:hover h2{
+    transform: translateY(-45px);
+}
+.card:hover .data{
+    transform: translateY(-130px);
+    /* transition-delay: .2s; */
+}
+.card:hover .but{
+    transform: translateY(-150px);
+    transition-delay: .2s;
+}
+.but{
+    text-align: center;
+    background: white;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 32%;
+    padding: 5px;
+    margin-top: 30px;
+    margin-left: 85px;
+}
+.but a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Changa', sans-serif;
+}
+.but a:hover{
+    padding-top: 10px;
+    color: #de3434;
+}

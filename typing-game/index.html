@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>typing game</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+     <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <button id="setting-btn" class="setting-btn">
+      <i class="fas fa-cog"></i>
+    </button>
+    <div id="setting" class="setting">
+      <form action="" id="setting-form">
+        <div class="">
+          <label for="difficulty">🛠️LEVEL</label>
+          <select name="" id="difficulty">
+            <option value="easy">easy</option>
+            <option value="medium">medium</option>
+            <option value="hard">hard</option>
+          </select>
+        </div>
+      </form>
+    </div>
+
+    <div class="container">
+      <h2>✍️Lets test your typing speed</h2>
+      <small>💻type the following word</small>
+      <h1 id="word"></h1>
+      <input
+        type="text"
+        id="text"
+        autocomplete="off"
+        placeholder="please type the word here"
+      />
+      <p class="time-container">⏲️time left : <span id="time">10s</span></p>
+      <p id="score-container" class="score-container">
+        💥score: <span id="score">0</span>
+      </p>
+      <div id="end-game-container" class="end-game-container"></div>
+    </div>
+    <script src="script.js" async defer></script>
+  </body>
+</html>

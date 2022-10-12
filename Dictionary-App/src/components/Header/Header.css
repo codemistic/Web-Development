@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;1,100&display=swap");
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 35vh;
+  width: 100%;
+}
+
+.title {
+  font-size: 7vw;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+}
+
+.input {
+  width: 100%;
+}
+
+.search,
+.select {
+  width: 43%;
+}
+
+@media (max-width: 500px) {
+  .header {
+    height: 25vh;
+  }
+  .title {
+    font-size: 11vw;
+  }
+}

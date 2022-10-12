@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: violet;
+    display: flex;
+}
+.game-box {
+    width: 537px;
+    
+    margin: auto;
+    
+    
+    display: flex;
+    flex-wrap: wrap;
+    transform: scale(1);
+    perspective: 1000px;
+}
+.game-image {
+position: relative;
+    margin: 1.5px;
+    margin-top: -1.8px;
+    transform-style: preserve-3d;
+    transition: transform .6s;
+    
+    
+}
+
+.cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 5%;
+    backface-visibility: hidden;
+}
+.game-image:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+}
+.flipping {
+    transform: rotateY(180deg);
+}
+.face {
+border-radius: 5%;
+    transform: rotateY(180deg);
+}

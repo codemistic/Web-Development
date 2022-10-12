@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<form name="fnew">
+<label>NAME :</label>
+<input type="text" name="nm" placeholder="name please"   minlength="10"   required/>
+<br><br>
+<label>User Id:</label>
+<input type="number" name="uid" placeholder="number only" required>
+<br><br>
+<label>Password:</label>
+<input type="password" name="pwd" placeholder="pwd please"  required/>
+<br><br>
+<label>Age :</label>
+<input type="number" name="age" placeholder="Age please"   min="20" max="30" required>
+<br><br>
+<label>Email :</label>
+<input type="email" name="em" placeholder="xxxx@xxx.xxx" required>
+<br><br>
+<label>Gender:</label>
+<input type="radio" name="gen" value="Male" required>M
+<input type="radio" name="gen" value="female" required>F
+<br><br>
+<label>State:</label>
+<select name="loc" required>
+<option value="">Select State</option>
+<option value="westbengal">wb</option>
+<option value="bihar">bhr</option>
+<option value="tamilnadu">tn</option>
+<option value="assam">assm</option>
+<option value="odissa">odh</option>
+<option value="madhya pradesh">mp</option>
+</select>
+<br><br>
+<label>Education :</label>
+<input type="checkbox" name="edu" value="graduate" required>Grad
+<input type="checkbox" name="edu" value="post graduate">PG
+<input type="checkbox" name="edu" value="btech">B.E
+<input type="checkbox" name="edu" value="mtech">M.E
+<input type="checkbox" name="edu" value="mba">MBA
+<br><br>
+<label>DOB :</label>
+<input type="date" name="dob" placeholder="DD-MM-YYYY" required>
+<br><br>
+<label>CV Upload :</label>
+<input type="file" name="fl" required>
+<br><br>
+<label>Remarks:</label>
+<textarea name="remrk" placeholder="Write something..." cols="20" rows="5" required></textarea>
+<br><br>
+<input type="submit" value="REGISTER"> 
+<input type="reset" value="RESET">
+</form>
+</body>
+</html>

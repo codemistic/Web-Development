@@ -13,18 +13,19 @@
   
   h1 {
     width: 90%;
-    position: absolute;
+    position:relative;
     top: -3.5rem;
     font-size: 1.5rem;
     text-align: center;
     font-family: sans-serif;
+    color: #083AA9;
   }
   
   #inputFile {
     padding: 0.4rem;
     font-size: 1rem;
-    margin-top: 1rem;
-    border: 2px solid gray;;
+    margin-top: 0rem;
+    border: 2px solid #905E96;
     outline: none;
     border-radius: 5px;
   }
@@ -37,19 +38,20 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 1rem;
+    margin-bottom: 1rem;
     padding: 1rem;
-    border: 2px solid gray;
+    border: 2px solid #905E96;
     border-radius: 5px;
   }
   
   .btnScr {
-    width: 4rem;
-    background: green;
+    width: 6.5rem;
+    background: #5F9DF7;
     color: #fff;
     padding: 0.3rem;
-    border: none;
+    border: 2px solid #905E96;
     outline: none;
-    border-radius: 5px;
+    border-radius: 9px;
     margin-top: 0.6rem;
     cursor: pointer;
     transition: all 0.2s ease-in;
@@ -66,6 +68,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    color: #002E94;
     margin: 0 0.25rem 0.25rem 0.25rem;
   }
   
@@ -75,7 +78,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid gray;
+    border: 2px solid #FFD384;
     border-radius: 5px;
   }
   
@@ -86,7 +89,7 @@
     top: 0rem;
     right: 0.3rem;
     background: transparent;
-    color: #000;
+    color: #002E94;
     border: none;
     outline: none;
     cursor: pointer;

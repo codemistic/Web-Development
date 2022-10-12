@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Mono:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.parent {
+  height: 90%;
+  width: 80%;
+  background: #e3e3e3b1;
+  backdrop-filter: blur(1px);
+  border-radius: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem;
+  font-family: "Roboto Mono", monospace;
+}
+.parent .outputArea {
+  padding-left: 1rem;
+  border-left: 1px solid rgb(114, 114, 114);
+}
+.parent h2 {
+  font-family: "Righteous", cursive;
+  letter-spacing: 0.2rem;
+}
+.parent .display {
+  background: #f3f3f3;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  height: 85%;
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+.parent .controlArea {
+  padding-right: 1rem;
+  font-weight: 300;
+}
+.colorControl,
+.sizeControl {
+  margin: 1.5rem 0;
+  padding: 0.5rem;
+  padding-top: 1rem;
+  border: 1px solid grey;
+  border-radius: 0.5rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1rem;
+}
+.CS {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* border-right: 1px solid black; */
+  /* padding: 0 0.5rem; */
+  /* background: rgb(236, 236, 236); */
+}
+.CS span {
+  line-height: 25px;
+}
+input {
+  background-color: #fff;
+  border-color: #dbdbdb;
+  border-radius: 4px;
+  color: #363636;
+}
+.colorSwatch {
+  padding: 0.2rem;
+}
+.sectionHeading {
+  position: absolute;
+  top: -1rem;
+  left: 0.5rem;
+  /* background: #e3e3e3; */
+  background: linear-gradient(-45deg, #e7b7b7, #e5b0c5, #a9d1df, #a9dfd2); 
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  width: fit-content;
+  padding: 0 0.5rem;
+}
+.sizePad {
+  outline: none;
+}
+.bsParent .CS {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  column-gap: 1rem;
+  text-transform: capitalize;
+}
+.marginParent {
+  grid-template-columns: repeat(4, 1fr);
+}
+.marginParent .CS input.sizePad {
+  width: 5rem;
+}
+.bRadParent {
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3rem;
+  row-gap: 0.5rem;
+}
+.bRadParent .CS {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* column-gap: 4rem; */
+}
+.bRadParent .CS input.sizePad {
+  width: 5rem;
+}
+.copyToClipboard {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 0.5rem;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.copyToClipboard:hover {
+  background: rgb(195, 195, 195);
+}
