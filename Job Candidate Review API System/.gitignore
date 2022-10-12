@@ -1,8 +1,0 @@
-**/__pycache__
-**/db.sqlite3
-**/DB backup
-**/log.txt
-**/staticfiles
-**/media
-templates/logs*
-job_profiles/migrations*
