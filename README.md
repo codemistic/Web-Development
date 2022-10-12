@@ -1,3 +1,4 @@
+## This repository is no longer a part of Hacktoberfest 2022
 <h1 align="centre">
     <b>Web Developement</b>
 </h1>
@@ -58,3 +59,6 @@ Update in progress....
 [![views](https://komarev.com/ghpvc/?username=codemistic&label=Profile%20views&color=0e75b6&style=flat)](https://github.com/codemistic)
 
 <a href="https://telegram.me/codemistic"><img alt="Custom badge for codemistic Group" src="https://img.shields.io/endpoint?style=for-the-badge&amp;url=https%3A%2F%2Frunkit.io%2Fdamiankrawczyk%2Ftelegram-badge%2Fbranches%2Fmaster%3Furl%3Dhttps%3A%2F%2Ft.me%2Fcodemistic"></a>
+
+### Contributors
+
