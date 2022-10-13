@@ -1,0 +1,272 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Avaiate | Job Review System {% endblock %}
+
+{% block main %}
+<style>
+.viewsApplicationsBtn {
+    position: absolute    ;
+    top: 80px;
+    right: 10px;
+    color: white;
+    background-color: #254292;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.viewsApplicationsBtn:hover {
+    filter: brightness(80%);
+}
+    
+@media screen and (max-width: 600px){
+.viewsApplicationsBtn {
+    position: absolute;
+    top: 50px;
+    font-size: 14px;
+    right: 10px;
+    color: white;
+    background-color: #254292;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.5s;
+    }
+}
+</style>
+<div  style="margin-left:auto !important; margin-right:auto !important; display:flex; justify-content:center">
+<button onclick="get(event)">GET APPLICANTS</button>&nbsp;
+<button><a href="{% url 'job_profiles:apply' %}">CREATE NEW APPLICATION</a></button></div>
+
+<div class="section__projects" id="maincontainer" style="margin-left:auto; margin-right:auto">
+    <div id="repeat">
+    <div class="section__projectCard is-collapsed">
+        <div class="section__projectCardInner" style="height: 325px !important;">
+            <p class="section__projectCardTitle" id="fullname"></p>
+            <p class="section__projectCardSecondaryText" id="email"></p>
+            <p class="section__projectCardMode"><b>Status:</b> <span id="status"></span></p>
+            <p class="section__projectCardDetail"></p>
+            <p class="section__projectCardSubtitle" style="margin-top: 10px;">Applied On: <span id="applied_on"></span></p>
+            <p class="section__projectCardAction js-expander">Read more</p>
+        </div>
+        <div class="section__projectDetails">
+            <i class="fa fa-close js-collapser"></i>
+            <h1 style="margin-bottom: 20px;">Candidate Details</h1>
+            <div class="section__projectInfo" style="flex:1;">
+                <div class="section__projectInfo-sub">
+                    <p><b><i class=" fas fa-file-signature"></i></i>Name: </b><span id="fullname2"></span></p>
+               
+                    <p><b><i class="fas fa-university"></i></i>University: </b><span></span></p>
+                    <p><b><i class="fas fa-calendar-day"></i></i>Applied On: </b><span id="applied_on2"></span></p>
+                </div>
+                <div class="section__projectInfo-sub">
+                    <p><b><i class="fas fa-calendar-alt"></i></i>Email: </b><span id="email2"></span>
+                    </p>
+                    <p><b><i class="fas fa-dollar-sign"></i>Status: </b><span id="status2"></span></p>
+                    <form style="display:none" class="status_form" onsubmit="patch(event)">
+                        <label for="status_change"><p>Choose Status: </p></label>
+                        <select id="status_change" class="status_change" name="status_change">
+                            <option value="Applied">Applied</option>
+                            <option value="Shortlisted">Shortlisted</option>
+                            <option value="Rejected">Rejected</option>
+                            <option value="Accepted">Accepted</option>
+                        </select>
+                        <input type="hidden" id="status_email">
+                        <input type="hidden" id="status_password">
+                        <input type="hidden" class="status_id" id="status_id">
+                        <input type="hidden" id="no_of_app">
+                        <button type="submit">Change</button>
+                    </form>
+                </div>
+            </div>
+            <p class="section__projectDetails2" style="flex-direction: column;"><b><i
+                        class="fas fa-info-circle"></i>SOP: <p id="sop"></p>
+                </b><br><br> <span><b>Files: </b></span><span></span></p>
+            <p><b><i class="fas fa-puzzle-piece"></i>Resume: <a id="cv" download>Download</a>
+                </b><span></span></p>
+                <button onclick="openstatus(event)">Change Status</button>
+        </div>
+
+</div>
+</div>
+</div>
+
+<a style="display:none;" href="{% url 'job_profiles:Job_Applications' %}" id="reloader"></a> 
+<script>
+    function openstatus(event) {
+        event.preventDefault();
+        let x = document.getElementsByClassName('status_form');
+        console.log(x);
+        for(let y in x){
+            document.getElementsByClassName('status_form')[y].style.display="block";
+        }
+    }
+
+    function getCookie(name) {
+        var cookieValue = null;
+        if (document.cookie && document.cookie !== '') {
+            var cookies = document.cookie.split(';');
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = jQuery.trim(cookies[i]);
+                if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+    }
+
+    function get(event){
+    event.preventDefault();
+    var divrepeat = document.getElementById("repeat"), container = document.getElementById("maincontainer");
+    // Make a request for a user with a given ID
+    axios.get('/job_apply/applications')
+    .then(async function (response) {
+        // handle success
+
+        let length = response.data.length;
+        let sop = [], status = [];
+        let cv = [];
+        let applied_on = [];
+        let j=0;
+        let application_ids = [];
+        for(var i=0;i<response.data.length; i++){
+            event.preventDefault();
+            sop[i]=response.data[i].sop;
+            cv[i]=response.data[i].cv;
+            status[i]=response.data[i].status;
+            application_ids[i] = response.data[i].id;
+            applied_on[i] = response.data[i].applied_on.substring(0,10);
+            await axios.get(`/job_apply/jobprofiles/${response.data[i].job_profile}/`)
+            .then(function(secondresponse) {
+                    //console.log(secondresponse.data);
+                    document.getElementById('fullname').innerHTML = secondresponse.data.first_name + " " + secondresponse.data.last_name;
+                    document.getElementById('fullname2').innerHTML = secondresponse.data.first_name + " " + secondresponse.data.last_name;
+                    document.getElementById('email').innerHTML = secondresponse.data.email;
+                    document.getElementById('email2').innerHTML = secondresponse.data.email;
+                    document.getElementById('cv').href = cv[j];
+                    document.getElementById('applied_on').innerHTML = applied_on[j];
+                    document.getElementById('applied_on2').innerHTML = applied_on[j];
+                    document.getElementById('status').innerHTML = status[j];
+                    document.getElementById('status2').innerHTML = status[j];
+                    
+                    document.getElementById('status_email').value = secondresponse.data.email;
+                    document.getElementById('status_password').value = secondresponse.data.password;
+                    document.getElementById('status_id').value = application_ids[j];
+                    document.getElementById('sop').innerHTML = sop[j++];
+                    document.getElementById('no_of_app').value = length;
+
+                    if(j<length){
+                        let clone = divrepeat.cloneNode(true);
+                        container.appendChild(clone);
+
+                        let projectCards = Array.from(document.getElementsByClassName("section__projectCard"));
+                        //console.log(document.getElementsByClassName("section__projectCard"));
+                        let projectCardTimeout;
+                        let isOtherProjectOpen = false;
+                        projectCards.map(projectCard => {
+                            projectCard.querySelector(".js-expander").addEventListener("click", () => {
+                                if (projectCard.classList.contains("is-collapsed")) {
+                                    projectCards.map(projectCard => {
+                                        projectCard.classList.remove("is-expanded");
+                                        projectCard.classList.add("is-collapsed");
+                                        projectCard.style.zIndex = 0;
+                                    });
+                                    clearTimeout(projectCardTimeout);
+                                    projectCardTimeout = setTimeout(() => {
+                                        projectCard.classList.remove("is-collapsed");
+                                        projectCard.classList.add("is-expanded");
+                                        projectCard.style.zIndex = 1;
+                                        window.scrollTo(0, projectCard.offsetTop + 150);
+                                    }, isOtherProjectOpen ? 300 : 0);
+
+                                    // switch isOtherProjectOpen
+                                    isOtherProjectOpen = true;
+                                }
+                                else {
+                                    projectCard.classList.remove("is-expanded");
+                                    projectCard.classList.add("is-collapsed");
+                                    projectCard.style.zIndex = 0;
+                                    window.scrollTo(0, projectCard.offsetTop - 200);
+                                    isOtherProjectOpen = false;
+                                }
+                            });
+
+                            projectCard.querySelector(".js-collapser").addEventListener("click", () => {
+                                projectCard.classList.remove("is-expanded");
+                                projectCard.classList.add("is-collapsed");
+                                projectCard.style.zIndex = 0;
+                                window.scrollTo(0, projectCard.offsetTop - 200);
+                                isOtherProjectOpen = false;
+                            });
+                        });
+
+                    }
+            })
+        }
+        
+    })
+    .catch(function (error) {
+        // handle error
+        console.log(error.response.data);
+    })
+    .then(function () {
+  
+    })
+    
+}
+
+    function patch(event) {
+        event.preventDefault();
+        const csrfToken = getCookie('XSRF-TOKEN');
+        console.log(csrfToken)
+        let email = document.getElementById('status_email').value;
+        let password = document.getElementById('status_password').value;
+        let job_profileid = document.getElementById('status_id').value;
+        console.log("WOW",email,"Passwrod",password);
+        console.log(status);
+        var session_url = '/job_apply/login/';
+        var uname = email;
+        var pass = password;
+        axios.post(session_url, {
+            username: 'nk@gmail.com',     //Add SuperUser credentials here so that he/she can edit any job applications he/she wants
+            password: '1234',            
+        }
+        ,{ headers: { 
+            'X-CSRFToken': csrfToken, 
+        }}
+        ).then(async function(response) {
+
+            console.log('Authenticated');
+            auth = response.data.token;
+            let no_of_app = document.getElementById('no_of_app').value;
+            for(let p=0;p<no_of_app;p++){
+                let app_id = document.getElementsByClassName('status_id')[p].value;
+                let statuschange = document.getElementsByClassName('status_change')[p].value;
+                await axios.patch(`/job_apply/applications/${app_id}/`,
+                    {  
+                        status: statuschange
+                },
+                    { headers: { 
+                        'Authorization': `Token ${auth}`,
+                        'X-CSRFToken': csrfToken, 
+            
+                }}
+                ).then((response) => {
+                    console.log(response.data);
+                    console.log("Check if changed");
+
+                }).catch((error) => {
+                    console.log("last error: ",error.response.data);
+                })
+
+            }
+        }).then(function () {
+                    
+            document.getElementById('reloader').click();
+        });
+    }
+
+</script>
+{% endblock %}

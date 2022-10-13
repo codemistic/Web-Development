@@ -1,0 +1,85 @@
+@import url(//db.onlinewebfonts.com/c/ea0517f0c20dfd81ffa9363950561257?family=FlexoW01-Regular);
+@font-face {font-family: "FlexoW01-Regular"; src: url("//db.onlinewebfonts.com/t/ea0517f0c20dfd81ffa9363950561257.eot"); };
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    background: url(./6068.png) center center no-repeat;
+    background-attachment: fixed;
+    position:relative;
+    font-family: 'Flexo-Medium',arial,sans-serif;
+}
+.container{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    filter: blur(0px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff ;
+}
+.list{
+    width: 120%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.pokemon{
+    width: 350px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 25px;
+    /* text-align: center; */
+    margin: 10px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+.images{
+    width: 200px;
+    height: 200px;
+}
+.details{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 300px;
+    justify-content: center;
+}
+.type{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.types{
+    border-radius: 25px;
+    font-size: 15px;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    /* background-color: greenyellow; */
+    margin: 5px;
+    padding-top: 9px;
+}
+.loader{
+    font-size: 50px;
+    color: #444;
+    position: fixed;
+    left: 50%;
+    top: 50vh;
+}

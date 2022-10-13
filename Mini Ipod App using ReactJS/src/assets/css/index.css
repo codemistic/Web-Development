@@ -1,0 +1,214 @@
+/* -----------------------------Google Fonts-------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Lobster&display=swap");
+
+/* --------------------------------General Styling-------------------------------- */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-user-drag: none;
+	user-select: none;
+	-webkit-user-select: none;
+}
+body {
+	margin: auto;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+		"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+		"Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow: hidden;
+}
+body::-webkit-scrollbar {
+	display: none;
+	overflow: hidden;
+}
+
+/* --------------------------------Transition Styling-------------------------------- */
+.ipod,
+.top-container,
+.bottom-container,
+.display-container,
+.display,
+.display > img,
+.menu,
+.controller-container,
+.controller {
+	transition: all 2s linear;
+}
+
+/* --------------------------------Ipod Styling-------------------------------- */
+.ipod {
+	height: 580px;
+	width: 370px;
+	background: linear-gradient(90deg, #e3e4e5, #cacaca);
+	border-radius: 10%;
+	margin: auto;
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* --------------------------------Ipod Top Container Styling-------------------------------- */
+/* Top Container */
+.ipod .top-container {
+	background: linear-gradient(90deg, #e3e4e5, #cacaca);
+	border-radius: 10%;
+	height: 50%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 2;
+	border-top-left-radius: 10%;
+	border-top-right-radius: 10%;
+}
+/* Display Container */
+.ipod .display-container {
+	border-radius: 10%;
+	background: linear-gradient(90deg, #e3e4e5, #cacaca);
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 2;
+}
+/* Display */
+.display {
+	z-index: 2;
+	border-top-left-radius: 10%;
+	border-top-right-radius: 10%;
+	background: linear-gradient(45deg, #e3e4e5, #cacaca);
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+/* Menu */
+.menu {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 40%;
+	height: 100%;
+	font-family: "Lobster", cursive;
+	background-color: white;
+	border-top-left-radius: 10%;
+	z-index: 10;
+	position: absolute;
+	top: 0%;
+}
+/* Toggle Menu */
+.hide {
+	display: none;
+}
+/* Menu Options */
+#options {
+	font-family: "Kanit", sans-serif;
+	font-weight: bolder;
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 3rem;
+}
+/* Menu Options Arrow Select Image */
+#options img {
+	height: 10px;
+	width: 10px;
+	margin-right: 15px;
+	display: none;
+}
+
+/* --------------------------------Ipod Bottom Container Styling-------------------------------- */
+/* Bottom Container */
+.ipod .bottom-container {
+	border-bottom-left-radius: 10%;
+	border-bottom-right-radius: 10%;
+	height: 50%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	-webkit-box-reflect: below -5px linear-gradient(transparent, transparent, #0004);
+	z-index: 0;
+}
+/* Controller Container */
+.ipod .controller-container {
+	border-bottom-left-radius: 10%;
+	border-bottom-right-radius: 10%;
+	filter: brightness(100%);
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	z-index: 0;
+}
+/* Controller */
+.ipod .controller-container .controller {
+	background: linear-gradient(45deg, #cacaca, gray);
+	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+/* Enter Button */
+.ipod .controller-container .controller .inner-circle {
+	background: linear-gradient(200deg, #cacaca, gray);
+	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+/* Enter Button Click Effect */
+.down {
+	transform: translateY(3px);
+	box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+	transition: 0.18s ease-in-out;
+}
+/* Menu Button */
+.menu-btn {
+	position: absolute;
+	top: 20px;
+}
+/* Play Pause Button */
+.play-pause {
+	position: absolute;
+	bottom: 12px;
+}
+/* Next Button */
+.forward {
+	position: absolute;
+	right: 7px;
+}
+/* Previous Button */
+.backward {
+	position: absolute;
+	left: 8px;
+}
+/* -------------------------------Music Player Styling------------------------------- */
+/* Progress Bar */
+.progress {
+	background-color: red;
+	height: 100%;
+	width: 0%;
+	transition: width 0.1s linear;
+	border-radius: 50px;
+}
+/* Music Player Cover */
+.music-player img {
+	-webkit-box-shadow: 0px 0px 12px 7px rgba(255, 255, 255, 1);
+	-moz-box-shadow: 0px 0px 12px 7px rgba(255, 255, 255, 1);
+	box-shadow: 0px 0px 12px 7px rgba(255, 255, 255, 1);
+}

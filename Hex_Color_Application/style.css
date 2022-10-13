@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+body{font-family: 'Comfortaa', cursive;}
+
+.container{
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#hex-colors{
+  width: 100%;
+  text-align: center;
+}
+
+#hex-colors h1, h2{
+  font-size: 2rem;
+  text-transform: uppercase;
+  -ms-animation: colorchange 5s infinite alternate;
+  -moz-animation: colorchange 5s infinite alternate;
+  -o-animation: colorchange 5s infinite alternate; 
+  animation: colorchange 5s infinite alternate; 
+}
+
+#hex-colors h2{
+  margin-top: 15%;
+  text-transform: lowercase;
+}
+
+@-ms-keyframes colorchange{
+  0% {
+        color: #ffffff;
+      }
+      
+      20% {
+        color: #cccccc;
+      }
+      
+      40% {
+        color: #999999;
+      }
+      
+      60% {
+        color: #666666;
+      }
+      
+      80% {
+        color: #333333;
+      }
+      
+      100% {
+        color: #000000;
+      } 
+}
+
+@-moz-keyframes colorchange{
+    0% {
+        color: #ffffff;
+      }
+      
+      20% {
+        color: #cccccc;
+      }
+      
+      40% {
+        color: #999999;
+      }
+      
+      60% {
+        color: #666666;
+      }
+      
+      80% {
+        color: #333333;
+      }
+      
+      100% {
+        color: #000000;
+      } 
+}
+
+@-o-keyframes colorchange{
+    0% {
+        color: #ffffff;
+      }
+      
+      20% {
+        color: #cccccc;
+      }
+      
+      40% {
+        color: #999999;
+      }
+      
+      60% {
+        color: #666666;
+      }
+      
+      80% {
+        color: #333333;
+      }
+      
+      100% {
+        color: #000000;
+      }  
+}
+
+@keyframes colorchange {
+    0% {
+        color: #ffffff;
+      }
+      
+      20% {
+        color: #cccccc;
+      }
+      
+      40% {
+        color: #999999;
+      }
+      
+      60% {
+        color: #666666;
+      }
+      
+      80% {
+        color: #333333;
+      }
+      
+      100% {
+        color: #ffffff;
+      }  
+}
+
+@media(max-width:480px){
+  #hex-colors h1{font-size: 1.5rem;}
+  
+  #hex-colors h2{font-size: 1.5rem;}
+}

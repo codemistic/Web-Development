@@ -1,0 +1,131 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    background: #ffc600;
+    font-family: 'helvetica neue';
+    font-weight: 200;
+    font-size: 20px;
+    background-color: #3BC1AC;
+    background-image:
+        radial-gradient(circle at 100% 150%, #3BC1AC 24%, #42D2BB 25%, #42D2BB 28%, #3BC1AC 29%, #3BC1AC 36%, #42D2BB 36%, #42D2BB 40%, transparent 40%, transparent),
+        radial-gradient(circle at 0 150%, #3BC1AC 24%, #42D2BB 25%, #42D2BB 28%, #3BC1AC 29%, #3BC1AC 36%, #42D2BB 36%, #42D2BB 40%, transparent 40%, transparent),
+        radial-gradient(circle at 50% 100%, #42D2BB 10%, #3BC1AC 11%, #3BC1AC 23%, #42D2BB 24%, #42D2BB 30%, #3BC1AC 31%, #3BC1AC 43%, #42D2BB 44%, #42D2BB 50%, #3BC1AC 51%, #3BC1AC 63%, #42D2BB 64%, #42D2BB 71%, transparent 71%, transparent),
+        radial-gradient(circle at 100% 50%, #42D2BB 5%, #3BC1AC 6%, #3BC1AC 15%, #42D2BB 16%, #42D2BB 20%, #3BC1AC 21%, #3BC1AC 30%, #42D2BB 31%, #42D2BB 35%, #3BC1AC 36%, #3BC1AC 45%, #42D2BB 46%, #42D2BB 49%, transparent 50%, transparent),
+        radial-gradient(circle at 0 50%, #42D2BB 5%, #3BC1AC 6%, #3BC1AC 15%, #42D2BB 16%, #42D2BB 20%, #3BC1AC 21%, #3BC1AC 30%, #42D2BB 31%, #42D2BB 35%, #3BC1AC 36%, #3BC1AC 45%, #42D2BB 46%, #42D2BB 49%, transparent 50%, transparent);
+    background-size: 100px 50px;
+}
+.speech{
+    padding: 2rem;
+    width: 50rem;
+    margin: 3vh auto;
+    border-radius: 1rem;
+    position: relative;
+    background: white;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+}
+
+.words {
+    max-width: 500px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem 1rem 5rem;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#d9eaf3), color-stop(4%, #fff)) 0 4px;
+    background-size: 100% 3rem;
+    position: relative;
+    line-height: 3rem;
+    min-height: 15vh;
+    border: 2px solid gray;
+}
+
+p {
+    margin: 0 0 3rem;
+}
+
+.words:before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    top: 0;
+    left: 30px;
+    bottom: 0;
+    border: 1px solid;
+    border-color: transparent #efe4e4;
+}
+
+button {
+    background: #ffc600;
+    padding: 1rem 2rem;
+    border: 0;
+    border-radius: 5px;
+    width: 49%;
+    margin-bottom: 0;
+    font-size: 2rem;
+    border-bottom: 5px solid #F3C010;
+    cursor: pointer;
+    position: relative;
+    margin-top: 1rem;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    /* background: orange; */
+    color: darkgoldenrod;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+}
+h2{
+    text-align: center;
+    font-weight: normal;
+    background: #ffc600;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    /* font-family: 'Pacifico', cursive; */
+}
+footer{
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 25px;
+    background: #ffc600;
+    padding: 1rem 2rem;
+}
+#dev{
+    margin-top: 1rem;
+}
+footer a{
+    color: black;
+}
+.fa-github{
+    font-size: 30px;
+}
+h1{
+    width: calc(100% + 4rem);
+    color: black;
+    margin: -2rem 0 2rem -2rem;
+    padding: .5rem;
+    background: #ffc600;
+    border-bottom: 5px solid #F3C010;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 100;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 3px 3px 0 #F3C010;
+}
+footer p{
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+    .speech{
+        width: 33rem;
+    }
+    h1{
+        font-size: 3rem;
+    }
+}
