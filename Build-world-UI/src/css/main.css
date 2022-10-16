@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.row1 {
+    background-image: linear-gradient(to top, #e9ecef, #f8f9fa);
+    width: 100vw;
+    height: 40vh;
+}
+
+.nav-bar {
+    padding-top: 2rem;
+    font-family: 'Nunito', sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+
+    list-style-type: none;
+    /*background: black;*/
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+.r2 {
+    margin-top: 3rem;
+    width: 100vw;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.inr {
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.n0 {
+    position: absolute;
+    left: 1rem;
+    display: flex;
+
+}
+
+.n0 img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.n0 h3 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 2rem;
+}
+
+.a {
+    padding: 0.7rem;
+}
+
+.d {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.d a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    opacity: 0.8;
+}
+
+.d li {
+    padding: 2rem;
+    list-style-type: none;
+}
+
+
+.row2 {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.box {
+    width: 7rem;
+    height: 9rem;
+    /*background: aqua;*/
+    box-shadow: grey 2px 2px 8px;
+    border-radius: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-direction: column;
+}
+
+.box:hover {
+    border: 3px solid #2c7da0;
+
+}
+
+.box span {
+    /*padding: 1rem;*/
+}
+
+.rupess {
+    font-size: 2rem;
+
+}
+
+.row3 {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-column-gap: 2rem;
+    justify-content: center;
+}
+
+.row4 {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.clean {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-weight: bold;
+    color: #e9ecef;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    /*alignment: center;*/
+    text-align: center;
+    background: #2c7da0;
+    /*height: 2rem;*/
+    width: 10rem;
+    border-radius: 1rem;
+}
+
+.qw {
+    font-size: 1rem;
+    text-align: center;
+    color: grey;
+}
+
+.qw1 {
+    font-size: 3rem;
+}
+
+.middle {
+    text-align: center;
+}
+
+.cl {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+}
+
+.cl div {
+    width: 50rem;
+    height: 1px;
+    background: grey;
+
+}
+
+.grantee {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cls {
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.cli {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+    font-size: 0.9rem;
+    width: 29rem;
+    padding-bottom: 1rem;
+    color: grey;
+}
+
+
+.frir {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.firstr1 {
+    margin-left: 7rem;
+    width: 22rem;
+    /*padding: 2rem;*/
+}
+
+.kjs {
+    color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: #2c7da0;
+    width: 10rem;
+    border-radius: 1rem;
+    alignment: center;
+    margin: auto;
+    padding: 0.5em;
+}
+
+.aa {
+    margin-left: 7rem;
+    font-weight: bold;
+}
+
+.containerbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    box-sizing: border-box;
+}
+
+.circle {
+    display: flex;
+    border-radius: 8rem;
+    width: 9rem;
+    height: 7rem;
+    background: white;
+    box-shadow: grey 2px 2px 6px;
+    position: relative;
+    top: 2rem;
+    left: 4rem;
+}
+
+.clblock {
+    overflow: hidden;
+    display: flex;
+    padding-top: 2rem;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 40rem;
+    height: 11rem;
+    background: #fcd5ce;
+    border-radius: 2rem;
+}
+
+.rowdon {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.inputwaliclass input {
+    border: grey solid 1px;
+    height: 2rem;
+    width: 40rem;
+
+}
+
+.inputwaliclass button {
+    color: #e9ecef;
+    height: 2rem;
+    width: 10rem;
+    background: #2c7da0;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+.circle img {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 9rem;
+    height: 7rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ft1 {
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.fux li {
+    padding: 1.5rem;
+}
+
+.ft2 img {
+    height: 15rem;
+}
+
+.ft2 {
+    display: flex;
+
+}
+
+.ft2 h3 {
+    margin-top: 8rem;
+}
+
+.fxtra {
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.fux li:first-child {
+    border-bottom: 4px solid #2c7da0;
+    margin-left: 2rem;
+}
+
+.inputwaliclass input {
+    text-indent: 20px;
+    letter-spacing: 1.5px;
+}
