@@ -188,9 +188,9 @@ Steps to contribute in this repository
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/ARYAN-CODES-STAR>
-            <img src=https://avatars.githubusercontent.com/u/78686630?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=ARYAN-CODES-STAR/>
+            <img src=https://avatars.githubusercontent.com/u/78686630?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Aryan Sharma/>
             <br />
-            <sub style="font-size:14px"><b>ARYAN-CODES-STAR</b></sub>
+            <sub style="font-size:14px"><b>Aryan Sharma</b></sub>
         </a>
     </td>
 </tr>
@@ -644,9 +644,9 @@ Steps to contribute in this repository
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/vatsalya1102>
-            <img src=https://avatars.githubusercontent.com/u/99107358?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=vatsalya1102/>
+            <img src=https://avatars.githubusercontent.com/u/99107358?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Vatsalya Sharma/>
             <br />
-            <sub style="font-size:14px"><b>vatsalya1102</b></sub>
+            <sub style="font-size:14px"><b>Vatsalya Sharma</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
