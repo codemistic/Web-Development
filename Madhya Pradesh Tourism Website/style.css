@@ -1,0 +1,215 @@
+                             /* added box-sizing universally */
+
+                             * {
+                                 box-sizing: border-box;
+                                 font-family: 'Lato';
+                             }
+
+                             /* Margin and padding is none in body */
+
+                             body {
+                                 margin: 0px;
+                                 padding: 0px;
+                             }
+
+                             /* Added an image in header */
+
+                             div.parallex1 {
+                                 width: 100%;
+                                 height: 100vh;
+                                 background-image: url(2.jpg);
+                                 background-position: bottom;
+                                 background-size: cover;
+                                 background-repeat: no-repeat;
+                                 background-attachment: fixed;
+                                 position: relative;
+                             }
+
+
+
+
+                             /* Apply flexbox in div.nav */
+
+                             div.nav {
+                                 width: 100%;
+                                 height: 10vh;
+                                 background-color: rgba(0, 0, 0, 0.9);
+                                 display: flex;
+                                 flex-direction: row;
+                                 position: fixed;
+                             }
+
+                             /* Styling the logo */
+
+                             .nav h1 {
+                                 font-family: 'Lato';
+                                 color: white;
+                                 margin: 15px 100px 0px 10px;
+                             }
+
+                             /* Styling the menu*/
+                             .navbar {
+                                 width: 70%;
+                                 margin-left: 50px;
+                             }
+
+                             .navbar ul {
+                                 width: 100%;
+                                 display: flex;
+                                 justify-content: space-evenly;
+                                 padding: 5px 0px;
+                             }
+
+                             .navbar ul li {
+                                 display: inline-block;
+                                 font-family: 'Lato';
+                                 color: white;
+                                 font-size: 20px;
+                                 cursor: pointer;
+                             }
+
+                             .navbar ul li a {
+                                 text-decoration: none;
+                                 display: inline-block;
+                                 font-family: 'Lato';
+                                 color: white;
+                                 font-size: 20px;
+                                 cursor: pointer;
+                             }
+
+                             /* Apply a special effect */
+                             .navbar ul li::before {
+                                 content: '';
+                                 width: 0;
+                                 height: 5px;
+                                 background-color: white;
+                                 display: block;
+                                 position: relative;
+                                 top: 59px;
+                                 transition: width 0.5s;
+                             }
+
+                             .navbar ul li:hover::before {
+                                 width: 100%;
+                             }
+
+                             /* Style the content */
+                             .content {
+                                 width: 80%;
+                                 margin: 0px auto auto auto;
+                             }
+
+                             .box h1 {
+                                 font-family: 'Space Grotesk';
+                                 letter-spacing: 1px;
+                                 font-size: 3em;
+                                 text-align: center;
+                                 font-size: 72px;
+                                 background: -webkit-linear-gradient(180deg, #03045e, #9bf6ff);
+                                 -webkit-background-clip: text;
+                                 -webkit-text-fill-color: transparent;
+                             }
+
+                             .box p {
+                                 font-family: 'Lato';
+                                 font-size: 16px;
+                                 text-align: center;
+
+                             }
+
+                             .box iframe {
+                                 display: block;
+                                 margin: auto auto;
+                                 padding-bottom: 20px;
+                             }
+
+                             /* Added background images in parallex */
+                             div.parallex2 {
+                                 width: 100%;
+                                 height: 500px;
+                                 background-image: url(shutterstock_1430024867.jpg);
+                                 background-position: center;
+                                 background-size: cover;
+                                 background-repeat: no-repeat;
+                                 background-attachment: fixed;
+                             }
+
+                             div.parallex3 {
+                                 width: 100%;
+                                 height: 500px;
+                                 background-image: url(4.jpg);
+                                 background-position: top;
+                                 background-size: cover;
+                                 background-repeat: no-repeat;
+                                 background-attachment: fixed;
+                             }
+
+                             div.parallex4 {
+                                 width: 100%;
+                                 height: 500px;
+                                 background-image: url(mike-tinnion-BA7da404ekg-unsplash.jpg);
+                                 background-position: top;
+                                 background-size: cover;
+                                 background-repeat: no-repeat;
+                                 background-attachment: fixed;
+                             }
+
+                             /* Added responsiveness */
+                             @media (max-width:1130px) {
+                                 .nav h1 {
+                                     margin-right: 0px;
+                                 }
+
+                                 #poster {
+                                     font-size: 100px;
+                                     position: absolute;
+                                     top: 100px;
+                                     left: 33%;
+                                 }
+                             }
+
+                             @media (max-width:800px) {
+                                 .navbar {
+                                     margin-left: 0px;
+                                 }
+                             }
+
+                             @media(max-width:630px) {
+                                 .navbar ul li {
+                                     display: none;
+                                 }
+
+                                 .navbar {
+                                     width: 20%;
+                                     background-image: url(https://icon-library.com/images/menu-icon-white-png/menu-icon-white-png-27.jpg);
+                                     background-size: 100%;
+                                     transform: translate(220%, -10%);
+                                     cursor: pointer;
+                                 }
+
+                                 #poster {
+                                     font-size: 80px;
+                                     position: absolute;
+                                     top: 200px;
+                                     left: 30%;
+                                 }
+
+                                 .box h1 {
+                                     font-size: 2em;
+                                 }
+                             }
+
+                             @media(max-width:500px) {
+                                 .navbar {
+                                     width: 0;
+                                 }
+
+                                 #poster {
+                                     display: none;
+                                 }
+
+                                 div.parallex1 {
+                                     height: 50vh;
+                                     background-position: left;
+                                 }
+                             }
