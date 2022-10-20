@@ -1,0 +1,30 @@
+.sideIcons{
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 1px solid rgb(219, 219, 219);
+}
+
+.sideIcons__top{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sideIcons__top>img{
+    object-fit: contain;
+    width: 30px;
+    margin: 10px 0;
+}
+
+.sideIcons>hr{
+    margin: 12px 0;
+    width: 90%;
+}
+
+.sideIcons__plusIcon{
+    display: flex;
+    align-items: center;
+}

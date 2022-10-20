@@ -1,0 +1,21 @@
+.newFile {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    padding-left: 20px;
+}
+
+.newFile__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* TRouBLe */
+    padding: 6px 32px 6px 8px;
+    border-radius: 50px;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149);
+    cursor: pointer;
+}
+
+.newFile__container>p{
+    margin-left: 14px;
+}

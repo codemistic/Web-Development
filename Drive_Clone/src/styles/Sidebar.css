@@ -1,0 +1,11 @@
+.sidebar{
+    width: 15%;
+    height: 100vh;
+    margin-right: 5px;
+}
+
+hr{
+    background-color: rgb(197, 197, 197);
+    height: 1px;
+    border: none;
+}
