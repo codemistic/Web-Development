@@ -1,0 +1,161 @@
+@import url("../../../global.css");
+
+.avatar-container {
+  display: flex;
+  padding: 1rem;
+  gap: 2rem;
+  align-items: center;
+  background-color: rgb(230, 239, 245);
+  flex-wrap: wrap;
+  width: 100%;
+
+  margin: 3rem 0;
+}
+
+.avatar {
+  border-radius: 100%;
+  /* outline: 2px solid #0263e0; */
+  border: 0.2em solid white;
+
+  object-fit: cover;
+}
+
+.avatar-lrg {
+  width: 10rem;
+  height: 10rem;
+  font-size: 2rem;
+}
+
+.avatar-mdm {
+  width: 7rem;
+  height: 7rem;
+
+  font-size: 1.4rem;
+}
+
+.avatar-sml {
+  width: 4.9rem;
+  height: 4.9rem;
+  font-size: 0.98rem;
+}
+
+.avatar-xsml {
+  width: 3rem;
+  height: 3rem;
+  font-size: 0.6rem;
+}
+
+.avatar-text {
+  box-sizing: content-box;
+  padding: 1rem;
+
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cta-background-color); /*CTA color */
+  color: var(--white-temp);
+}
+
+.avatar-text:hover {
+  background-color: var(--white-temp); /*primary-text-color*/
+  color: var(--cta-background-color);
+}
+
+.avatar-wrapper {
+  /* overflow: hidden; */
+  position: relative;
+}
+
+/* raw copy */
+.avatar-wrapper img {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.overlay-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.4s all cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  background-color: var(--light-text-color);
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: inherit;
+  border-radius: 100%;
+  color: var(--cta-background-color);
+  cursor: pointer;
+
+  opacity: 0;
+}
+
+.temp-cta-color {
+  font-size: 2em;
+}
+
+.avatar-wrapper:hover .overlay-wrapper {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 767px) {
+  .tab-avatar-lrg {
+    width: 10rem;
+    height: 10rem;
+    font-size: 2rem;
+  }
+
+  .tab-avatar-mdm {
+    width: 7rem;
+    height: 7rem;
+
+    font-size: 1.4rem;
+  }
+
+  .tab-avatar-sml {
+    width: 4.9rem;
+    height: 4.9rem;
+    font-size: 0.98rem;
+  }
+
+  .tab-avatar-xsml {
+    width: 3rem;
+    height: 3rem;
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mob-avatar-lrg {
+    width: 10rem;
+    height: 10rem;
+    font-size: 2rem;
+  }
+
+  .mob-avatar-mdm {
+    width: 7rem;
+    height: 7rem;
+
+    font-size: 1.4rem;
+  }
+
+  .mob-avatar-sml {
+    width: 4.9rem;
+    height: 4.9rem;
+    font-size: 0.98rem;
+  }
+
+  .mob-avatar-xsml {
+    width: 3rem;
+    height: 3rem;
+    font-size: 0.6rem;
+  }
+}

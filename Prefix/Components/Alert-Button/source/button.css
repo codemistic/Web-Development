@@ -1,0 +1,166 @@
+@import url("../../../global.css");
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.btn {
+  outline: none;
+
+  border: none;
+
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+  cursor: pointer;
+
+  border-radius: 0.3rem;
+  position: relative;
+  text-align: center;
+  margin: 1.2em 0;
+  line-height: 1.4rem;
+  box-shadow: var(--universal-box-shadow);
+}
+.btn:hover {
+  filter: brightness(var(--hover-brightness));
+}
+.btn-wide {
+  width: 100%;
+}
+
+.btn-cta {
+  background-color: var(--cta-background-color);
+  color: var(--light-text-color);
+}
+
+.btn-cta-anim::after {
+  content: " --";
+
+  letter-spacing: -1px;
+
+  font-size: 1.4em;
+  font-weight: 700;
+  transition-property: "all";
+  transition-duration: 2s;
+
+  animation-name: blip;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.btn-cta-anim:hover:after {
+  content: "->";
+  animation: none;
+}
+
+/* Feat on progress
+.btn-cta:hover::after {
+  animation: none;
+  content: " ->";
+}
+*/
+
+.btn-outlined {
+  background-color: var(--light-text-color);
+  outline: 1px solid var(--dark-text-color);
+}
+
+.btn-outlined:hover {
+  background-color: var(--light-text-color);
+  color: var(--cta-background-color);
+  box-shadow: var(--outline-box-shadow);
+  outline-color: var(--cta-background-color);
+}
+
+.btn-lrg {
+  font-size: 1.3em;
+
+  line-height: 1.8em;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
+}
+
+.btn-sml {
+  font-size: 0.8em;
+  line-height: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.btn-icon-outlined {
+  color: var(--alert-success-bg-color);
+}
+.btn-icon-outlined:hover {
+  color: var(--cta-background-color);
+}
+
+.btn-icon {
+  font-size: 1em;
+  margin-right: 0.25em;
+}
+
+.btn:disabled {
+  background-color: rgba(128, 128, 128, 0.514);
+  opacity: 0.5;
+  cursor: not-allowed;
+
+  color: var(--red-variant);
+}
+
+.hover-cta-color:hover:active {
+  color: var(--cta-background-color);
+}
+
+.link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.floating-btn-icon {
+  padding: 0;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--cta-background-color);
+
+  font-size: 1rem;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  color: var(--light-text-color);
+  cursor: pointer;
+}
+
+.box-shadow-dense {
+  box-shadow: var(--box-shadow-dense);
+}
+
+.blip-animation {
+  animation-name: blip;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.blip-animation:focus {
+  animation: none;
+}
+
+@keyframes blip {
+  0% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
