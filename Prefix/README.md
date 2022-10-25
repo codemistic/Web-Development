@@ -1,6 +1,6 @@
 # PREFIX
 
-### Alway before your content
+### Always before your content
 
 ---
 
