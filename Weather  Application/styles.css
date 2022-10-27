@@ -1,0 +1,111 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: #222;
+  background-image: url('https://source.unsplash.com/1600x900/?landscape');
+  font-size: 100%;
+}
+
+.card {
+  background: rgba( 0, 0, 0, 0.30 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 11.5px );
+  -webkit-backdrop-filter: blur( 11.5px );
+  border-radius: 10px;
+  border: 2px solid rgba( 255, 255, 255, 0.18 );
+  color: white;
+  padding: 5em;
+  border-radius: 50px;
+  width: 100%;
+  max-width: 420px;
+  margin: 4em;
+  overflow: hidden;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em;
+  border-radius: 50px;
+}
+
+button {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 44px;
+  width: 44px;
+  outline: none;
+  background: rgba( 0,0,0);
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+input.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 34px;
+  background: rgba( 0, 0, 0);
+  color: white;
+  font-family: inherit;
+  font-size: 105%;
+  width: calc(100% - 100px);
+}
+
+button:hover {
+  background: #789395;
+}
+
+h1.temp {
+  margin: 0;
+  margin-bottom: 0.4em;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  text-transform: capitalize;
+  margin-left: 8px;
+}
+
+.weather.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+
+.icon center{
+  height:60px;
+  width:60px;
+  margin:auto;
+}
+
+.weather.loading:after {
+  visibility: visible;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+
+.js-tilt-glare {
+  border-radius: 10px;
+}
+
+a {
+  margin-top: 7%;
+  color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
