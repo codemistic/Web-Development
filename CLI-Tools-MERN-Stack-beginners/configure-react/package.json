@@ -1,0 +1,40 @@
+{
+  "name": "configure-react",
+  "version": "1.0.5",
+  "description": "Easily configure React App with Any Framework or Library like Bootstrap, Material UI, Tailwind CSS, etc. And also configure with any state management library like Redux, MobX, etc. and also configure with any routing library like React Router, Reach Router, etc. and also configure with any testing library like Jest, Enzyme, etc. and also configure with any form library like Formik, React Hook Form, etc. and also configure with any styling library like Styled Components, Emotion, etc. and also configure with any GraphQL library like Apollo Client, Relay, etc. and also configure with any i18n library like i18next, react-intl, etc. ",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon src/index"
+  },
+  "keywords": [
+    "tailwind-react-app",
+    "tailwind-gastby-app",
+    "tailwind-angular-app",
+    "tailwind-next-app",
+    "tailwind-nuxt-app",
+    "tailwindcss-configure-react-app",
+    "tailwind-next-configure-app"
+  ],
+  "author": {
+    "name": "Shantanu Bombatkar",
+    "email": "shodkkshantanu@gmail.com",
+    "url": "https://github.com/shaantanu9"
+  },
+  "files": [
+    "commands/*",
+    "index.js",
+    "utils/*",
+    "fileData/*"
+  ],
+  "bin": {
+    "configure-react": "index.js",
+    "cr": "index.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@tos_/cli-welcome": "^1.0.2",
+    "commander": "^9.0.0",
+    "prettier": "^2.7.1",
+    "shelljs": "^0.8.5"
+  }
+}
