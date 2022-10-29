@@ -1,0 +1,20 @@
+*{margin:0;padding:0}
+header{background:#fb5a0b}
+.body{
+	align-items:center;
+	background:red;
+	justify-content:center;
+	margin:0;
+	padding:0;}
+#shree{
+	text-align:center;
+	margin:0;
+	margin-bottom:;
+	padding:0;
+	color:orangered;
+	font-size:20px;
+	background:cornsilk;
+	font-family:'Yatra One';
+	width:100%;
+	text-shadow: 1px 1px 1px #ffa000;}
+.fa{display:inline;margin-left:3vw;padding:clamp(.5vw,1vw,1vw);}
