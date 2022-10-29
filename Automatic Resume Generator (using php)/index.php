@@ -33,9 +33,9 @@ if(isset($_GET['uid']) == false){echo "
 
 <?php
 $server = 'localhost';
-$user = 'id18897310_k1n9';
-$pass = 'th15!s0mk4rkulk4rN1';
-$db = 'id18897310_resume';
+$user = 'root';
+$pass = '';
+$db = 'resume';
 $con = mysqli_connect($server, $user, $pass, $db);
 
 if(isset($_GET['uid'])){

@@ -30,7 +30,7 @@ if(isset($_POST['submit'])){
 if(isset($_FILES['photo'])){
 
 
-$con = mysqli_connect("localhost","id18897310_k1n9","th15!s0mk4rkulk4rN1","id18897310_resume");
+$con = mysqli_connect("localhost","root","","resume");
 $uid = $_POST['uid'];
 $name = $_POST['name'];
 $dob = $_POST['dob'];
