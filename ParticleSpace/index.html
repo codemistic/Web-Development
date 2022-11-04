@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Particle Systems</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThreeJS Starter</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="content">
+            <h1>The Next<br>Dimension</h1>
+            <p>You are looking at a spinning torus and a bunch of particles made possible by Math.random</p>
+        </div>
+    </div>
+
+    
+
+    <canvas class="webgl"></canvas>
+  
+  
+  
+  
+  
+
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- CSS Rule Plugin CDN -->
+    <!-- Allows GSAP to access transform:scale(X) of pseudo element in CSS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/CSSRulePlugin.min.js" integrity="sha512-oYnRsy+bFXYr+btXcKk2dpzfERnCUc5G4GkJ0AO/XSvomLV7Xc7tZVhTsYIz9QzOAw9qo/6qoA6JTpzaYuHUGg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+
+        const border = CSSRulePlugin.getRule('.content:before')
+
+        // animate clip path property
+        const h1 = document.querySelector('h1')
+        const p = document.querySelector('p')
+
+        const tl = gsap.timeline()
+
+        tl.from(border,{ delay: 0.5, duration: 4, cssRule: {scaleX: 0} })
+        tl.to(h1, { delay: -1, duration: 2, clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', y: '30px' }, "-=2")
+        tl.to(p, { delay: -3, duration: 3, clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', y: '30px' })
+        // can write "-=2" to delay by neg 3 secs or delay: -2)
+
+    </script>
+  
+
+
+</body>
+
+</html>
+<!-- partial -->
+  <script src='https://threejs.org/build/three.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
