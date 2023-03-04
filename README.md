@@ -248,9 +248,9 @@ Steps to contribute in this repository
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/Cybaries>
-            <img src=https://avatars.githubusercontent.com/u/65446412?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Cybaries/>
+            <img src=https://avatars.githubusercontent.com/u/65446412?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Aman Jha/>
             <br />
-            <sub style="font-size:14px"><b>Cybaries</b></sub>
+            <sub style="font-size:14px"><b>Aman Jha</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
