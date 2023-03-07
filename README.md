@@ -945,9 +945,9 @@ Steps to contribute in this repository
 <tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/SusanStorm>
-            <img src=https://avatars.githubusercontent.com/u/114725350?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Developer/>
+            <img src=https://avatars.githubusercontent.com/u/114725350?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Shivangi Kumari/>
             <br />
-            <sub style="font-size:14px"><b>Developer</b></sub>
+            <sub style="font-size:14px"><b>Shivangi Kumari</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
@@ -1318,9 +1318,9 @@ Steps to contribute in this repository
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/anshika9946>
-            <img src=https://avatars.githubusercontent.com/u/91412230?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=anshika9946/>
+            <img src=https://avatars.githubusercontent.com/u/91412230?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Anshika Agarwal/>
             <br />
-            <sub style="font-size:14px"><b>anshika9946</b></sub>
+            <sub style="font-size:14px"><b>Anshika Agarwal</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
