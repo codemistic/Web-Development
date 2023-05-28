@@ -945,9 +945,9 @@ Steps to contribute in this repository
 <tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/SusanStorm>
-            <img src=https://avatars.githubusercontent.com/u/114725350?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Shivangi Kumari/>
+            <img src=https://avatars.githubusercontent.com/u/114725350?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=SusanStorm/>
             <br />
-            <sub style="font-size:14px"><b>Shivangi Kumari</b></sub>
+            <sub style="font-size:14px"><b>SusanStorm</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
