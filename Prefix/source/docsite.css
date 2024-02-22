@@ -1,0 +1,55 @@
+@import url("../global.css");
+
+.main-content {
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.main-content-info {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.doc-wrapper {
+  width: 100%;
+  height: 100vh;
+}
+
+.doc-aside {
+  box-shadow: var(--universal-box-shadow);
+  width: 100%;
+
+  height: 100%;
+  box-sizing: border-box;
+  z-index: 999;
+}
+.doc-aside-nav {
+  height: 100%;
+}
+
+.doc-main {
+  height: 100%;
+  overflow: scroll;
+}
+
+.doc-main {
+  padding-left: 3em;
+}
+
+.component-display {
+  max-width: 80%;
+}
+
+.code-demo {
+  max-width: 40rem;
+}
+
+#installation {
+  height: 100vh;
+}
