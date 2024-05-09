@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .content{
+        background-color: red;
+        padding: 30px 22px;
+        border-radius: 7px;
+        color: #fff;
+    }
+    .content h1{
+        padding-bottom: 20px;
+    }
+    .inp{
+        width: 550px;
+        height: 200px;
+        resize: none;
+        font-size: 19px;
+        padding: 10px;
+        border: none;
+        border-radius: 6px;
+        border: none;
+        outline: none;
+    }
+    .count{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 7px;
+        font-size: 19px;
+    }
+    #totalchar{
+        color: slateblue;
+    }
+    #remainchar{
+        color:blue;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <h1>Real-time Character Counter</h1>
+        <textarea id="inp" class="inp" placeholder="please write your text here" maxlength="100"></textarea>
+        <div class="count">
+            <h4>Total Characters: <span id="totalchar"></span></h4>
+            <h4>Remaining: <span id="remainchar"></span></h4>
+        </div>
+    </div>
+</div>
+<script>
+
+const text = document.getElementById("inp");
+const totalchar = document.getElementById("totalchar");
+const remainchar = document.getElementById("remainchar");
+
+
+text.addEventListener("keyup", ()=>{
+    totalchar.innerText = text.value.length;
+    remainchar.innerHTML = text.getAttribute("maxLength")- text.value.length;
+});
+
+</script>
+</body>
+</html>
