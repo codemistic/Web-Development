@@ -884,10 +884,10 @@ Steps to contribute in this repository
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/Ashish-khanagwal>
-            <img src=https://avatars.githubusercontent.com/u/75534912?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Ashish Khanagwal/>
+        <a href=https://github.com/rajmaurya-dev>
+            <img src=https://avatars.githubusercontent.com/u/63300537?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Raj Maurya/>
             <br />
-            <sub style="font-size:14px"><b>Ashish Khanagwal</b></sub>
+            <sub style="font-size:14px"><b>Raj Maurya</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
@@ -1236,12 +1236,21 @@ Steps to contribute in this repository
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/krishnan05>
+            <img src=https://avatars.githubusercontent.com/u/104081853?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Aayush Krishnan/>
+            <br />
+            <sub style="font-size:14px"><b>Aayush Krishnan</b></sub>
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/aaushitiwari>
             <img src=https://avatars.githubusercontent.com/u/110895038?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Aaushi Tiwari/>
             <br />
             <sub style="font-size:14px"><b>Aaushi Tiwari</b></sub>
         </a>
     </td>
+</tr>
+<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/accodes21>
             <img src=https://avatars.githubusercontent.com/u/101868279?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Aarya Chopkar/>
@@ -1249,8 +1258,6 @@ Steps to contribute in this repository
             <sub style="font-size:14px"><b>Aarya Chopkar</b></sub>
         </a>
     </td>
-</tr>
-<tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/paditya99>
             <img src=https://avatars.githubusercontent.com/u/43406934?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=ADITYA PATHAK/>
@@ -1263,13 +1270,6 @@ Steps to contribute in this repository
             <img src=https://avatars.githubusercontent.com/u/41264611?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=ABHISHEK ANAND/>
             <br />
             <sub style="font-size:14px"><b>ABHISHEK ANAND</b></sub>
-        </a>
-    </td>
-    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/rajmaurya-dev>
-            <img src=https://avatars.githubusercontent.com/u/63300537?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Raj Maurya/>
-            <br />
-            <sub style="font-size:14px"><b>Raj Maurya</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
@@ -1453,6 +1453,13 @@ Steps to contribute in this repository
             <img src=https://avatars.githubusercontent.com/u/76626529?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Ayush Kanduri/>
             <br />
             <sub style="font-size:14px"><b>Ayush Kanduri</b></sub>
+        </a>
+    </td>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/Ashish-khanagwal>
+            <img src=https://avatars.githubusercontent.com/u/75534912?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Ashish Khanagwal/>
+            <br />
+            <sub style="font-size:14px"><b>Ashish Khanagwal</b></sub>
         </a>
     </td>
 </tr>
