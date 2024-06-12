@@ -1,0 +1,68 @@
+@import url("../../../global.css");
+
+.ul-custom {
+  list-style-type: none;
+}
+.ol-custom {
+  list-style: none;
+  counter-reset: li;
+}
+
+.ul-list-item {
+  border: 2px solid transparent;
+}
+
+.ul-list-item:hover {
+  border: 2px solid var(--cta-background-color);
+}
+
+.ul-list-item:before {
+  content: "○";
+
+  font-weight: bold;
+  color: var(--custom-bullet-color);
+
+  width: 1em;
+  margin-right: 0.3em;
+}
+
+.ol-list-item {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  border: 2px solid transparent;
+}
+.ol-list-item:hover {
+  border: 2px solid var(--cta-background-color);
+}
+
+.ol-list-item::before {
+  content: counter(li);
+  color: var(--custom-decimal-color);
+
+  width: 1em;
+  margin-right: 0.3em;
+}
+li {
+  counter-increment: li;
+}
+
+.notification {
+  background-color: rgb(212 227 237);
+  border: 2px solid var(--dark-text-color);
+}
+.comment-box {
+  background-color: hsl(0, 17%, 94%);
+
+  max-width: 50ch;
+}
+.font-weight-light {
+  font-weight: 300;
+}
+
+.align-items-stretch {
+  align-items: stretch;
+}
+
+.gap-zero {
+  gap: 0;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./source/modal.css" />
+    <script
+      src="https://kit.fontawesome.com/6f74bb313d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <button class="btn btn-cta" id="btn-open-modal">Open Modal</button>
+    <div
+      class="modal-container flex-center display-none"
+      id="modal-container-js"
+    >
+      <div class="modal-content padding-mdm">
+        <button
+          class="btn btn-outlined btn-sml pos-abs-top-right box-shadow-none red-text-color"
+          id="btn-close-modal"
+        >
+          Close
+        </button>
+        <h3 class="headline-typography text-align-center">Login</h3>
+        <div class="flex-spc-btwn">
+          <button
+            aria-label="github login"
+            class="btn btn-outlined avatar avatar-xsml avatar-text fs-sml dark-txt-light-bg"
+          >
+            <a href="#"><i class="fab fa-github"></i></a>
+          </button>
+          <button
+            aria-label="google login"
+            class="btn btn-outlined avatar avatar-xsml avatar-text fs-sml dark-txt-light-bg"
+          >
+            <a href="#"><i class="fab fa-google"></i></a>
+          </button>
+          <button
+            aria-label="apple login"
+            class="btn btn-outlined avatar avatar-xsml avatar-text fs-sml dark-txt-light-bg"
+          >
+            <a href="#"><i class="fab fa-apple"></i></a>
+          </button>
+        </div>
+        <h4 class="text-align-center">Or</h4>
+        <form action="#">
+          <div class="form-field">
+            <label for="email-input" class="input-lbl">Email </label>
+            <input
+              name="email-input"
+              class="form-input"
+              id="email-input"
+              required
+              aria-required="true"
+              autocomplete="off"
+              type="email"
+            />
+          </div>
+
+          <div class="form-field">
+            <label for="password-input" class="input-lbl">Password </label>
+            <input
+              name="password-input"
+              class="form-input"
+              id="password-input"
+              required
+              aria-required="true"
+              autocomplete="off"
+              type="password"
+            />
+          </div>
+          <button class="btn btn-cta">Login</button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="./source/main.js"></script>
+</html>
