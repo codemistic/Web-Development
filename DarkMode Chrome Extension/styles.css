@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    min-width: 150px;
+  }
+  
+  #toggle-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  #dark-mode-toggle {
+    margin-left: 10px;
+  }
+  
