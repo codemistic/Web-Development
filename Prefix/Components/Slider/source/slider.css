@@ -1,0 +1,13 @@
+@import url("../../../global.css");
+
+.slider {
+  width: 100%;
+  accent-color: var(--cta-background-color);
+}
+
+.input-checkbox {
+  accent-color: var(--cta-background-color);
+}
+.input-radio {
+  accent-color: var(--cta-background-color);
+}
