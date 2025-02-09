@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./source/list.css" />
+  </head>
+
+  <body>
+    <ul
+      class="flex-column gap-mdm ul-custom"
+      style="--custom-bullet-color: #0ea5e9"
+    >
+      <!--Add your bullet color preference in the style attribute  -->
+
+      <li class="ul-list-item">List Item One</li>
+      <li class="ul-list-item">List Item Two</li>
+      <li class="ul-list-item">List Item Three</li>
+    </ul>
+    <ol class="flex-column ol-custom" style="--custom-decimal-color: #0ea5e9">
+      <li class="ol-list-item">List Item One</li>
+      <li class="ol-list-item">List Item Two</li>
+      <li class="ol-list-item">List Item Three</li>
+    </ol>
+    <p>Stacked Notification</p>
+    <ul class="flex-column gap-sml">
+      <li>
+        <div class="flex-column notification">
+          <div class="grid-col-2--20-80">
+        
+            <div class="flex-f-end">
+              <img
+                src="./../Card/assets/quincyLarson.jpg"
+                class="avatar avatar-sml"
+                alt="Quincy Larson"
+              />
+            </div>
+    
+            <div class="flex-column flex-f-start align-items-stretch gap-zero">
+              <p>Quincy Larson replied to your comment</p>
+             
+              <p class="comment-box padding-sml">
+                We can use FlexBox for Sticky Footer and Header without using
+                positions in CSS
+              </p>
+          
+            </div>
+            </div>
+                
+          <div class="flex-f-end font-weight-light padding-sml">
+            <p>1 hour ago</p>
+           </div>
+          </div>
+      </li>
+      <li>
+        <div class="flex-column notification">
+          <div class="grid-col-2--20-80 ">
+        
+            <div class="flex-f-end">
+              <img
+                src="./../Avatar-Badge/assets/dan-abramov.jpg"
+                class="avatar avatar-sml"
+                alt="Dan Abramov"
+              />
+            </div>
+    
+            <div class="flex-column flex-f-start align-items-stretch gap-zero ">
+              <p>Dan Abramov replied to your comment</p>
+             
+              <p class="comment-box padding-sml">
+                Have you had a chance to watch the second half of my talk? I'd say quite the opposite — it's way less trickier to use suspense for data fetching than anything else (including Redux, local state, or some other library).
+          
+              </p>
+          
+            </div>
+            </div>
+                
+          <div class="flex-f-end font-weight-light padding-sml">
+            <p>1 hour ago</p>
+           </div>
+          </div>
+      </li>
+    </ul>
+
+    </div>
+  </body>
+</html>
