@@ -393,10 +393,10 @@ Steps to contribute in this repository
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/Rehan147jmi>
-            <img src=https://avatars.githubusercontent.com/u/114819641?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Rehan Reza Ali/>
+        <a href=https://github.com/najar2807>
+            <img src=https://avatars.githubusercontent.com/u/114819641?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Mushtahasan Nazar/>
             <br />
-            <sub style="font-size:14px"><b>Rehan Reza Ali</b></sub>
+            <sub style="font-size:14px"><b>Mushtahasan Nazar</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
