@@ -1,0 +1,29 @@
+@import url("../../../global.css");
+
+.demo-image-container {
+  width: 30rem;
+}
+
+.image-resp {
+  width: 100%;
+
+  height: auto;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.rounded-image-container {
+  width: 10rem;
+}
+
+.border-rad-100 {
+  border-radius: 100%;
+}
+
+.border-rad-50 {
+  border-radius: 50%;
+}
+
+.border-rad-25 {
+  border-radius: 25%;
+}
