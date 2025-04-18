@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.filter-sort-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#movie-search {
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+#search-button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#genre-filter, #sort-options {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#movie-details {
+    display: flex;
+    gap: 20px;
+}
+
+#poster {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    display: none;
+}
+
+.movie-info {
+    max-width: 500px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.movie-item {
+    display: flex;
+    align-items: flex-start; 
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 100%;
+}
+
+.movie-item img {
+    width: 150px;
+    margin-right: 20px; 
+}
+
+.movie-content {
+    display: flex;
+    flex-direction: column; 
+}
+
+.movie-title {
+    font-size: 1.5em;
+    margin-bottom: 10px; 
+}
+
+.movie-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.movie-details p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.movie-item h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+}
