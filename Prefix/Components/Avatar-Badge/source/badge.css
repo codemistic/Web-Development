@@ -1,0 +1,76 @@
+@import url("../../../global.css");
+
+.badge {
+  width: 20%;
+  height: 20%;
+
+  border-radius: 100%;
+  overflow: visible;
+}
+
+.badge-status {
+  position: absolute;
+  border: 0.2em solid var(--light-text-color); /*background-color*/
+  z-index: 5;
+  overflow: hidden;
+
+  right: -0.2em;
+  bottom: 0.5em;
+
+  z-index: 4;
+}
+
+.badge-status-dnd {
+  background-color: var(--dnd-status-color);
+}
+
+.badge-status-dnd::before {
+  content: "-";
+
+  display: grid;
+  place-items: center;
+
+  color: var(--light-text-color); /*background-color*/
+}
+
+.badge-status-online {
+  background-color: var(--online-status-color);
+}
+
+.badge-status-offline {
+  background-color: var(--offline-status-color);
+}
+
+.badge-status-offline::before {
+  /* content: "○"; */
+
+  display: grid;
+  place-items: center;
+  color: var(--light-text-color); /*white color*/
+}
+
+.icon-wrapper {
+  position: relative;
+  background: transparent;
+
+  font-size: 3rem;
+}
+
+.icon-wrapper-sml {
+  font-size: 1.2rem;
+}
+
+.badge-notification {
+  background-color: var(--cta-background-color);
+  border: 0.3em solid var(--light-text-color);
+  transition: display 0.5s ease;
+  position: absolute;
+  min-width: 45%;
+  height: 30%;
+  top: 12.5%;
+  right: -8.31%;
+  font-size: 17%;
+  display: grid;
+  place-items: center;
+  color: var(--light-text-color);
+}
