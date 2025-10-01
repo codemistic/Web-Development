@@ -218,9 +218,9 @@ Steps to contribute in this repository
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/Krishna-K-Chowdhury>
-            <img src=https://avatars.githubusercontent.com/u/83708161?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Krishna Kishore Chowdhury/>
+            <img src=https://avatars.githubusercontent.com/u/83708161?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=K K Chowdhury/>
             <br />
-            <sub style="font-size:14px"><b>Krishna Kishore Chowdhury</b></sub>
+            <sub style="font-size:14px"><b>K K Chowdhury</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
