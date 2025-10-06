@@ -996,9 +996,9 @@ Steps to contribute in this repository
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
         <a href=https://github.com/hrishikesh-g>
-            <img src=https://avatars.githubusercontent.com/u/82530056?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=hrishikesh-g/>
+            <img src=https://avatars.githubusercontent.com/u/82530056?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Hrishikesh Ghule/>
             <br />
-            <sub style="font-size:14px"><b>hrishikesh-g</b></sub>
+            <sub style="font-size:14px"><b>Hrishikesh Ghule</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
