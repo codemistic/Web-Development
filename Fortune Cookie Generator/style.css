@@ -1,0 +1,284 @@
+body {
+  background: radial-gradient(
+      circle at 100% 50%,
+      transparent 20%,
+      #add8e6 21%,
+      #add8e6 34%,
+      transparent 35%,
+      transparent
+    ),
+    radial-gradient(
+        circle at 0% 50%,
+        transparent 20%,
+        #add8e6 21%,
+        #add8e6 34%,
+        transparent 35%,
+        transparent
+      )
+      0 -50px;
+  background-color: #f8f8ff;
+  background-size: 75px 100px;
+  overflow: hidden;
+}
+
+.fortuneCookie {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-40%, -40%);
+}
+
+.backgroundCookie {
+  position: absolute;
+  width: 400px;
+  height: 550px;
+  margin-top: -200px;
+  margin-left: -50px;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.24);
+}
+
+.cookies {
+  position: absolute;
+}
+
+.cookie1 {
+  margin-left: 160px;
+  transform: rotate(50deg);
+}
+
+.cookie2 {
+  margin-top: 70px;
+  margin-left: 80px;
+  transform: rotate(50deg);
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #cd853f;
+  box-shadow: 1px 5px 15px #000 inset;
+}
+
+.fortune {
+  position: absolute;
+  margin-top: -150px;
+}
+
+.triangle {
+  position: absolute;
+  width: 40px;
+  height: 80px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.triOne {
+  margin-top: -85px;
+  margin-left: 70px;
+  background-color: #000;
+  transform: rotate(-25deg);
+}
+
+.triTwo {
+  margin-top: -81px;
+  margin-left: 74px;
+  width: 36px;
+  background-color: #fff;
+  transform: rotate(-25deg);
+}
+
+.triThree,
+.triFour,
+.triFive {
+  margin-top: -130px;
+  margin-left: 25px;
+  width: 75px;
+  height: 50px;
+  background-color: rgba(218, 165, 32, 0.1);
+  transform: rotate(-25deg) scaleY(-1);
+  filter: drop-shadow(1px -20px 5px #fff);
+}
+
+.triFour,
+.triFive {
+  margin-top: -102px;
+  margin-left: 12px;
+  transform: rotate(-95deg) scaleY(-1);
+}
+
+.triFive {
+  margin-top: -125px;
+  margin-left: 55px;
+  transform: rotate(50deg) scaleY(-1);
+}
+
+.triSix,
+.triSeven {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 120px;
+  height: 120px;
+  background-color: #cd853f;
+  transform: rotate(-90deg);
+}
+
+.triSeven {
+  margin-left: 180px;
+  transform: rotate(90deg);
+}
+
+.squares {
+  position: absolute;
+  background-color: #fff;
+}
+
+.squareOne {
+  width: 50px;
+  height: 50px;
+  margin-top: -30px;
+  margin-left: 70px;
+  transform: rotate(-55deg);
+}
+
+.squareTwo {
+  width: 30px;
+  height: 30px;
+  margin-top: -30px;
+  margin-left: 105px;
+  transform: rotate(-75deg);
+}
+
+.triFront,
+.triFrontBack {
+  position: absolute;
+  width: 10px;
+  height: 105px;
+  margin-top: 15px;
+  margin-left: 130px;
+  background-color: #000;
+  border-radius: 0 50px 50px 0;
+  box-shadow: 1px 2px 3px #000 inset;
+}
+
+.triFrontRight,
+.triFrontBackRight {
+  margin-left: 170px;
+  border-radius: 50px 0 0 50px;
+}
+
+.triFrontBack {
+  position: absolute;
+  width: 15px;
+  height: 120px;
+  margin-top: 10px;
+  margin-left: 130px;
+  background-color: #cd853f;
+}
+
+.triFrontBackRight {
+  margin-left: 165px;
+}
+
+button {
+  position: absolute;
+  margin-top: 250px;
+  margin-left: 60px;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 25px;
+  background: #00a0b0;
+  color: #fff;
+  font-family: cursive;
+  border: none;
+  border-right: 5px outset #8fd8d8;
+  border-bottom: 5px outset #8fd8d8;
+  outline: none;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  transition: 0.2s all;
+}
+
+button:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+h1 {
+  position: absolute;
+  margin-top: -220px;
+  width: 300px;
+}
+
+.paper {
+  position: absolute;
+  width: 30px;
+  height: 85px;
+  background: #00a0b0;
+  margin-top: -130px;
+  margin-left: 130px;
+  font-size: 20px;
+  color: #fff;
+  padding: 10px;
+}
+
+.animatePaper {
+  animation: animatePaper 1s linear;
+  animation-fill-mode: forwards;
+}
+
+.animateCookieLeft {
+  animation: cookieLeft 1s linear;
+  animation-fill-mode: forwards;
+}
+
+.animateCookieRight {
+  animation: cookieRight 1s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cookieLeft {
+  100% {
+    margin-left: -100px;
+  }
+}
+
+@keyframes cookieRight {
+  100% {
+    margin-left: 100px;
+  }
+}
+
+@keyframes animatePaper {
+  100% {
+    width: 230px;
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 321px) {
+  .fortuneCookie {
+    position: absolute;
+    top: 40%;
+    left: 18%;
+    transform: translate(-18%, -40%) scale(0.7);
+  }
+}
+
+@media (min-width: 321px) and (max-width: 376px) {
+  .fortuneCookie {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-20%, -40%) scale(0.8);
+  }
+}
+
+@media (min-width: 377px) and (max-width: 426px) {
+  .fortuneCookie {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-20%, -40%) scale(0.85);
+  }
+}

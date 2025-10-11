@@ -1,0 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Inter Tight', sans-serif;
+  background: #030303;
+  overflow: hidden;
+}

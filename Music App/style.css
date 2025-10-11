@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@600&family=Roboto:wght@300;400&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: black;
+    font-family: "Lato", sans-serif;
+    background-color: #fbab7e;
+    background-image: linear-gradient(62deg, #7aecf0 0%, #44c8f0 100%);
+    overflow: hidden;
+}
+
+#logo {
+    display: inline-block;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
+#logo img {
+    display: block;
+    margin: auto;
+    width: 55px;
+}
+
+.bg {
+    position: absolute;
+    top: 450px;
+}
+
+.bg img {
+    width: 600px;
+}
+
+.bg .earphone{
+    position: relative;
+    z-index: -1;
+}
+
+.bg .girl {
+    position: absolute;
+    left: 770px;
+    bottom: 35px;
+    width: 750px;
+}
+
+.player {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wrapper {
+    width: 350px;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-color: white;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.track-art {
+    margin: 20px auto;
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #fff;
+    box-shadow: 0px 6px 5px #ccc;
+    box-shadow: 0px 6px 5px rgba(33, 30, 30, 0.701),
+        -0px -4px 5px rgba(71, 71, 71, 0.21);
+}
+
+.now-playing {
+    font-size: 25px;
+}
+
+.track-name {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.track-artist {
+    font-size: 17px;
+    text-transform: capitalize;
+    font-family: "Roboto", sans-serif;
+    margin-top: 3px;
+    color: rgba(0, 0, 0, 0.715);
+}
+
+.buttons {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons i {
+    opacity: 0.9;
+    padding: 13px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.buttons i:hover {
+    color: #23211f;
+    transform: scale(1.1);
+}
+
+.buttons .playpause-track i {
+    font-size: 65px;
+}
+
+.slider_container {
+    width: 100%;
+    margin: 20px auto;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.current-time,
+.total-duration {
+    position: absolute;
+    color: rgba(0, 0, 0, 0.731);
+    font-family: cursive;
+    font-size: 13px;
+}
+
+.current-time {
+    padding-top: 14px;
+    left: 0;
+}
+
+.total-duration {
+    padding-top: 10px;
+    right: 0;
+}
+
+.seek_slider {
+    width: 100%;
+    border-radius: 20px;
+    appearance: none;
+    height: 4px;
+    background: #83a9ff;
+    transition: opacity 0.2s;
+}
+
+.seek_slider:hover{
+    cursor: pointer;
+}
+
+.seek_slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 13px;
+    height: 13px;
+    background: white;
+    border: 3px solid #3774ff;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.rotate {
+    animation: rotation 9s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.fa-random {
+    margin-right: 5px;
+}
+
+.fa-repeat {
+    margin-left: 5px;
+}

@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin-top: 5rem;
+  position: relative;
+}
+
+h1 {
+  width: 90%;
+  position: absolute;
+  top: -3.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+#inputFile {
+  border: 2px solid gray;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 1rem;
+  padding: 0.4rem;
+  outline: none;
+}
+
+.add_And_Display_Btn_Div {
+  margin-top: 0.4rem;
+  padding: 0.4rem;
+}
+
+.add_And_Display_Btn_Div .btnScr {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 4rem;
+  background: green;
+  color: #fff;
+  padding: 0.4rem;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.add_And_Display_Btn_Div .btnScr:hover {
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-box-shadow: 2px 2px 15px 1px #888888;
+          box-shadow: 2px 2px 15px 1px #888888;
+}
+
+.container {
+  border: 2px solid gray;
+  border-radius: 5px;
+  width: 90%;
+  min-height: 20rem;
+  font-family: sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 1rem;
+  padding: 0.4rem;
+}
+
+.container .que {
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  margin: 0 0.25rem 0.25rem 0.25rem;
+}
+
+.container .que .box {
+  border: 2px solid gray;
+  border-radius: 5px;
+  width: 4rem;
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .que .btnS {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 1rem;
+  color: gray;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  right: 0.1rem;
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+}
+
+.container .que .btnS:hover {
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/*# sourceMappingURL=style.css.map */

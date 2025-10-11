@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GYM WEBSITE</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+       background-image: url(/gym2.jpg); 
+        background-size: cover;
+       
+      }
+
+      header::before {
+        background-image: url(/gym2.jpg);
+       content: "";
+        background-size: cover;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.8;
+        
+
+      }
+
+      @import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@600&family=Oswald&display=swap");
+
+      ul {
+        display: inline-block;
+        padding: 13px;
+      }
+
+      li {
+        display: inline-block;
+        font-family: "DynaPuff", cursive;
+        padding-right: 20px;
+        text-align: center;
+        margin-left: 20px;
+        border-radius: 6px;
+      }
+
+      li:hover {
+        text-decoration: none;
+        /* transform: scale(1.1); */
+        background-color: #88f4ff;
+        cursor: pointer;
+        padding: 5px;
+      }
+      a:hover {
+        color: black;
+      }
+
+      li:visited {
+        color: dimgrey;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+      }
+      .logo {
+        display: inline-block;
+        color: wheat;
+        margin-right: 30px;
+        font-size: 40px;
+        font-weight: 1000;
+      }
+      img {
+        display: inline-block;
+      }
+      nav {
+        background-color: black;
+        height: 70px;
+        width: 100vw;
+      }
+      .quote {
+        color: black;
+        display: inline-block;
+        top: 14px;
+        font-size: medium;
+        font-weight: bold;
+        position: relative;
+        left: 37vw;
+        width: 300px;
+        /* margin: 0 0 0 15px; */
+        font-family: "DynaPuff", cursive;
+        background-color: white;
+        color: black;
+        border: 2px solid black;
+        text-align: center;
+      }
+      
+
+      summary {
+        text-decoration: underline;
+      }
+      .searchbar {
+       text-align: center;
+       margin-left: 15px;
+       margin-top: 10px;
+       padding: 4px;
+       border: 2px solid black;
+       border-radius: 4px;
+      }
+      h1 {
+        color: black;
+        text-shadow: 6px 3px 3px white;
+        /* background-color: black; */
+        /* border: 2px solid white; */
+        font-family: "DynaPuff", cursive;
+        border-radius: 8px;
+        width: 300px;
+        margin-top: 0px;
+        margin-left: 58px;
+        font-size: 26px;
+        
+      }
+
+      .userDetails {
+        display: inline-block;
+        font-weight: bold;
+        position: absolute;
+        height: 316px;
+        width: 425px;
+        border: 2px solid black;
+        border-radius: 30px;
+        margin-left: 400px;
+        margin-top: 188px;
+        padding: 10px;
+        text-align: center;
+        box-shadow: 0px 4px 22px 12px black;
+
+      }
+
+      .formgroup input {
+        text-align: center;
+        width: 307px;
+        margin: 11px auto;
+        padding: 5px;
+        border: 2px solid black;
+        border-radius: 13px;
+        font-family: "DynaPuff", cursive;
+        font-size: 17px;
+
+
+      }
+      .btn {
+        text-align: center;
+        border: 3px solid white;
+        width: 140px;
+        height: 33px;
+        border-radius: 16px;
+        /* background-color: black; */
+        color: black;
+        font-size: medium;
+        font-weight: 600;
+        margin-top: 10px;
+        font-family: "DynaPuff", cursive;
+      }
+      button:hover {
+          /* border:3px solid rgb(6, 132, 243) ; */
+          /* transform: scale(1.1); */
+          text-decoration: underline;
+          border: 2px solid black;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="img">
+          <img src="logo3.jpg" alt="image" height="70px" />
+        </div>
+
+        <nav class="navigation">
+          <ul>
+            <li><a href="#"> HOME</a></li>
+            <li><a href="#">YOUR PROFILE</a></li>
+            <li><a href="#">TRACK FITNESS </a></li>
+            <li><a href="#">ABOUT </a></li>
+            <li><a href="#"> FAQ</a></li>
+            <li><a href="#"> CONTACT US</a></li>
+            <li><a href="#">NEED HELP! </a></li>
+            <input type="text" name="search" class="searchbar" placeholder="Search Your Query..." />
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="userDetails">
+        <h1>JOIN US TODAY</h1>
+        <div class="formgroup">
+          <input type="text" name="NAME" id="1" placeholder="NAME*" />
+        </div>
+        <div class="formgroup">
+          <input type="email" name="NAME" id="1" placeholder="EMAIL*" />
+        </div>
+        <div class="formgroup">
+          <input type="password" name="NAME" id="1" placeholder="CREATE PASSWORD*" />
+        </div>
+        <div class="formgroup">
+          <input type="text" name="NAME" id="1" placeholder="RE-ENTER PASSWORD*" />
+        </div>
+        <BUTTON class="btn">SIGN IN</BUTTON>
+      </div>
+      <div class="quote">
+        <summary>QUOTE OF THE DAY</summary>
+
+        <p1>
+          WAKE UP TO REALITY, NOTHING EVER GOES AS PLANNED IN THIS ACURRSED
+          WORLD , THE LONGER YOU LIVE THE MORE YOU REALISE THE ONLY THING THAT
+          TRULY EXIST IS PAIN AND SUFFERING!
+        </p1>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #ff9ce3, #4ab3ff);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+h1,
+h2 {
+    color: #000;
+    font-size: 3.5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-heading {
+    margin-top: 6rem;
+    padding: 0.1em 0.5em;
+    background: rgba( 255, 255, 255, 0.35);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 0.0px);
+    -webkit-backdrop-filter: blur( 0.0px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+.color {
+    padding: 0.5em 1em;
+    margin-top: 4rem;
+    background: rgba( 255, 255, 255, 0.35);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 0.0px);
+    -webkit-backdrop-filter: blur( 0.0px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+.css-code-div {
+    margin-top: 6rem;
+    font-size: 2rem;
+    padding: 0.2em 0.7em;
+    background: rgba( 255, 255, 255, 0.35);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 0.0px);
+    -webkit-backdrop-filter: blur( 0.0px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    text-align: center;
+}
+
+.css-code-div p {
+    display: inline;
+}
+
+.left-color {
+    margin-right: 2rem;
+}
+
+.generate {
+    margin-top: 3rem;
+}
+
+.rotate {
+    font-size: 1.5rem;
+    padding: 0.5em 1.3em;
+    border-radius: 1em;
+}
+
+.rotate:hover {
+    font-weight: 600;
+    background-color: rgb(194, 194, 194);
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+.deg {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    padding: 0.5em 1.3em;
+    border-radius: 1em;
+    outline : none;
+}
+
+.random {
+    font-size: 1.5rem;
+    padding: 0.5em 1.3em;
+    border-radius: 1em;
+}
+
+.random:hover {
+    font-weight: 600;
+    background-color: rgb(194, 194, 194);
+}
+
+
+/* media queries */
+
+@media (max-width:550px) {
+    html {
+        font-size: 6px;
+    }
+}
+
+@media (min-width:550px) and (max-width:768px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {}

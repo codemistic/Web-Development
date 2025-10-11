@@ -1,0 +1,33 @@
+.Home_container {
+  display: flex;
+}
+
+.Home_div {
+  h2 {
+    margin-top: 10px;
+  }
+
+  p {
+    margin-top: 15px;
+  }
+
+  ul {
+    padding: 20px 40px;
+
+    li {
+      strong {
+        display: flex;
+        p {
+          color: rgb(208, 59, 59);
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+.light {
+  p {
+    color: rgb(58, 54, 54);
+  }
+}

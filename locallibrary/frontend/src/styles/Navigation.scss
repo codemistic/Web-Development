@@ -1,0 +1,16 @@
+.Nav_container {
+  margin-right: 50px;
+  ul {
+    list-style: none;
+
+    li {
+      width: 110px;
+      padding: 5px;
+      font-size: 18px;
+
+      .link_tag {
+        text-decoration: none;
+      }
+    }
+  }
+}

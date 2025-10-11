@@ -1,0 +1,42 @@
+.AllBooks_container {
+  display: flex;
+}
+
+.light {
+  .books_title_p {
+    color: rgb(58, 54, 54);
+  }
+  p {
+    color: rgb(58, 54, 54);
+  }
+}
+
+.book_detail-container {
+  ul {
+    display: flex;
+    margin-top: 10px;
+
+    li {
+      p {
+        font-size: 20px;
+        color: rgb(214, 151, 151);
+      }
+    }
+  }
+
+  .book_author-name {
+    margin-top: 3px;
+  }
+}
+
+.book_detail-pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  button {
+    border: 1px solid red;
+    padding: 5px 10px;
+    cursor: pointer;
+    background: skyblue;
+  }
+}

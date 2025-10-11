@@ -1,0 +1,48 @@
+#active-game{
+    text-align: center;
+    margin: 2rem 0 5rem 0;
+    display: none;
+}
+#gameOver{
+    width: 90%;
+    max-width: 40rem;
+    margin: auto;
+    padding: 1rem 2rem;
+    background-color: rgb(50,5,87);
+    box-shadow: 0 2px 8px rgb(50,5,87);
+    border-radius: 4px;
+    color: azure;
+    display: none;
+}
+#active-player-name{
+    font-weight: bold;
+    color: blue;
+}
+#gameboard{
+    list-style: none;
+    margin:1rem 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3,6rem);
+    grid-template-rows: repeat(3,6rem);
+    justify-content: center;
+    gap: 0.5rem;
+}
+#gameboard li{
+    background-color: antiquewhite;
+    border-radius: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+#gameboard li:hover{
+    background-color: rgb(112,13,204);
+}
+#gameboard li.disabled{
+    background-color: rgb(112,13,204);
+    color: aliceblue;
+    cursor:default;
+}
