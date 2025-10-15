@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+body {
+  background-color: #ffe4e1; /* light pastel pink */
+  display: flex;
+  justify-content: center;
+   align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Patrick Hand', cursive;
+}
+
+.card {
+  width: 400px;
+  height: 600px;
+  background-image: url("notepadpink.jpg");
+  background-size: 100% 100%;       /* This stretches the image to cover full width & height */
+  background-repeat: no-repeat;     /* Prevents tiling */
+  background-position: center;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 60px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  font-family: 'Patrick Hand', cursive;
+}
+
+
+#title{
+    font-family: 'Naughty', sans-serif;
+    font-size: 60px;
+    text-decoration: underline;
+    color: #a73659;
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+}
+#contents {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.datec{
+    font-family: "Kulminoituva";
+    font-size: 30px;
+    text-align: left;
+    align-self: flex-start;
+    width: 100%;
+    padding-left: 20px;
+}
+#date{
+    padding-bottom: 2px;
+    margin: auto;
+}
+.addtask{
+    align-items: center;
+    padding-left: 100px;
+}
+#addtasky {
+  padding: 10px 20px;
+  background-color: beige;
+  border-radius: 10px;
+  width: 150px;
+  height: 80px;
+  font-family: "Uchiyama", sans-serif;
+  font-size: 26px;
+  color: #150328;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#addtasky:hover {
+  background-color: #ffb6c1;
+  color: white;
+}
+.inputs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  opacity: 85%;
+  width: 300px;
+  height: 320px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  color: white;
+  text-align: center;
+  font-size: 32px;
+  font-family: "Dreams Liem";
+}
+#savetask{
+    background-color: white;
+    border-radius: 30px;
+    font-family: "Jelly Berry";
+    font-size: 22px;
+    border-color: white;
+    opacity: 100%;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
