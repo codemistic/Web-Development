@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartQuiz Builder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- Base Styles & Theme --- */
+        :root {
+            --primary-color: #ffffff;
+            --secondary-color: #f0f0f0;
+            --accent-color-1: #00f2fe;
+            --accent-color-2: #4facfe;
+            --accent-color-3: #ff7e5f;
+            --accent-color-4: #feb47b;
+            --text-color: #e0e0e0;
+            --text-dark: #333;
+            --correct-color: #28a745;
+            --incorrect-color: #dc3545;
+            --current-color: #4facfe;
+            --bg-gradient: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: var(--bg-gradient);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        /* --- Glassmorphism Container --- */
+        .container {
+            width: 100%;
+            max-width: 950px; /* Increased width for new layout */
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            padding: 40px;
+            text-align: center;
+            transition: all 0.3s ease;
+            margin-bottom: 40px; /* Add margin to separate from footer */
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px;
+            }
+        }
+
+        /* --- Screen Management --- */
+        .screen {
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .screen.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* --- Typography --- */
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, var(--accent-color-3), var(--accent-color-4));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 25px;
+        }
+        
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        /* --- Buttons & Interactive Elements --- */
+        .btn {
+            background: linear-gradient(90deg, var(--accent-color-1), var(--accent-color-2));
+            color: var(--text-dark);
+            font-weight: 600;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 242, 254, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn:hover:not(:disabled), .btn:focus {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 242, 254, 0.5);
+        }
+        
+        .btn-secondary {
+             background: linear-gradient(90deg, var(--accent-color-3), var(--accent-color-4));
+             box-shadow: 0 4px 15px rgba(255, 126, 95, 0.3);
+        }
+        
+        .btn-secondary:hover:not(:disabled), .btn-secondary:focus {
+             box-shadow: 0 8px 25px rgba(255, 126, 95, 0.5);
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .btn-wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        /* --- Form Elements --- */
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        input[type="text"], input[type="number"], textarea, select {
+            width: 100%;
+            padding: 12px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            background: rgba(0, 0, 0, 0.2);
+            color: var(--text-color);
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus, input[type="number"]:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: var(--accent-color-1);
+        }
+        
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .csv-format-info {
+            background: rgba(0,0,0,0.3);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-family: monospace;
+            font-size: 0.9rem;
+            text-align: left;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        
+        /* --- Manual Question Entry --- */
+        .question-entry {
+            background: rgba(0,0,0,0.2);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--accent-color-2);
+            position: relative;
+        }
+        .question-entry .form-group {
+            padding-right: 40px; 
+        }
+        
+        .remove-question-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--incorrect-color);
+            color: white;
+            border: none;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.2s;
+        }
+        .remove-question-btn:hover {
+            background: #c82333;
+            transform: scale(1.1);
+        }
+
+        /* --- NEW: Quiz Screen Layout --- */
+        #quiz-screen-layout {
+            display: flex;
+            gap: 30px;
+        }
+        #quiz-main-panel {
+            flex-grow: 1;
+        }
+        #quiz-side-panel {
+            width: 200px;
+            flex-shrink: 0;
+        }
+        @media (max-width: 850px) {
+            #quiz-screen-layout {
+                flex-direction: column-reverse;
+            }
+            #quiz-side-panel {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+        
+        /* --- Quiz Screen --- */
+        #quiz-question {
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        
+        #quiz-options {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .option-label {
+            display: block;
+            padding: 15px;
+            background: rgba(0,0,0,0.3);
+            border: 2px solid rgba(255,255,255,0.3);
+            color: var(--text-color);
+            font-size: 1rem;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: left;
+        }
+
+        .option-label:hover {
+            background: rgba(0, 242, 254, 0.2);
+            border-color: var(--accent-color-1);
+        }
+        
+        .option-input {
+            display: none;
+        }
+        
+        .option-input:checked + .option-label {
+            background: var(--current-color);
+            border-color: var(--current-color);
+            color: white;
+        }
+        
+        #quiz-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        /* --- NEW: Question Grid --- */
+        #question-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+            gap: 10px;
+            background: rgba(0,0,0,0.2);
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .grid-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.3);
+            background: var(--primary-color);
+            color: var(--text-dark);
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .grid-btn:hover {
+            transform: scale(1.1);
+        }
+        .grid-btn.attended {
+            background: var(--correct-color);
+            color: white;
+            border-color: var(--correct-color);
+        }
+        .grid-btn.current {
+            background: var(--current-color);
+            color: white;
+            border-color: var(--current-color);
+            transform: scale(1.1);
+        }
+        
+        /* --- Results Screen --- */
+        #results-summary, #results-time {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        #results-percentage {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent-color-1);
+            margin-bottom: 30px;
+        }
+        #results-list {
+            list-style-type: none;
+            text-align: left;
+            max-height: 300px;
+            overflow-y: auto;
+            padding-right: 15px;
+        }
+        #results-list li {
+            background: rgba(0,0,0,0.2);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            border-left: 5px solid;
+        }
+        .result-question {
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .result-answer {
+            font-size: 0.9rem;
+        }
+        .result-answer span {
+            font-weight: bold;
+        }
+        .correct-answer {
+            border-left-color: var(--correct-color);
+        }
+        .incorrect-answer {
+            border-left-color: var(--incorrect-color);
+        }
+        .correct-icon::before { content: '✅ '; }
+        .incorrect-icon::before { content: '❌ '; }
+        
+        /* --- Footer Styles --- */
+        footer {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            padding: 15px 0;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .footer-text {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .footer-links {
+            display: flex;
+            gap: 20px;
+        }
+        .footer-links a {
+            color: var(--text-color);
+            transition: all 0.3s ease;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .footer-links a:hover {
+            color: var(--accent-color-1);
+            transform: translateY(-3px);
+            background: rgba(0, 242, 254, 0.1);
+            border-color: var(--accent-color-1);
+        }
+        .footer-links svg {
+            width: 22px;
+            height: 22px;
+            fill: currentColor;
+        }
+        .footer-links a::before {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--accent-color-2);
+            color: var(--text-dark);
+            padding: 4px 8px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        .footer-links a:hover::before {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        /* --- Utility & Error --- */
+        #error-message {
+            color: var(--incorrect-color);
+            background: rgba(220, 53, 69, 0.2);
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 15px;
+            display: none;
+            font-weight: 600;
+        }
+
+        /* --- Timer Styles --- */
+        #quiz-timer {
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding: 10px 20px;
+            background: rgba(0,0,0,0.3);
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.2);
+            margin-bottom: 20px;
+            color: var(--accent-color-4);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Home Screen -->
+        <div id="home-screen" class="screen active">
+            <h1>SmartQuiz Builder</h1>
+            <p>Build and Play Custom Quizzes Instantly.</p>
+            <div class="btn-wrapper">
+                <button id="upload-csv-btn" class="btn">➕ Upload CSV File</button>
+                <button id="create-manual-btn" class="btn btn-secondary">✍️ Create Quiz Manually</button>
+            </div>
+             <div class="btn-wrapper">
+                <button id="about-btn" class="btn" style="background: rgba(197, 212, 255, 0.3);">About This App</button>
+            </div>
+        </div>
+
+        <!-- About Screen -->
+        <div id="about-screen" class="screen">
+            <h2>About SmartQuiz Builder</h2>
+            <p style="font-size: 1.2rem; line-height: 1.8;">
+                This site is for practitioners who want to practice questions and answers for themselves.
+            </p>
+            <p>
+                Whether you're studying for an exam, preparing for an interview, or just looking to test your knowledge, SmartQuiz Builder provides a simple and effective way to create personalized quizzes.
+            </p>
+            <div class="btn-wrapper">
+                <button class="btn btn-secondary back-to-home">Back to Home</button>
+            </div>
+        </div>
+
+        <!-- CSV Upload Screen -->
+        <div id="csv-upload-screen" class="screen">
+            <h2>Upload CSV</h2>
+            <div class="form-group">
+                <label for="timer-csv">Set Timer (minutes):</label>
+                <input type="number" id="timer-csv" value="10" min="1">
+            </div>
+            <div class="form-group">
+                <label for="csv-input">Paste CSV content here:</label>
+                <div class="csv-format-info">Format: question,option1,option2,option3,option4,correct_answer,type<br>Example (MCQ): What is 2+2?,1,2,3,4,4,MCQ<br>Example (T/F): Is the sky blue?,,,,True,TF</div>
+                <textarea id="csv-input" placeholder="Paste your CSV data here..."></textarea>
+            </div>
+            <div class="btn-wrapper">
+                <button id="start-quiz-csv-btn" class="btn">Start Quiz</button>
+                <button class="btn btn-secondary back-to-home">Back to Home</button>
+            </div>
+        </div>
+
+        <!-- Manual Entry Screen -->
+        <div id="manual-entry-screen" class="screen">
+            <h2>Create Questions Manually</h2>
+            <div class="form-group">
+                <label for="timer-manual">Set Timer (minutes):</label>
+                <input type="number" id="timer-manual" value="10" min="1">
+            </div>
+            <div id="manual-questions-container">
+                <!-- Question entry forms will be injected here -->
+            </div>
+            <div class="btn-wrapper">
+                <button id="add-question-btn" class="btn">➕ Add Question</button>
+                <button id="start-quiz-manual-btn" class="btn btn-secondary">Start Quiz</button>
+            </div>
+             <button class="btn back-to-home" style="margin-top:20px; background: rgba(0,0,0,0.3);">Back to Home</button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="screen">
+            <div id="quiz-screen-layout">
+                <div id="quiz-main-panel">
+                    <h2 id="quiz-question">Question text goes here?</h2>
+                    <div id="quiz-options">
+                        <!-- Option labels will be injected here -->
+                    </div>
+                    <div id="quiz-navigation">
+                        <button id="prev-question-btn" class="btn btn-secondary">Previous</button>
+                        <button id="submit-quiz-btn" class="btn">Submit Quiz</button>
+                        <button id="next-question-btn" class="btn">Next</button>
+                    </div>
+                </div>
+                <div id="quiz-side-panel">
+                    <div id="quiz-timer">00:00</div>
+                    <h3>Questions</h3>
+                    <div id="question-grid">
+                        <!-- Grid buttons will be injected here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Result Screen -->
+        <div id="result-screen" class="screen">
+            <h2>Quiz Results</h2>
+            <p id="results-summary">You scored 8 out of 10</p>
+            <p id="results-percentage">80%</p>
+            <p id="results-time"></p>
+            <ul id="results-list">
+                <!-- Result items will be injected here -->
+            </ul>
+            <div class="btn-wrapper">
+                <button id="play-again-btn" class="btn">Play Again</button>
+                <button class="btn btn-secondary back-to-home">Back to Home</button>
+            </div>
+        </div>
+        
+        <div id="error-message"></div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-text">Developed by Prashant Gohel</div>
+            <div class="footer-links">
+                <a href="https://prashant-gohel-portfolio.netlify.app" target="_blank" data-tooltip="Portfolio">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                </a>
+                <a href="https://www.youtube.com/@DevOpsWithUs" target="_blank" data-tooltip="#DevOpsWithUs">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.58 7.19c-.23-.86-.9-1.52-1.76-1.75C18.25 5 12 5 12 5s-6.25 0-7.82.44C3.32 5.67 2.65 6.33 2.42 7.19 2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.9 1.52 1.76 1.75C5.75 19 12 19 12 19s6.25 0 7.82-.44c.86-.23 1.52-.9 1.76-1.75C22 15.25 22 12 22 12s0-3.25-.42-4.81zM9.75 15.5V8.5l6.5 3.5-6.5 3.5z"/></svg>
+                </a>
+                <a href="https://github.com/prashantgohel321" target="_blank" data-tooltip="prashantgohel321">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.475 2 2 6.475 2 12a9.994 9.994 0 0 0 6.838 9.488c.5.087.687-.213.687-.475 0-.237-.013-1.025-.013-1.862-2.512.463-3.162-.613-3.362-1.175-.113-.288-.6-1.175-1.025-1.413-.35-.187-.85-.65-.013-.662.788-.013 1.35.725 1.538 1.025.9 1.55 2.338 1.112 2.912.85.088-.65.35-1.112.638-1.362-2.225-.25-4.55-1.113-4.55-4.938 0-1.088.387-1.987 1.025-2.688-.1-.25-.45-1.275.1-2.65 0 0 .837-.262 2.75 1.026a9.58 9.58 0 0 1 5 0c1.912-1.3 2.75-1.026 2.75-1.026.55 1.375.2 2.4.1 2.65.637.7 1.025 1.6 1.025 2.688 0 3.837-2.337 4.687-4.562 4.937.362.312.675.912.675 1.85 0 1.337-.013 2.412-.013 2.75 0 .262.188.575.688.474A10.016 10.016 0 0 0 22 12c0-5.525-4.475-10-10-10z"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/prashantgohel1706" target="_blank" data-tooltip="prashantgohel1706">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zm-12 2H5v14h2V5zm4 0H9v14h2V5zm4 0h-2v14h2V5zm4 0h-2v14h2V5z" transform="scale(1,-1) translate(0,-24)" style="display:none;"/> <!-- Basic bar chart, not linkedin -->
+                    <path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zM8.5 18.5H6V10h2.5v8.5zM7.25 8.75a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM18.5 18.5h-2.5v-4.5c0-1.22-.88-2.25-2-2.25s-2 1.03-2 2.25v4.5H9.5V10h2.5v1.25c.5-.9 1.6-1.5 2.75-1.5 2.06 0 3.75 1.69 3.75 4.25v4.5z"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- DOM Elements ---
+            const screens = document.querySelectorAll('.screen');
+            const errorMessage = document.getElementById('error-message');
+            const aboutBtn = document.getElementById('about-btn');
+            const backToHomeBtns = document.querySelectorAll('.back-to-home');
+
+            // Home Screen
+            const uploadCsvBtn = document.getElementById('upload-csv-btn');
+            const createManualBtn = document.getElementById('create-manual-btn');
+
+            // CSV Screen
+            const csvInput = document.getElementById('csv-input');
+            const startQuizCsvBtn = document.getElementById('start-quiz-csv-btn');
+            const timerCsv = document.getElementById('timer-csv');
+
+            // Manual Screen
+            const manualQuestionsContainer = document.getElementById('manual-questions-container');
+            const addQuestionBtn = document.getElementById('add-question-btn');
+            const startQuizManualBtn = document.getElementById('start-quiz-manual-btn');
+            const timerManual = document.getElementById('timer-manual');
+
+            // Quiz Screen
+            const quizQuestion = document.getElementById('quiz-question');
+            const quizOptions = document.getElementById('quiz-options');
+            const prevQuestionBtn = document.getElementById('prev-question-btn');
+            const nextQuestionBtn = document.getElementById('next-question-btn');
+            const submitQuizBtn = document.getElementById('submit-quiz-btn');
+            const quizTimer = document.getElementById('quiz-timer');
+            const questionGrid = document.getElementById('question-grid');
+
+            // Result Screen
+            const resultsSummary = document.getElementById('results-summary');
+            const resultsPercentage = document.getElementById('results-percentage');
+            const resultsList = document.getElementById('results-list');
+            const playAgainBtn = document.getElementById('play-again-btn');
+            const resultsTime = document.getElementById('results-time');
+
+            // --- State Variables ---
+            let questions = [];
+            let currentQuestionIndex = 0;
+            let userAnswers = [];
+            let questionIdCounter = 0;
+            let quizInterval;
+            let timeLimit = 0; // in seconds
+            let timeLeft = 0;
+
+            // --- Functions ---
+            function showScreen(screenId) {
+                screens.forEach(screen => screen.classList.remove('active'));
+                document.getElementById(screenId).classList.add('active');
+                hideError();
+            }
+
+            function showError(message) {
+                errorMessage.textContent = message;
+                errorMessage.style.display = 'block';
+            }
+
+            function hideError() {
+                errorMessage.style.display = 'none';
+            }
+            
+            function resetToHome() {
+                questions = [];
+                currentQuestionIndex = 0;
+                userAnswers = [];
+                questionIdCounter = 0;
+                manualQuestionsContainer.innerHTML = '';
+                csvInput.value = '';
+                stopTimer();
+                showScreen('home-screen');
+            }
+
+            /**
+             * Shuffles an array in place using the Fisher-Yates algorithm.
+             * @param {Array} array The array to shuffle.
+             */
+            function shuffleArray(array) {
+                for (let i = array.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]];
+                }
+            }
+
+            function startQuiz(durationMinutes) {
+                if (questions.length === 0) {
+                    showError("No questions found. Please add some questions first.");
+                    return;
+                }
+                currentQuestionIndex = 0;
+                userAnswers = new Array(questions.length).fill(null);
+                timeLimit = durationMinutes * 60;
+                timeLeft = timeLimit;
+                
+                renderQuestionGrid();
+                displayQuestion(0);
+                startTimer();
+                showScreen('quiz-screen');
+            }
+
+            function displayQuestion(index) {
+                currentQuestionIndex = index;
+                const question = questions[index];
+                quizQuestion.textContent = `${index + 1}. ${question.question}`;
+                quizOptions.innerHTML = '';
+
+                // Create a copy of options and shuffle them to randomize display order
+                let options = question.type === 'MCQ' ? [...question.options] : ['True', 'False'];
+                shuffleArray(options);
+
+                options.forEach(option => {
+                    if (option) {
+                        const optionId = `q${index}_option_${option.replace(/\s+/g, '')}`;
+                        const wrapper = document.createElement('div');
+                        
+                        const input = document.createElement('input');
+                        input.type = 'radio';
+                        input.name = `question_${index}`;
+                        input.id = optionId;
+                        input.value = option;
+                        input.classList.add('option-input');
+                        if (userAnswers[index] === option) {
+                            input.checked = true;
+                        }
+                        input.addEventListener('change', () => selectAnswer(option));
+
+                        const label = document.createElement('label');
+                        label.htmlFor = optionId;
+                        label.textContent = option;
+                        label.classList.add('option-label');
+
+                        wrapper.appendChild(input);
+                        wrapper.appendChild(label);
+                        quizOptions.appendChild(wrapper);
+                    }
+                });
+
+                updateNavigationButtons();
+                updateQuestionGrid();
+            }
+
+            function selectAnswer(selectedOption) {
+                userAnswers[currentQuestionIndex] = selectedOption;
+                updateQuestionGrid();
+            }
+            
+            function updateNavigationButtons() {
+                prevQuestionBtn.disabled = currentQuestionIndex === 0;
+                nextQuestionBtn.disabled = currentQuestionIndex === questions.length - 1;
+            }
+
+            function renderQuestionGrid() {
+                questionGrid.innerHTML = '';
+                questions.forEach((_, index) => {
+                    const button = document.createElement('button');
+                    button.textContent = index + 1;
+                    button.classList.add('grid-btn');
+                    button.addEventListener('click', () => displayQuestion(index));
+                    questionGrid.appendChild(button);
+                });
+            }
+
+            function updateQuestionGrid() {
+                const gridButtons = questionGrid.children;
+                for (let i = 0; i < gridButtons.length; i++) {
+                    gridButtons[i].classList.remove('current', 'attended');
+                    if (userAnswers[i] !== null) {
+                        gridButtons[i].classList.add('attended');
+                    }
+                    if (i === currentQuestionIndex) {
+                        gridButtons[i].classList.add('current');
+                    }
+                }
+            }
+
+            function showResults() {
+                stopTimer();
+                let score = 0;
+                questions.forEach((q, i) => {
+                    if (userAnswers[i] && userAnswers[i].toLowerCase() === q.correctAnswer.toLowerCase()) {
+                        score++;
+                    }
+                });
+
+                showScreen('result-screen');
+                resultsSummary.textContent = `You scored ${score} out of ${questions.length}`;
+                const percentage = questions.length > 0 ? Math.round((score / questions.length) * 100) : 0;
+                resultsPercentage.textContent = `${percentage}%`;
+                
+                const timeTaken = timeLimit - timeLeft;
+                const minutes = Math.floor(timeTaken / 60);
+                const seconds = timeTaken % 60;
+                resultsTime.textContent = `Time Taken: ${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+
+                resultsList.innerHTML = '';
+                questions.forEach((question, index) => {
+                    const userAnswer = userAnswers[index];
+                    const isCorrect = userAnswer && (userAnswer.toLowerCase() === question.correctAnswer.toLowerCase());
+                    
+                    const li = document.createElement('li');
+                    li.classList.add(isCorrect ? 'correct-answer' : 'incorrect-answer');
+                    
+                    const userChoiceHTML = isCorrect 
+                        ? `<span class="correct-icon">Your answer: ${userAnswer}</span>`
+                        : `<span class="incorrect-icon">Your answer: ${userAnswer || 'Not answered'}</span>`;
+
+                    li.innerHTML = `
+                        <p class="result-question">${index + 1}. ${question.question}</p>
+                        <p class="result-answer">
+                            ${userChoiceHTML}<br>
+                            <span>Correct answer: ${question.correctAnswer}</span>
+                        </p>
+                    `;
+                    resultsList.appendChild(li);
+                });
+            }
+            
+            function parseCSV() {
+                const data = csvInput.value.trim();
+                if (!data) {
+                    showError("CSV input is empty.");
+                    return null;
+                }
+                
+                try {
+                    const rows = data.split('\n').filter(row => row.trim() !== '');
+                    const parsedQuestions = rows.map((row, index) => {
+                        const columns = row.split(',').map(c => c.trim());
+                        const [questionText, opt1, opt2, opt3, opt4, correctAnswer, type] = columns;
+
+                        if (!questionText || !correctAnswer || !type) {
+                            throw new Error(`Row ${index + 1}: Missing question, correct answer, or type.`);
+                        }
+
+                        if (type.toUpperCase() === 'MCQ') {
+                            const options = [opt1, opt2, opt3, opt4].filter(Boolean);
+                            if (options.length < 2) throw new Error(`Row ${index + 1}: MCQ needs at least 2 options.`);
+                            return { question: questionText, options, correctAnswer, type: 'MCQ' };
+                        } else if (type.toUpperCase() === 'TF') {
+                            return { question: questionText, options: ['True', 'False'], correctAnswer, type: 'TF' };
+                        } else {
+                            throw new Error(`Row ${index + 1}: Invalid type "${type}".`);
+                        }
+                    });
+                    
+                    if (parsedQuestions.length > 0) {
+                        return parsedQuestions;
+                    } else {
+                        showError("No valid questions parsed from CSV.");
+                        return null;
+                    }
+                } catch (error) {
+                    showError(`CSV Parsing Error: ${error.message}`);
+                    return null;
+                }
+            }
+            
+            function addManualQuestionField() {
+                const questionDiv = document.createElement('div');
+                questionDiv.classList.add('question-entry');
+                const uniqueId = ++questionIdCounter;
+                
+                questionDiv.innerHTML = `
+                    <button class="remove-question-btn" data-id="${uniqueId}" title="Remove Question">&times;</button>
+                    <div class="form-group"><label for="q-text-${uniqueId}">Question:</label><input type="text" id="q-text-${uniqueId}"></div>
+                    <div class="form-group"><label for="q-type-${uniqueId}">Type:</label><select id="q-type-${uniqueId}" data-id="${uniqueId}"><option value="MCQ">Multiple Choice</option><option value="TF">True / False</option></select></div>
+                    <div id="options-container-${uniqueId}"><div class="form-group"><label>Options (for MCQ):</label><input type="text" class="q-option" placeholder="Option 1" style="margin-bottom:10px;"><input type="text" class="q-option" placeholder="Option 2" style="margin-bottom:10px;"><input type="text" class="q-option" placeholder="Option 3" style="margin-bottom:10px;"><input type="text" class="q-option" placeholder="Option 4"></div></div>
+                    <div class="form-group"><label for="q-correct-${uniqueId}">Correct Answer:</label><input type="text" id="q-correct-${uniqueId}"></div>
+                `;
+                manualQuestionsContainer.appendChild(questionDiv);
+                
+                questionDiv.querySelector(`#q-type-${uniqueId}`).addEventListener('change', (e) => {
+                    const optionsContainer = document.getElementById(`options-container-${e.target.dataset.id}`);
+                    optionsContainer.style.display = e.target.value === 'MCQ' ? 'block' : 'none';
+                });
+                questionDiv.querySelector('.remove-question-btn').addEventListener('click', (e) => e.currentTarget.parentElement.remove());
+            }
+            
+            function parseManualQuestions() {
+                const questionEntries = manualQuestionsContainer.querySelectorAll('.question-entry');
+                if (questionEntries.length === 0) {
+                    showError("Please add at least one question.");
+                    return null;
+                }
+                
+                try {
+                    const parsedQuestions = Array.from(questionEntries).map((entry, index) => {
+                        const questionText = entry.querySelector('input[id^="q-text-"]').value.trim();
+                        const type = entry.querySelector('select').value;
+                        const correctAnswer = entry.querySelector('input[id^="q-correct-"]').value.trim();
+
+                        if (!questionText || !correctAnswer) throw new Error(`Question ${index + 1} is incomplete.`);
+
+                        if (type === 'MCQ') {
+                            const options = Array.from(entry.querySelectorAll('.q-option')).map(opt => opt.value.trim()).filter(Boolean);
+                            if (options.length < 2) throw new Error(`Question ${index + 1}: MCQ needs at least 2 options.`);
+                            return { question: questionText, options, correctAnswer, type: 'MCQ' };
+                        } else {
+                            return { question: questionText, options: ['True', 'False'], correctAnswer, type: 'TF' };
+                        }
+                    });
+                    return parsedQuestions;
+                } catch (error) {
+                    showError(`Error: ${error.message}`);
+                    return null;
+                }
+            }
+
+            // --- Timer Functions ---
+            function startTimer() {
+                quizInterval = setInterval(() => {
+                    timeLeft--;
+                    const minutes = Math.floor(timeLeft / 60);
+                    const seconds = timeLeft % 60;
+                    quizTimer.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+                    if (timeLeft <= 0) {
+                        stopTimer();
+                        alert("Time's up!");
+                        showResults();
+                    }
+                }, 1000);
+            }
+
+            function stopTimer() {
+                clearInterval(quizInterval);
+            }
+
+            // --- Event Listeners ---
+            uploadCsvBtn.addEventListener('click', () => showScreen('csv-upload-screen'));
+            createManualBtn.addEventListener('click', () => {
+                showScreen('manual-entry-screen');
+                if (manualQuestionsContainer.children.length === 0) addManualQuestionField();
+            });
+            aboutBtn.addEventListener('click', () => showScreen('about-screen'));
+            backToHomeBtns.forEach(btn => btn.addEventListener('click', resetToHome));
+
+            startQuizCsvBtn.addEventListener('click', () => {
+                const parsed = parseCSV();
+                if (parsed) {
+                    questions = parsed;
+                    startQuiz(parseInt(timerCsv.value, 10));
+                }
+            });
+            startQuizManualBtn.addEventListener('click', () => {
+                const parsed = parseManualQuestions();
+                if (parsed) {
+                    questions = parsed;
+                    startQuiz(parseInt(timerManual.value, 10));
+                }
+            });
+
+            addQuestionBtn.addEventListener('click', addManualQuestionField);
+            
+            prevQuestionBtn.addEventListener('click', () => displayQuestion(currentQuestionIndex - 1));
+            nextQuestionBtn.addEventListener('click', () => displayQuestion(currentQuestionIndex + 1));
+            submitQuizBtn.addEventListener('click', () => {
+                if (confirm('Are you sure you want to submit the quiz?')) {
+                    showResults();
+                }
+            });
+            
+            playAgainBtn.addEventListener('click', resetToHome);
+
+        });
+    </script>
+</body>
+</html>
