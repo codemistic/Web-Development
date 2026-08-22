@@ -1,0 +1,32 @@
+@import url("../../../global.css");
+
+.nav-bar {
+  width: 100%;
+  background-color: var(--primary-bg-color);
+  border-radius: var(--border-radius-custom);
+  box-shadow: var(--universal-box-shadow);
+  min-height: 10vh;
+  padding: 0 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mob-nav-items {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 999999;
+  background-color: var(--primary-background-color);
+  justify-content: flex-start;
+}
+
+.nav-item {
+  display: flex;
+}
+
+.nav-image-container {
+  width: 4rem;
+}
