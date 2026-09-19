@@ -1,0 +1,43 @@
+*{
+    padding : 0;
+    margin  : 0;
+}
+.game{
+    width:600px;
+    height:600px;
+    border : 3px solid black;
+    margin:  20px auto;
+    overflow : hidden;
+    background-image : url("bg.png");
+}
+#block{
+    width: 50px;
+    height : 600px;
+    background-color : #009e2a;
+    border-top-radius : 3px;
+    position : relative;
+    left : 600px;
+    animation :  block 2s infinite linear;
+}
+@keyframes block{
+    0%{left:600px}
+    100%{left:-50px}
+}
+#hole{
+    width: 50px;
+    height : 150px;
+    background-color :  #4cb8c2;
+    position : relative;
+    left : 600px;
+    top : -600px;
+    animation :  block 2s infinite linear;
+}
+#character{
+    width : 20px;
+    height : 20px;
+    border-radius : 50%;
+    background-color : yellow;
+    position : absolute;
+    top: 220px;
+    margin-left:20px;
+}
