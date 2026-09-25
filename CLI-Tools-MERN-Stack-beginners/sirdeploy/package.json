@@ -1,0 +1,49 @@
+{
+  "name": "sirdeploy",
+  "version": "1.0.14",
+  "description": "Easily Create Any Server and deploy it on Heroku",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon src/index"
+  },
+  "keywords": [
+    "deploy",
+    "server in 1 click",
+    "server",
+    "heroku",
+    "heroku-cli",
+    "heroku-deploy",
+    "heroku-deploy-server",
+    "heroku-deploy-server-cli",
+    "heroku-deploy-server-node",
+    "heroku-deploy-server-node-cli",
+    "heroku-deploy-server-node-js",
+    "heroku-deploy-server-node-js-cli",
+    "heroku-deploy-server-node-js-nodemon",
+    "heroku-deploy-server-node-js-nodemon-cli",
+    "heroku-deploy-server-node-js-nodemon-server",
+    "heroku-deploy-server-node-js-nodemon-server-cli"
+  ],
+  "author": {
+    "name": "Shantanu Bombatkar",
+    "email": "shodkkshantanu@gmail.com",
+    "url": "https://github.com/shaantanu9"
+  },
+  "files": [
+    "commands/*",
+    "index.js"
+  ],
+  "bin": {
+    "deploy": "index.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@tos_/cli-welcome": "^1.0.2",
+    "axios": "^0.27.2",
+    "commander": "^9.0.0",
+    "shelljs": "^0.8.5"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}

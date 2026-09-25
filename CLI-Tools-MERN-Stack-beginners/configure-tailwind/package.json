@@ -1,0 +1,36 @@
+{
+	"name": "configure-tailwind",
+	"version": "1.0.14",
+	"description": "Easily Create Any TailwindCSS Integrated App BoilerPlate",
+	"main": "index.js",
+	"scripts": {
+		"server": "nodemon src/index"
+	},
+	"keywords": [
+		"tailwind-react-app",
+		"tailwind-gastby-app",
+		"tailwind-angular-app",
+		"tailwind-next-app",
+		"tailwind-nuxt-app",
+		"tailwindcss-configure-react-app",
+		"tailwind-next-configure-app"
+	],
+	"author": {
+		"name": "Shantanu Bombatkar",
+		"email": "shodkkshantanu@gmail.com",
+		"url": "https://github.com/shaantanu9"
+	},
+	"files": [
+		"commands/*",
+		"index.js"
+	],
+	"bin": {
+		"createtailwind": "index.js"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"@tos_/cli-welcome": "^1.0.2",
+		"commander": "^9.0.0",
+		"shelljs": "^0.8.5"
+	}
+}
