@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-sacale=1.0">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Information</h1>
+
+        
+        <div class="search-container">
+            <input type="text" id="movie-search" placeholder="Enter Movie Title">
+            <button id="search-button">Search</button>
+        </div>
+
+      
+        <div class="filter-sort-container">
+            <select id="genre-filter">
+                <option value="">All Genres</option>
+            </select>
+
+            
+            <select id="sort-options">
+                <option value="">Sort By</option>
+                <option value="highestRating">Highest Rating</option>
+                <option value="lowestRating">Lowest Rating</option>
+                <option value="mostVotes">Most Votes</option>
+                <option value="leastVotes">Least Votes</option>
+            </select>
+        </div>
+
+        
+        <div id="movie-list"></div>
+
+      
+        <div class="pagination">
+            <button id="prev-button" disabled>Previous</button>
+            <button id="next-button" disabled>Next</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
