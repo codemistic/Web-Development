@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>wesbite </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+            <nav>
+                <div class="logo">
+                    <img src="https://imgur.com/uhAWy8k">
+                </div>
+                <div class="nav-links">
+
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Phone</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Cart</a></li>
+                    </ul>
+                </div>  
+            </nav>
+            <div class="information">
+                <div class="overlay">
+                    
+                </div>
+                <img src="https://imgur.com/jBBPiwT" class="mobile">
+                <div id="circle">
+                    <div class="feature one ">
+                        <img src="https://imgur.com/Q494Vfr">
+                        <div>
+                            <h1>Camera</h1>
+                            <p>12MP,Wide Angle Lens</p>
+                        </div>
+                    </div>
+                    <div class="feature two">
+                        <img src="https://imgur.com/EQITAuW">
+                        <div>
+                            <h1>Processor</h1>
+                            <p>SnapDragon 785</p>
+                        </div>
+                    </div>
+                    <div class="feature three">
+                        <img src="https://imgur.com/uOskqtL">
+                        <div>
+                            <h1>Display</h1>
+                            <p>SAMOLED 120Hz</p>
+                        </div>
+                    </div>
+                    <div class="feature four">
+                        <img src="https://imgur.com/yAHDxzC">  
+                        <div>
+                            <h1>Battery</h1>
+                            <p>8000mAh</p>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <img src="https://imgur.com/64NJM5G" id="upbtn">
+                <h3>Features</h3>
+                <img src="https://imgur.com/64NJM5G" id="downbtn">
+            </div>
+        </div>
+        <script>
+            var circle=document.getElementById("circle");
+            var upbtn=document.getElementById("upbtn");
+            var downbtn=document.getElementById("downbtn");
+            var rotatevalue=circle.style.transform;
+            var rotatesum;
+            upbtn.onclick=function()
+            {
+                rotatesum=rotatevalue+"rotate(-90deg)";
+                circle.style.transform=rotatesum;
+                rotatevalue=rotatesum;
+            }
+            downbtn.onclick=function()
+            {
+                rotatesum=rotatevalue+"rotate(90deg)";
+                circle.style.transform=rotatesum;
+                rotatevalue=rotatesum;
+            }
+        </script>
+
+    </body>
+</html>         
