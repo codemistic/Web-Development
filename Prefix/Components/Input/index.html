@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./source/input.css" />
+    <script
+      src="https://kit.fontawesome.com/6f74bb313d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../globalScript.js"></script>
+  </head>
+  <body class="preview-grid-wrapper">
+    <form class="form" method="post" action="#" onsubmit="return false">
+      <div class="form-field">
+        <label for="username-input" class="input-lbl required-field"
+          >Username
+        </label>
+        <input
+          name="username-input"
+          class="form-input"
+          id="username-input"
+          required
+          aria-required="true"
+          autocomplete="off"
+          type="text"
+          placeholder="Jeffdelaney23"
+        />
+        <small
+          class="alert alert-danger fs-sml padding-sml display-none"
+          id="username-text-error"
+          ><span><i class="fas fa-exclamation-circle"></i></span> Username can't
+          be empty</small
+        >
+        <small
+          class="alert alert-success fs-sml padding-sml display-none"
+          id="username-text-success"
+          ><span><i class="fas fa-check-circle"></i></span> Username is
+          Available</small
+        >
+      </div>
+
+      <div class="form-field">
+        <label for="email-input" class="input-lbl required-field">Email </label>
+        <input
+          name="email-input"
+          class="form-input"
+          id="email-input"
+          required
+          aria-required="true"
+          autocomplete="off"
+          type="email"
+          placeholder="beaucarnes123@gmail.com"
+        />
+        <small
+          class="alert alert-danger fs-sml padding-sml display-none"
+          id="email-text-error"
+          ><span><i class="fas fa-exclamation-circle"></i></span>
+          Email can't be empty
+        </small>
+        <small
+          class="alert alert-danger fs-sml padding-sml display-none"
+          id="email-validation-error"
+          ><span><i class="fas fa-exclamation-circle"></i></span>
+          Enter a Valid Email
+        </small>
+        <small
+          class="alert alert-success fs-sml padding-sml display-none"
+          id="email-validation-success"
+          ><span><i class="fas fa-check-circle"></i></span> Valid Email</small
+        >
+      </div>
+      <div class="form-field">
+        <label for="password-input" class="input-lbl required-field"
+          >Password
+        </label>
+        <input
+          name="password-input"
+          class="form-input"
+          id="password-input"
+          required
+          aria-required="true"
+          autocomplete="off"
+          type="password"
+        />
+        <small
+          class="alert alert-danger fs-sml padding-sml display-none"
+          id="password-text-error"
+          ><span><i class="fas fa-exclamation-circle"></i></span>
+          Password can't be empty.
+        </small>
+        <small
+          class="alert alert-danger fs-sml padding-sml display-none"
+          id="password-validation-error"
+          ><span><i class="fas fa-exclamation-circle"></i></span>
+          Password must at least contain 8 characters with at least 1 lowercase
+          character, 1 uppercase character, 1 number, and 1 special character in
+          (!@#$%^&*).
+        </small>
+        <small
+          class="alert alert-success fs-sml padding-sml display-none"
+          id="password-validation-success"
+          ><span><i class="fas fa-exclamation-circle"></i></span>
+          Valid Password.
+        </small>
+      </div>
+      <div class="form-field">
+        <label for="password-match-input" class="input-lbl required-field"
+          >Confirm Password
+        </label>
+        <input
+          name="password-match-input"
+          class="form-input"
+          id="password-match-input"
+          required
+          aria-required="true"
+          autocomplete="off"
+          type="password"
+        />
+        <small
+          class="alert alert-danger fs-sml padding-sml display-none"
+          id="password-match-text-error"
+          ><span><i class="fas fa-exclamation-circle"></i></span>
+          Please fill out this field
+        </small>
+        <small
+          class="alert alert-danger fs-sml padding-sml display-none"
+          id="password-match-validation-error"
+          ><span><i class="fas fa-exclamation-circle"></i></span>
+          Password didn't match
+        </small>
+        <small
+          class="alert alert-success fs-sml padding-sml display-none"
+          id="password-match-validation-success"
+          ><span><i class="fas fa-exclamation-circle"></i></span>
+          Password Matched
+        </small>
+      </div>
+      <div>
+        <label for="comments">Comments</label>
+        <textarea
+          name="comments"
+          class="form-textarea txtarea-mdm tab-txtarea-resp"
+        ></textarea>
+      </div>
+      <input
+        type="submit"
+        class="btn btn-cta"
+        disabled
+        id="form-submit"
+        value="Submit"
+      />
+    </form>
+  </body>
+  <script src="./source/main.js"></script>
+</html>

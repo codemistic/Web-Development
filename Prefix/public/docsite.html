@@ -1,0 +1,1889 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prefix</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../assets/site.webmanifest" />
+    <meta name="HandheldFriendly" content="true" />
+
+    <link rel="stylesheet" href="/source/docsite.css" />
+    <script defer type="text/javascript" src="../globalScript.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6f74bb313d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="../source/docsite.js"></script>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class=" mob-nav-items padding-mdm display-none" id="doc-nav">
+        <div><button class="red-text-color border-radius-100" id="btn-close-doc-nav"><i class="fas fa-times-circle"></i>
+        </button></div>
+        <ul class="  flex-center gap-lrg flex-column">
+        <li class="dark-txt-light-bg padding-sml ">
+          <a href="../index.html#installation"
+          >Installation</a>
+          
+        </li>
+        <li class="dark-txt-light-bg padding-sml ">
+          <a href="../index.html#about">About</a>
+          
+        </li>
+      </ul>
+
+      </div>
+
+
+      </div>
+      <button class="btn pc-tab-display-none" id="btn-open-doc-nav">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="flex-gap-mdm">
+        <li class="nav-image-container">
+          <a href="../index.html" title="Home"><img
+            class="image-resp border-rad-20"
+            src="/assets/prefix (1).png"
+            alt="logo"
+          />
+        </a>
+        </li>
+        <li>
+          <input
+            type="search"
+            name=""
+            class="form-input fluid-width"
+            placeholder="Search"
+            id=""
+          />
+        </li>
+      </ul>
+      <ul class="flex-spc-btwn mob-display-none">
+        <li>
+          <a href="../index.html#installation" class="cta-text-hover"
+          target="_blank"
+          rel="noopener noreferrer nofollow" 
+            >Installation</a
+          >
+        </li>
+
+        <li><a href="../index.html#about" class="cta-text-hover"   target="_blank"
+          rel="noopener noreferrer nofollow" >About</a></li>
+      </ul>
+      <ul class="flex-spc-btwn">
+        <li title="GitHub">
+          <a
+            class="btn-icon alert-text"
+            href="https://github.com/Sen-442b/prefix-ui"
+            target="_blank"
+            rel="noopener noreferrer nofollow" 
+            ><i class="fa fa-github"></i
+  
+          ></a>
+        </li>
+        <li title="Twitter">
+          <a
+            class="btn-icon alert-text"
+            href="https://twitter.com/sen_shubhendu"
+            target="_blank"
+            rel="noopener noreferrer nofollow" 
+            ><i class="fa fa-twitter"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="doc-wrapper grid-col-2--20-80 mob-grid-col-1">
+      <aside class="padding-sml">
+        <header class="flex-spc-btwn">
+          <h2 class="text-align-center fs-mdm heading-typopraphy">
+            Components
+          </h2>
+
+          <button class="pc-tab-display-none btn" id="toggle-component-list">
+            ↓
+          </button>
+        </header>
+        <ul
+          class="doc-aside flex-column flex-spc-arnd doc-aside-nav mob-display-none"
+          id="component-list"
+        >
+          <li><a href="#alert" class="cta-text-hover">Alert</a></li>
+          <li><a href="#avatar" class="cta-text-hover">Avatar</a></li>
+          <li><a href="#badge" class="cta-text-hover">Badge</a></li>
+          <li><a href="#button" class="cta-text-hover">Button</a></li>
+          <li><a href="#card" class="cta-text-hover">Cards</a></li>
+          <li><a href="#grid" class="cta-text-hover">Grid</a></li>
+          <li><a href="#image" class="cta-text-hover">Image</a></li>
+          <li><a href="#input" class="cta-text-hover">Input</a></li>
+          <li><a href="#list" class="cta-text-hover">List</a></li>
+          <li><a href="#modal" class="cta-text-hover">Modal</a></li>
+          <li><a href="#navigation" class="cta-text-hover">Navigation</a></li>
+          <li><a href="#text-utils" class="cta-text-hover">Typography</a></li>
+        </ul>
+      </aside>
+      <main class="doc-main">
+        <div id="alert">
+          <div class="content-intro">
+            <h3 class="heading-light fs-lrg">Alert</h3>
+            <h5>Alerts are generally used to attract user attention</h5>
+          </div>
+          <div class="content-showcase">
+            <h5>
+              we have 5 different types of alert components Primary, Secondary,
+              Danger and Immediate action
+            </h5>
+            <h4 class="fs-mdm">Usage</h4>
+            <p>
+              Add the alert class with the required type of alert eg:<code
+                class="universal-box-shadow"
+              >
+                class="alert alert-primary"</code
+              >
+            </p>
+            <div class="component-display">
+              <div class="alert alert-primary">
+                This is a primary text in primary alert box with
+                <a class="alert-link-text" href="#">alert link</a>
+              </div>
+              <div class="alert alert-secondary">
+                This is a random text to show secondary alert box with
+                <a class="alert-link-text" href="#">alert link</a>
+              </div>
+              <div class="alert alert-danger">
+                <a href="#"><i class="fas fa-exclamation-circle"></i></a> This
+                is a danger text in danger alert box
+              </div>
+              <div class="alert alert-success">
+                <a href="#"><i class="fas fa-check-circle"></i></a> This is a
+                positive alert text in alert box
+              </div>
+              <div class="alert alert-immediate-action">
+                <a href="#"><i class="fas fa-radiation-alt"></i></a> This is a
+                Warning text in an alert box
+              </div>
+              <div class="alert alert-immediate-action flex-spc-btwn">
+                <div><a href="#"><i class="fas fa-radiation-alt"></i></a> This is a
+                text with close button
+              </div>
+                <button class=""><i class="fas fa-times-circle"></i></button>
+              </div>
+            </div>
+            <div class="code-demo">
+              <iframe
+                src="https://carbon.now.sh/embed/QFGPoyxDqYoyA3OmjcLz"
+                class="text-align-center"
+                style="
+                  width: 100%;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <div id="avatar">
+          <div class="content-intro">
+            <h3 class="heading-light fs-lrg">Avatar</h3>
+            <h5>
+              Avatar can be used to show user's profile picture on card,navbar
+              and in blogs as well.
+            </h5>
+          </div>
+          <div class="content-showcase">
+            <p>we have circular avatar available in different sizes</p>
+            <h4 class="fs-mdm">Usage</h4>
+            <p>
+              Add the avatar class with the required size of avatar eg:<code
+                class="universal-box-shadow"
+              >
+                class="avatar avatar-mdm"</code
+              >
+              <span>(mdm here stands for medium)</span>
+            </p>
+            <div class="component-display">
+              <div class="avatar-container">
+                <img
+                  src="../Components/Avatar-Badge/assets/dan-abramov.jpg"
+                  class="avatar avatar-lrg"
+                  alt="Dan Abramov"
+                />
+                <img
+                  src="../Components/Avatar-Badge/assets/dan-abramov.jpg"
+                  class="avatar avatar-mdm"
+                  alt="Dan Abramov"
+                />
+                <img
+                  src="../Components/Avatar-Badge/assets/dan-abramov.jpg"
+                  class="avatar avatar-sml"
+                  alt="Dan Abramov"
+                />
+                <img
+                  src="../Components/Avatar-Badge/assets/dan-abramov.jpg"
+                  class="avatar avatar-xsml"
+                  alt="Dan Abramov"
+                />
+              </div>
+            </div>
+            <div class="code-demo">
+              <iframe
+                src="https://carbon.now.sh/embed/hvcYHaGBtodZhglwbyME"
+                class="text-align-center"
+                style="
+                  width: 100%;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+            <h3>Avatar Text</h3>
+            <h5>
+              Text avatar can be used to show the identity in textual manner
+            </h5>
+            <div class="component-display">
+              <div class="avatar-container">
+                <div class="avatar avatar-lrg avatar-text">
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="avatar avatar-mdm avatar-text">
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="avatar avatar-sml avatar-text">
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="avatar avatar-xsml avatar-text">Lorem ipsum</div>
+              </div>
+              <div class="code-demo">
+                <iframe
+                  src="https://carbon.now.sh/embed/IKHwmCUgrJ6kMe6caRwS"
+                  class="text-align-center"
+                  style="
+                    width: 100%;
+                    border: 0;
+                    transform: scale(1);
+                    overflow: hidden;
+                  "
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </div>
+              <h3>Avatar Overlay</h3>
+              <h5>
+                To show users social links, or info on hover
+                <span class="card-subtitle"
+                  >Note:-Use the avatar class and avatar size class on the image
+                  container</span
+                >
+              </h5>
+              <div class="avatar-container">
+                <div class="avatar avatar-mdm avatar-wrapper">
+                  <div class="overlay-wrapper">
+                    <a class="temp-cta-color" href="#"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                  </div>
+                  <img
+                    src="../Components/Avatar-Badge/assets/dan-abramov.jpg"
+                    alt="Dan Abramov"
+                  />
+                </div>
+                <div class="avatar avatar-mdm avatar-wrapper">
+                  <div class="overlay-wrapper">
+                    <p>Dan Abramov</p>
+                  </div>
+                  <img
+                    src="../Components/Avatar-Badge/assets/dan-abramov.jpg"
+                    alt="Dan Abramov"
+                  />
+                </div>
+              </div>
+              <div class="code-demo">
+                <iframe
+                  src="https://carbon.now.sh/embed/T3SZYC08yJHjlMLNUc6U"
+                  class="text-align-center"
+                  style="
+                    width: 100%;
+                    border: 0;
+                    transform: scale(1);
+                    overflow: hidden;
+                  "
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="badge">
+          <div class="content-intro">
+            <h3 class="heading-light fs-lrg">Badge</h3>
+            <h5>Badges are used to show status and new notifications</h5>
+          </div>
+          <div class="content-showcase">
+            <p>
+              We have two types of badge components, notification and status
+              badge
+            </p>
+            <h4 class="fs-mdm">Usage</h4>
+            <p>
+              Add the badge class with the required type of badge eg:
+              <code class="universal-box-shadow">
+                class="badge badge-status badge-status-online"<br />
+                class="badge badge-notification"
+              </code>
+            </p>
+            <div class="component-display">
+              <div class="avatar-container">
+                <div class="avatar avatar-lrg avatar-wrapper">
+                  <img
+                    src="../Components/Avatar-Badge/assets/dan-abramov.jpg"
+                    alt="Dan Abramov"
+                  />
+                  <div class="badge badge-status badge-status-online"></div>
+                </div>
+                <div class="avatar avatar-mdm avatar-wrapper">
+                  <img
+                    src="../Components/Avatar-Badge/assets/dan-abramov.jpg"
+                    alt="Dan Abramov"
+                  />
+                  <div class="badge badge-status badge-status-dnd"></div>
+                </div>
+                <div class="avatar avatar-sml avatar-wrapper">
+                  <img
+                    src="../Components/Avatar-Badge/assets/dan-abramov.jpg"
+                    alt="Dan Abramov"
+                  />
+                  <div class="badge badge-status badge-status-offline"></div>
+                </div>
+                <span class="icon-wrapper"
+                  ><i class="fas fa-bell"></i
+                  ><span class="badge badge-notification">99</span></span
+                >
+              </div>
+            </div>
+            <div class="code-demo">
+              <iframe
+                src="https://carbon.now.sh/embed/myqDSsBc276irtWY0Exy"
+                class="text-align-center"
+                style="
+                  width: 100%;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <div id="button">
+          <div class="content-intro">
+            <h3 class="heading-light fs-lrg">Button</h3>
+            <h5>
+              Buttons are generally used to change the state of the view after
+              the user interacts with it
+            </h5>
+          </div>
+          <div class="content-showcase">
+            <p>
+              we have a cta and outlined button along with different types of
+              alert button
+            </p>
+            <h4 class="fs-mdm">Usage</h4>
+            <p>
+              Add the button class with the required type of button eg:<code
+                class="universal-box-shadow"
+              >
+                class="btn btn-cta</code
+              >
+            </p>
+            <h4 class="fs-mdm">CTA, Outlined and Disabled</h4>
+            <div class="component-display">
+              <div class="avatar-container">
+                <button class="btn btn-cta btn-cta-anim">Get Started</button>
+                <button class="btn btn-outlined">Outlined</button>
+                <button class="btn alert-primary" disabled>Disabled</button>
+              </div>
+            </div>
+            <div class="code-demo">
+              <iframe
+                src="https://carbon.now.sh/embed/8rPUggWSs0FEhX6RA7NE"
+                class="text-align-center"
+                style="
+                  width: 100%;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+            <h4 class="fs-mdm">Button sizes</h4>
+            <div class="component-display">
+              <div class="avatar-container">
+                <button class="btn alert-success btn-lrg">Large</button>
+                <button class="btn btn-outlined btn-sml">Small</button>
+              </div>
+            </div>
+            <div class="code-demo">
+              <iframe
+                src="https://carbon.now.sh/embed/JLAcbov0bWaBbfcpWIoo"
+                class="text-align-center"
+                style="
+                  width: 100%;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+            <h4 class="fs-mdm">Alert buttons</h4>
+            <div class="component-display">
+              <div class="avatar-container">
+                <button class="btn alert-primary">Primary</button>
+                <button class="btn alert-secondary">Secondary</button>
+                <button class="btn alert-success">Success</button>
+                <button class="btn alert-danger">Danger</button>
+                <button class="btn alert-immediate-action">
+                  immediate action
+                </button>
+              </div>
+            </div>
+            <div class="code-demo">
+              <iframe
+                src="https://carbon.now.sh/embed/CxCpAVMIRjWSqaF9ugNd"
+                class="text-align-center"
+                style="
+                  width: 100%;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+            <h4 class="fs-mdm">Icon and Link buttons</h4>
+            <div class="component-display">
+              <div class="avatar-container">
+                <button class="btn btn-outlined">
+                  <a href="#" class="btn-icon"
+                    ><i class="fas fa-shopping-cart"></i
+                  ></a>
+                  Cart
+                </button>
+                <button class="btn btn-cta box-shadow-dense">
+                  <a href="#" class="btn-icon"
+                    ><i class="fas fa-shopping-cart"></i></a
+                  >Cart
+                </button>
+                <a class="btn-icon hover-cta-color"
+                  ><i class="fas fa-shopping-cart"></i
+                ></a>
+                <span class="link hover-cta-color">
+                  <a href="#">Link text</a></span
+                >
+              </div>
+            </div>
+            <div class="code-demo">
+              <iframe
+                src="https://carbon.now.sh/embed/DJXo2EJq3Mk8D7DTVv1n"
+                class="text-align-center"
+                style="
+                  width: 100%;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+            <h4 class="fs-mdm">Floating Icon</h4>
+            <div class="component-display">
+              <div class="avatar-container">
+                <button class="btn floating-btn-icon">
+                  <a href="#" class="blip-animation"
+                    ><i class="fas fa-plus"></i
+                  ></a>
+                </button>
+              </div>
+            </div>
+            <div class="code-demo">
+              <iframe
+                src="https://carbon.now.sh/embed/kPN8ZIbCXDYWBEHCaUAC"
+                class="text-align-center"
+                style="
+                  width: 100%;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <div id="card">
+          <div class="content-intro">
+            <h3 class="heading-light fs-lrg">Card</h3>
+            <h5>
+              Cards are used to show interrelated data in a single component
+            </h5>
+          </div>
+          <div class="content-showcase">
+            <p>
+              We have three different types of card components horizontal,
+              vertical and card with avatar
+            </p>
+            <h4 class="fs-mdm">Usage</h4>
+            <p>
+              Copy the code snippet from the required type of card, you can
+              modify it with other utility classes as well
+            </p>
+            <h4 class="fs-mdm">Horizontal Card</h4>
+            <div class="component-display">
+              <div class="avatar-container">
+                <div class="card-container curved-border">
+                  <div class="card-showcase curved-border">
+                    <div class="image-container">
+                      <img
+                        class="image-resp curved-border-top"
+                        src="../Components/Card/assets/quincyLarson.jpg"
+                        alt="Quincy Larson"
+                      />
+                      <div class="overlay-wrapper curved-border-top fs-lrg">
+                        <a href="#" class="btn-icon-outlined"
+                          ><i class="fas fa-play" aria-hidden="true"></i
+                        ></a>
+                      </div>
+                    </div>
+                    <div
+                      class="fi-btn-container flex-spc-arnd curved-border-bottom"
+                    >
+                      <button>
+                        <span class="btn-icon-outlined"
+                          ><i class="fas fa-heart" aria-hidden="true"></i
+                        ></span>
+                      </button>
+                      <button>
+                        <span class="btn-icon-outlined"
+                          ><i class="fas fa-bookmark" aria-hidden="true"></i
+                        ></span>
+                      </button>
+                      <button>
+                        <span class="btn-icon-outlined"
+                          ><i class="fas fa-share" aria-hidden="true"></i
+                        ></span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <h2 class="headline-typography heading-text-decoration">
+                      CSS Zero to Hero
+                    </h2>
+                    <h3 class="card-subtitle">By Quincy Larson</h3>
+                    <div class="rating">
+                      <span class="rating-positive"
+                        ><i class="fas fa-star" aria-hidden="true"></i></span
+                      ><span class="rating-positive"
+                        ><i class="fas fa-star" aria-hidden="true"></i></span
+                      ><span class="rating-positive"
+                        ><i class="fas fa-star" aria-hidden="true"></i></span
+                      ><span class="rating-positive"
+                        ><i class="fas fa-star" aria-hidden="true"></i></span
+                      ><span
+                        ><i class="fas fa-star" aria-hidden="true"></i></span
+                      ><span class="fs-sml card-subtitle">4.0(300)</span>
+                    </div>
+                    <div class="fi-btn-container flex-spc-btwn">
+                      <button class="btn btn-cta light-text-color">
+                        Enroll
+                      </button>
+                      <button class="btn btn-outlined">About</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="code-demo">
+              <iframe
+                src="https://carbon.now.sh/embed/7lgyRTBOvHDQatfHvwWD"
+                class="text-align-center"
+                style="
+                  width: 100%;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+            <h4 class="fs-mdm">Vertical Card</h4>
+            <div class="component-display">
+              <div class="avatar-container">
+                <div class="card-container curved-border flex-column">
+                  <div class="image-container">
+                    <img
+                      class="image-resp curved-border-top"
+                      src="../Components/Card/assets/quincyLarson.jpg"
+                      alt="Quincy Larson"
+                    />
+                    <div class="overlay-wrapper curved-border-top fs-lrg">
+                      <a href="#" class="btn-icon-outlined"
+                        ><i class="fas fa-play"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="text-align-center">
+                    <h2 class="headline-typography">
+                      Getting Started With CSS
+                    </h2>
+                    <h3 class="card-subtitle">By Quincy Larson</h3>
+                    <div class="rating">
+                      <span class="rating-positive"
+                        ><i class="fas fa-star"></i></span
+                      ><span class="rating-positive"
+                        ><i class="fas fa-star"></i></span
+                      ><span class="rating-positive"
+                        ><i class="fas fa-star"></i></span
+                      ><span class="rating-positive"
+                        ><i class="fas fa-star"></i></span
+                      ><span><i class="fas fa-star"></i></span
+                      ><span class="fs-sml card-subtitle">4.0(300)</span>
+                    </div>
+                    <div class="flex-spc-btwn">
+                      <button class="btn btn-cta light-text-color">
+                        Enroll
+                      </button>
+                      <button class="btn btn-outlined">About</button>
+                    </div>
+                  </div>
+                  <div
+                    class="fi-btn-container flex-spc-btwn curved-border-bottom"
+                  >
+                    <button>
+                      <span class="btn-icon-outlined"
+                        ><i class="fas fa-heart"></i
+                      ></span>
+                    </button>
+                    <button>
+                      <span class="btn-icon-outlined"
+                        ><i class="fas fa-bookmark"></i
+                      ></span>
+                    </button>
+                    <button>
+                      <span class="btn-icon-outlined"
+                        ><i class="fas fa-share"></i
+                      ></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="code-demo">
+                <iframe
+                  src="https://carbon.now.sh/embed/ONzdeU1QAgVHhFppHQJL"
+                  class="text-align-center"
+                  style="
+                    width: 100%;
+                    border: 0;
+                    transform: scale(1);
+                    overflow: hidden;
+                  "
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </div>
+            </div>
+            <h4 class="fs-mdm">Card with avatar</h4>
+            <div class="component-display">
+              <div class="avatar-container">
+                <div class="card-container curved-border">
+                  <img
+                    class="image-resp"
+                    src="https://www.freecodecamp.org/news/content/images/size/w2000/2019/10/css.png"
+                    alt="free code camp responsive art"
+                  />
+                  <div
+                    class="card-info hover-to-display pos-abs-bottom flex-f-start mob-max-height-100 mob-flex-column"
+                  >
+                    <img
+                      src="../Components/Card/assets/quincyLarson.jpg"
+                      class="avatar avatar-mdm mob-avatar-xsml"
+                      alt="Quincy Larson"
+                    />
+                    <div class="text-align-left">
+                      <h3>Getting Started With CSS</h3>
+                      <p class="card-subtitle">By Quincy Larson</p>
+                      <div class="fi-btn-container flex-f-start">
+                        <button class="btn btn-cta light-text-color">
+                          Enroll
+                        </button>
+                        <button class="btn btn-outlined">About</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="code-demo">
+              <iframe
+                src="https://carbon.now.sh/embed/e1QKsLvdzFgII79iHisW"
+                class="text-align-center"
+                style="
+                  width: 100%;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+            <h4 class="fs-mdm">Card With Badge</h4>
+            <div class="component-display">
+              <div class="avatar-component">
+                <div class="card-container curved-border flex-spc-arnd gap-mdm">
+                  <div class="card-showcase curved-border">
+                    <div class="image-container">
+                      <img
+                        class="image-resp curved-border-top"
+                        src="../Components/Card/assets/quincyLarson.jpg"
+                        alt="Quincy Larson"
+                      />
+                      <div class="overlay-wrapper curved-border-top fs-lrg">
+                        <a href="#" class="btn-icon-outlined"
+                          ><i class="fas fa-play"></i
+                        ></a>
+                      </div>
+
+                      <div class="overlay-wrapper curved-border-top fs-lrg">
+                        <a href="#" class="btn-icon-outlined"
+                          ><i class="fas fa-play"></i
+                        ></a>
+                      </div>
+                      <span class="text-badge pos-abs-top-left blip-animation"
+                        >30% <span class="fs-sml">off</span></span
+                      >
+                    </div>
+                    <div
+                      class="fi-btn-container flex-spc-arnd curved-border-bottom"
+                    >
+                      <button>
+                        <span class="btn-icon-outlined"
+                          ><i class="fas fa-heart"></i
+                        ></span>
+                      </button>
+                      <button>
+                        <span class="btn-icon-outlined"
+                          ><i class="fas fa-bookmark"></i
+                        ></span>
+                      </button>
+                      <button>
+                        <span class="btn-icon-outlined"
+                          ><i class="fas fa-share"></i
+                        ></span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="flex-column text-align-center">
+                    <h2 class="headline-typography">
+                      Getting Started With CSS
+                    </h2>
+                    <h3 class="card-subtitle">By Quincy Larson</h3>
+                    <div class="rating">
+                      <span class="rating-positive"
+                        ><i class="fas fa-star"></i></span
+                      ><span class="rating-positive"
+                        ><i class="fas fa-star"></i></span
+                      ><span class="rating-positive"
+                        ><i class="fas fa-star"></i></span
+                      ><span class="rating-positive"
+                        ><i class="fas fa-star"></i></span
+                      ><span><i class="fas fa-star"></i></span
+                      ><span class="fs-sml card-subtitle">4.0(300)</span>
+                    </div>
+                    <div class="fi-btn-container flex-spc-btwn">
+                      <button class="btn btn-cta light-text-color">
+                        Enroll
+                      </button>
+                      <button class="btn btn-outlined">About</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="code-demo">
+              <iframe
+                src="https://carbon.now.sh/embed/YvUFTsFCp4K9xeQdGglT"
+                class="text-align-center"
+                style="
+                  width: 100%;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+            <h4 class="fs-mdm">Card with Overlay</h4>
+            <div class="component-display">
+              <div class="avatar-container">
+                <div class="card-container curved-border">
+                  <div class="overlay-wrapper overlay-fix curved-border">
+                    <p class="alert alert-danger">
+                      <i class="fas fa-exclamation-circle"></i>Offer Expired
+                    </p>
+                  </div>
+                  <div class="card-showcase curved-border">
+                    <div class="image-container">
+                      <img
+                        class="image-resp curved-border-top"
+                        src="../Components/Card/assets/quincyLarson.jpg"
+                        alt="Quincy Larson"
+                      />
+                      <div class="overlay-wrapper curved-border-top fs-lrg">
+                        <a href="#" class="btn-icon-outlined"
+                          ><i class="fas fa-play"></i
+                        ></a>
+                      </div>
+                      <span class="text-badge pos-abs-top-left"
+                        >30% <span class="fs-sml">off</span></span
+                      >
+                    </div>
+                    <div
+                      class="fi-btn-container flex-spc-arnd curved-border-bottom"
+                    >
+                      <button>
+                        <span class="btn-icon-outlined"
+                          ><i class="fas fa-heart"></i
+                        ></span>
+                      </button>
+                      <button>
+                        <span class="btn-icon-outlined"
+                          ><i class="fas fa-bookmark"></i
+                        ></span>
+                      </button>
+                      <button>
+                        <span class="btn-icon-outlined"
+                          ><i class="fas fa-share"></i
+                        ></span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <h2 class="headline-typography heading-text-decoration">
+                      Getting Started With CSS
+                    </h2>
+                    <h3 class="card-subtitle">By Quincy Larson</h3>
+                    <div class="rating">
+                      <span class="rating-positive"
+                        ><i class="fas fa-star"></i></span
+                      ><span class="rating-positive"
+                        ><i class="fas fa-star"></i></span
+                      ><span class="rating-positive"
+                        ><i class="fas fa-star"></i></span
+                      ><span class="rating-positive"
+                        ><i class="fas fa-star"></i></span
+                      ><span><i class="fas fa-star"></i></span
+                      ><span class="fs-sml card-subtitle">4.0(300)</span>
+                    </div>
+                    <div class="fi-btn-container flex-spc-btwn">
+                      <button class="btn btn-cta light-text-color">
+                        Enroll
+                      </button>
+                      <button class="btn btn-outlined">About</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="code-demo">
+              <iframe
+                src="https://carbon.now.sh/embed/T5robbWZdlTbscDnWNP8"
+                class="text-align-center"
+                style="
+                  width: 100%;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+            <h4 class="fs-mdm">Card with Close Button</h4>
+            <div class="component-display">
+              <div class="avatar-container">
+                <div class="card-container curved-border">
+                  <button
+                    class="btn btn-outlined btn-sml pos-abs-top-right box-shadow-none red-text-color"
+                  >
+                    Close
+                  </button>
+                  <div class="card-showcase curved-border">
+                    <div class="image-container">
+                      <img
+                        class="image-resp curved-border-top"
+                        src="../Components/Card/assets/quincyLarson.jpg"
+                        alt="Quincy Larson"
+                      />
+                      <div class="overlay-wrapper curved-border-top fs-lrg">
+                        <a href="#" class="btn-icon-outlined"
+                          ><i class="fas fa-play"></i
+                        ></a>
+                      </div>
+                    </div>
+                    <div
+                      class="fi-btn-container flex-spc-arnd curved-border-bottom"
+                    >
+                      <button>
+                        <span class="btn-icon-outlined"
+                          ><i class="fas fa-heart"></i
+                        ></span>
+                      </button>
+                      <button>
+                        <span class="btn-icon-outlined"
+                          ><i class="fas fa-bookmark"></i
+                        ></span>
+                      </button>
+                      <button>
+                        <span class="btn-icon-outlined"
+                          ><i class="fas fa-share"></i
+                        ></span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <h2 class="headline-typography heading-text-decoration">
+                      Getting Started With CSS
+                    </h2>
+                    <h3 class="card-subtitle">By Quincy Larson</h3>
+                    <div class="rating">
+                      <span class="rating-positive"
+                        ><i class="fas fa-star"></i></span
+                      ><span class="rating-positive"
+                        ><i class="fas fa-star"></i></span
+                      ><span class="rating-positive"
+                        ><i class="fas fa-star"></i></span
+                      ><span class="rating-positive"
+                        ><i class="fas fa-star"></i></span
+                      ><span><i class="fas fa-star"></i></span
+                      ><span class="fs-sml card-subtitle">4.0(300)</span>
+                    </div>
+                    <div class="fi-btn-container flex-spc-btwn">
+                      <button class="btn btn-cta light-text-color">
+                        Enroll
+                      </button>
+                      <button class="btn btn-outlined">About</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="code-demo">
+                <iframe
+                  src="https://carbon.now.sh/embed/MV9ayV1vxs3H8zWvLNe2"
+                  class="text-align-center"
+                  style="
+                    width: 100%;
+                    border: 0;
+                    transform: scale(1);
+                    overflow: hidden;
+                  "
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </div>
+            </div>
+            <h4 class="fs-mdm">Text Only Card</h4>
+            <div class="component-display">
+              <div class="avatar-container">
+                <div class="card-container curved-border card-container-text">
+                  <h2 class="headline-typography heading-text-decoration">
+                    Getting Started With CSS
+                  </h2>
+                  <h3 class="card-subtitle">By Quincy Larson</h3>
+                  <div class="rating">
+                    <span class="rating-positive"
+                      ><i class="fas fa-star"></i></span
+                    ><span class="rating-positive"
+                      ><i class="fas fa-star"></i></span
+                    ><span class="rating-positive"
+                      ><i class="fas fa-star"></i></span
+                    ><span class="rating-positive"
+                      ><i class="fas fa-star"></i></span
+                    ><span><i class="fas fa-star"></i></span
+                    ><span class="fs-sml card-subtitle">4.0(300)</span>
+                  </div>
+                  <p>
+                    Without CSS, every web page would be drab plain text and
+                    images that flowed straight down the page. With CSS, you can
+                    add color and background images and change the layout of
+                    your page — your web pages can feel like works of art!
+                  </p>
+                  <div class="fi-btn-container flex-f-start">
+                    <button class="btn btn-cta light-text-color">Enroll</button>
+                    <button class="btn btn-outlined">About</button>
+                  </div>
+                  <div class="fi-btn-container flex-f-end curved-border-bottom">
+                    <button>
+                      <span class="btn-icon-outlined"
+                        ><i class="fas fa-heart"></i
+                      ></span>
+                    </button>
+                    <button>
+                      <span class="btn-icon-outlined"
+                        ><i class="fas fa-bookmark"></i
+                      ></span>
+                    </button>
+                    <button>
+                      <span class="btn-icon-outlined"
+                        ><i class="fas fa-share"></i
+                      ></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="code-demo">
+              <iframe
+                src="https://carbon.now.sh/embed/LPceEY9SIcK4u91fygYE"
+                class="text-align-center"
+                style="
+                  width: 100%;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <div id="grid">
+          <div class="content-intro">
+            <h3 class="heading-light fs-lrg">Grid</h3>
+            <h5>
+              CSS Grid Layout is a two-dimensional layout system for the web. It
+              lets you lay content out in rows and columns.
+            </h5>
+          </div>
+          <div class="content-showcase">
+            <p>We have two layouts for two and three columned grids</p>
+            <h4 class="fs-mdm">Usage</h4>
+            <p>
+              Add grid class with the required ratio eg:-
+              <code class="universal-box-shadow"
+                >class="grid-col-2--20-80"</code
+              >
+            </p>
+            <p>
+              (here 20 80 after the double hyphen means the ratio of
+              distribution of the grid items in a grid container)
+            </p>
+            <h4 class="fs-mdm">2 Columns Grid (50:50)</h4>
+            <div class="component-display">
+              <div class="avatar-container">
+                <div class="demo-grid-container">
+                  <div class="grid-col-2--50-50 curved-border">
+                    <img
+                      src="https://previews.123rf.com/images/kytalpa/kytalpa1603/kytalpa160300009/53926876-dibujado-a-mano-dise%C3%B1os-de-p%C3%A1gina-web-dise%C3%B1o-de-estilo-de-dibujo.jpg"
+                      class="image-resp"
+                      alt="css-image"
+                    />
+                    <div class="margin-sml demo-grid-content padding-sml">
+                      <h4 class="fs-mdm">About the course</h4>
+                      <p>
+                        This course will teach you how to bring high-quality
+                        Figma designs to life in the browser. You will learn how
+                        to create a space travel website from scratch. In this
+                        course, you’ll test your HTML, CSS and JavaScript skills
+                        by building out a responsive, multi-page site featuring
+                        a homepage, buttons, a navigation bar, tabs, keyboard
+                        navigation and underline, dot and number indicators.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="code-demo">
+              <iframe
+                src="https://carbon.now.sh/embed/SiOSOtx5auJUGttrwtpA"
+                class="text-align-center"
+                style="
+                  width: 100%;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+            <h4 class="fs-mdm">2 Columns Grid (20:80)</h4>
+            <div class="component-display">
+              <div class="avatar-container">
+                <div class="demo-grid-container">
+                  <div class="grid-col-2--20-80 curved-border">
+                    <img
+                      src="https://previews.123rf.com/images/kytalpa/kytalpa1603/kytalpa160300009/53926876-dibujado-a-mano-dise%C3%B1os-de-p%C3%A1gina-web-dise%C3%B1o-de-estilo-de-dibujo.jpg"
+                      class="image-resp"
+                      alt="css-image"
+                    />
+                    <div class="margin-sml demo-grid-content padding-sml">
+                      <h4 class="fs-mdm">About the course</h4>
+                      <p>
+                        This course will teach you how to bring high-quality
+                        Figma designs to life in the browser. You will learn how
+                        to create a space travel website from scratch. In this
+                        course, you’ll test your HTML, CSS and JavaScript skills
+                        by building out a responsive, multi-page site featuring
+                        a homepage, buttons, a navigation bar, tabs, keyboard
+                        navigation and underline, dot and number indicators.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="code-demo">
+              <iframe
+                src="https://carbon.now.sh/embed/DiQAmQIqViX0DC8mJqQn"
+                class="text-align-center"
+                style="
+                  width: 100%;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+            <h4 class="fs-mdm">3 Columns Grid (1:1:1)</h4>
+            <div class="component-display">
+              <div class="avatar-container">
+                <div class="demo-grid-container">
+                  <div class="grid-col-3--33-33-33 curved-border">
+                    <img
+                      src="https://previews.123rf.com/images/kytalpa/kytalpa1603/kytalpa160300009/53926876-dibujado-a-mano-dise%C3%B1os-de-p%C3%A1gina-web-dise%C3%B1o-de-estilo-de-dibujo.jpg"
+                      class="image-resp"
+                      alt="css-image"
+                    />
+                    <div class="margin-sml demo-grid-content padding-sml">
+                      <h4 class="fs-mdm">About the course</h4>
+                      <p>
+                        This course will teach you how to bring high-quality
+                        Figma designs to life in the browser. You will learn how
+                        to create a space travel website from scratch. In this
+                        course, you’ll test your HTML, CSS and JavaScript skills
+                        by building out a responsive, multi-page site featuring
+                        a homepage, buttons, a navigation bar, tabs, keyboard
+                        navigation and underline, dot and number indicators.
+                      </p>
+                    </div>
+                    <div class="margin-sml demo-grid-content padding-sml">
+                      <h4 class="fs-mdm">Perquisites</h4>
+                      <p>Zeal to learn</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="code-demo">
+              <iframe
+                src="https://carbon.now.sh/embed/pZ3v1RYQMZeGMfJZEhM3"
+                class="text-align-center"
+                style="
+                  width: 100%;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+
+            <h4 class="fs-mdm">3 Columns (1:2:2)</h4>
+            <div class="demo-grid-container">
+              <div class="grid-col-3--20-40-40 curved-border">
+                <img
+                  src="https://previews.123rf.com/images/kytalpa/kytalpa1603/kytalpa160300009/53926876-dibujado-a-mano-dise%C3%B1os-de-p%C3%A1gina-web-dise%C3%B1o-de-estilo-de-dibujo.jpg"
+                  class="image-resp"
+                  alt="css-image"
+                />
+                <div class="margin-sml demo-grid-content padding-sml">
+                  <h4 class="fs-mdm">About the course</h4>
+                  <p>
+                    This course will teach you how to bring high-quality Figma
+                    designs to life in the browser. You will learn how to create
+                    a space travel website from scratch. In this course, you’ll
+                    test your HTML, CSS and JavaScript skills by building out a
+                    responsive, multi-page site featuring a homepage, buttons, a
+                    navigation bar, tabs, keyboard navigation and underline, dot
+                    and number indicators.
+                  </p>
+                </div>
+                <div class="margin-sml demo-grid-content padding-sml">
+                  <h4 class="fs-mdm">Perquisites</h4>
+                  <p>Zeal to learn</p>
+                </div>
+              </div>
+            </div>
+            <div class="code-demo">
+              <iframe
+                src="https://carbon.now.sh/embed/Wbw6pbRxpV87ainw7tx3"
+                class="text-align-center"
+                style="
+                  width: 100%;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <div id="image">
+          <div class="content-intro">
+            <h3 class="heading-light fs-lrg">Image</h3>
+            <h5>
+              Images are used to make the webapp more attractive and informative
+            </h5>
+          </div>
+          <div class="content-showcase">
+            <p>We have responsive square and rounded images</p>
+            <h4 class="fs-mdm">Usage</h4>
+            <p>
+              Add the responsive image class with the type of border-radius if
+              required
+              <code> class="box-shadow">class="image-resp border-rad-100"</code>
+            </p>
+            <h4 class="fs-mdm">Responsive Image</h4>
+            <div class="component-display">
+              <div class="avatar-container">
+                <div class="demo-image-container">
+                  <img
+                    class="image-resp"
+                    src="https://www.pngkit.com/png/detail/80-803539_javascript-black-and-white-logo.png"
+                    alt="JavaScript"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="code-demo">
+              <iframe
+                src="https://carbon.now.sh/embed/LviocfdcHXLRYBdddFZp"
+                class="text-align-center"
+                style="
+                  width: 100%;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+            <h4 class="fs-mdm">Round Image</h4>
+            <div class="component-display">
+              <div class="avatar-container">
+                <div class="rounded-image-container">
+                  <img
+                    class="image-resp border-rad-100"
+                    src="../Components/Image/assets/Brendan Eich.jpg"
+                    alt="Brendan Eich"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="code-demo">
+              <iframe
+                src="https://carbon.now.sh/embed/bUNNhidZ1ZrJpaEwa9EA"
+                class="text-align-center"
+                style="
+                  width: 100%;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <div id="input">
+          <div class="content-intro">
+            <h3 class="fs-lrg">Input</h3>
+            <h5>
+              As the name suggests Input/textarea elements are used to take user
+              input
+            </h5>
+          </div>
+          <div class="content-showcase">
+            <p>
+              We have a form component with input fields and customizable
+              validation messages
+            </p>
+            <h4 class="fs-mdm">Usage</h4>
+            <p>Copy the code snippet and modify it according to your requirements</p>
+            <div class="component-display">
+              <div class="avatar-container">
+                <form
+                  class="form"
+                  method="post"
+                  action="#"
+                  onsubmit="return false"
+                >
+                  <div class="form-field">
+                    <label for="username-input" class="input-lbl required-field"
+                      >Username
+                    </label>
+                    <input
+                      name="username-input"
+                      class="form-input"
+                      id="username-input"
+                      required
+                      aria-required="true"
+                      autocomplete="off"
+                      type="text"
+                      placeholder="Jeffdelaney23"
+                    />
+                    <small
+                      class="alert alert-danger fs-sml padding-sml display-none"
+                      id="username-text-error"
+                      ><span><i class="fas fa-exclamation-circle"></i></span>
+                      Username can't be empty</small
+                    >
+                    <small
+                      class="alert alert-success fs-sml padding-sml display-none"
+                      id="username-text-success"
+                      ><span><i class="fas fa-check-circle"></i></span> Username
+                      is Available</small
+                    >
+                  </div>
+                  <div class="form-field">
+                    <label for="email-input" class="input-lbl required-field"
+                      >Email
+                    </label>
+                    <input
+                      name="email-input"
+                      class="form-input"
+                      id="email-input"
+                      required
+                      aria-required="true"
+                      autocomplete="off"
+                      type="email"
+                      placeholder="kentcdodds123@gmail.com"
+                    />
+                    <small
+                      class="alert alert-danger fs-sml padding-sml display-none"
+                      id="email-text-error"
+                      ><span><i class="fas fa-exclamation-circle"></i></span>
+                      Email can't be empty
+                    </small>
+                    <small
+                      class="alert alert-danger fs-sml padding-sml display-none"
+                      id="email-validation-error"
+                      ><span><i class="fas fa-exclamation-circle"></i></span>
+                      Enter a Valid Email
+                    </small>
+                    <small
+                      class="alert alert-success fs-sml padding-sml display-none"
+                      id="email-validation-success"
+                      ><span><i class="fas fa-check-circle"></i></span> Valid
+                      Email</small
+                    >
+                  </div>
+                  <div class="form-field">
+                    <label for="password-input" class="input-lbl required-field"
+                      >Password
+                    </label>
+                    <input
+                      name="password-input"
+                      class="form-input"
+                      id="password-input"
+                      required
+                      aria-required="true"
+                      autocomplete="off"
+                      type="password"
+                    />
+                    <small
+                      class="alert alert-danger fs-sml padding-sml display-none"
+                      id="password-text-error"
+                      ><span><i class="fas fa-exclamation-circle"></i></span>
+                      Password can't be empty.
+                    </small>
+                    <small
+                      class="alert alert-danger fs-sml padding-sml display-none"
+                      id="password-validation-error"
+                      ><span><i class="fas fa-exclamation-circle"></i></span>
+                      Password must at least contain 8 characters with at least
+                      1 lowercase character, 1 uppercase character, 1 number,
+                      and 1 special character in (!@#$%^&*).
+                    </small>
+                    <small
+                      class="alert alert-success fs-sml padding-sml display-none"
+                      id="password-validation-success"
+                      ><span><i class="fas fa-exclamation-circle"></i></span>
+                      Valid Password.
+                    </small>
+                  </div>
+                  <div class="form-field">
+                    <label
+                      for="password-match-input"
+                      class="input-lbl required-field"
+                      >Confirm Password
+                    </label>
+                    <input
+                      name="password-match-input"
+                      class="form-input"
+                      id="password-match-input"
+                      required
+                      aria-required="true"
+                      autocomplete="off"
+                      type="password"
+                    />
+                    <small
+                      class="alert alert-danger fs-sml padding-sml display-none"
+                      id="password-match-text-error"
+                      ><span><i class="fas fa-exclamation-circle"></i></span>
+                      Please fill out this field
+                    </small>
+                    <small
+                      class="alert alert-danger fs-sml padding-sml display-none"
+                      id="password-match-validation-error"
+                      ><span><i class="fas fa-exclamation-circle"></i></span>
+                      Password didn't match
+                    </small>
+                    <small
+                      class="alert alert-success fs-sml padding-sml display-none"
+                      id="password-match-validation-success"
+                      ><span><i class="fas fa-exclamation-circle"></i></span>
+                      Password Matched
+                    </small>
+                  </div>
+                  <div>
+                    <label for="comments">Comments</label>
+                    <textarea
+                      name="comments"
+                      class="form-textarea txtarea-mdm tab-txtarea-resp"
+                    ></textarea>
+                  </div>
+                  <input
+                    type="submit"
+                    class="btn btn-cta"
+                    disabled
+                    id="form-submit"
+                    value="Submit"
+                  />
+                </form>
+              </div>
+            </div>
+            <div class="code-demo">
+              <iframe
+                src="https://carbon.now.sh/embed/grnCYjaUzCKsFuUpzT1U"
+                class="text-align-center"
+                style="
+                  width: 100%;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <div id="list">
+          <div class="content-intro">
+            <h3 class="fs-lrg">Lists</h3>
+            <h5>
+           The List in CSS specifies the listing of the contents or items in a particular manner i.e., it can either be organized  or unorganized 
+            </h5>
+          </div>
+          <div class="content-showcase">
+            <p>We have styled classes for ordered list, unordered list and notification</p>
+            <h4 class="fs-mdm">Usage</h4>
+            <p>
+              Copy the code snippet and modify it according to your requirements
+             <span class="universal-box-shadow"> Note:-use uniform classes for parent list and child list items</span>
+            </p>
+            <h5 class="fs-mdm">Ordered and Unordered List</h5>
+            <div class="component-display">
+              <div class="avatar-container">
+                <ul
+                class="flex-column gap-mdm ul-custom"
+                style="--custom-bullet-color: #0ea5e9"
+              >
+                <!--Add your bullet color preference in the style attribute  -->
+          
+                <li class="ul-list-item">List Item One</li>
+                <li class="ul-list-item">List Item Two</li>
+                <li class="ul-list-item">List Item Three</li>
+              </ul>
+              <ol class="flex-column ol-custom" style="--custom-decimal-color: #0ea5e9">
+                <li class="ol-list-item">List Item One</li>
+                <li class="ol-list-item">List Item Two</li>
+                <li class="ol-list-item">List Item Three</li>
+              </ol>
+              </div>
+            </div>
+            <div class="code-demo">
+              <iframe
+                src="https://carbon.now.sh/embed/6hDbEaTUlAGcv1MU5JBd"
+                class="text-align-center"
+                style="
+                  width: 100%;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+            <h5 class="fs-mdm">Stacked Notification List</h5>
+            <div class="component-display">
+              <div class="avatar-container">
+                <ul class="flex-column gap-sml">
+                  <li>
+                    <div class="flex-column notification">
+                      <div class="grid-col-2--20-80">
+                    
+                        <div class="flex-center">
+                          <img
+                            src="../Components/Card/assets/quincyLarson.jpg"
+                            class="avatar avatar-sml"
+                            alt="Quincy Larson"
+                          />
+                        </div>
+                
+                        <div class="flex-column flex-f-start align-items-stretch gap-zero">
+                          <p>Quincy Larson replied to your comment</p>
+                         
+                          <p class="comment-box padding-sml">
+                            We can use FlexBox for Sticky Footer and Header without using
+                            positions in CSS
+                          </p>
+                      
+                        </div>
+                        </div>
+                            
+                      <div class="flex-f-end font-weight-light padding-sml">
+                        <p>1 hour ago</p>
+                       </div>
+                      </div>
+                  </li>
+                  <li>
+                    <div class="flex-column notification">
+                      <div class="grid-col-2--20-80 ">
+                    
+                        <div class="flex-center">
+                          <img
+                            src="../Components/Avatar-Badge/assets/dan-abramov.jpg"
+                            class="avatar avatar-sml"
+                            alt="Dan Abramov"
+                          />
+                        </div>
+                
+                        <div class="flex-column flex-f-start align-items-stretch gap-zero ">
+                          <p>Dan Abramov replied to your comment</p>
+                         
+                          <p class="comment-box padding-sml">
+                            Have you had a chance to watch the second half of my talk? I'd say quite the opposite — it's way less trickier to use suspense for data fetching than anything else (including Redux, local state, or some other library).
+                      
+                          </p>
+                      
+                        </div>
+                        </div>
+                            
+                      <div class="flex-f-end font-weight-light padding-sml">
+                        <p>1 hour ago</p>
+                       </div>
+                      </div>
+                  </li>
+                </ul>
+              
+              </div>
+            </div>
+            <div class="code-demo">
+              <iframe
+                src="https://carbon.now.sh/embed/GLmgLnSTjKWjeM837ppA"
+                class="text-align-center"
+                style="
+                  width: 100%;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <div id="modal">
+          <div class="content-intro">
+            <h3 class="fs-lrg">Modal</h3>
+            <h5>
+              Modal component is used to attract user's whole attention towards
+              a single piece of information only
+            </h5>
+          </div>
+          <div class="content-showcase">
+            <p>We have customizable login page as a modal component</p>
+            <h4 class="fs-mdm">Usage</h4>
+            <p>Copy the code snippet and modify it according to your requirements</p>
+            <div class="component-display">
+              <div class="avatar-container">
+                <button class="btn btn-cta" id="btn-open-modal">
+                  Open Modal
+                </button>
+                <div
+                  class="modal-container flex-center text-align-center display-none"
+                  id="modal-container-js"
+                >
+                  <div class="modal-content padding-mdm">
+                    <button
+                      class="btn btn-outlined btn-sml pos-abs-top-right box-shadow-none red-text-color"
+                      id="btn-close-modal"
+                    >
+                      Close
+                    </button>
+                    <h3 class="headline-typography text-align-center">Login</h3>
+                    <div class="flex-spc-btwn">
+                      <button
+                        aria-label="github login"
+                        class="btn btn-outlined avatar avatar-xsml avatar-text fs-sml dark-txt-light-bg"
+                      >
+                        <a href="#"><i class="fab fa-github"></i></a>
+                      </button>
+                      <button
+                        aria-label="google login"
+                        class="btn btn-outlined avatar avatar-xsml avatar-text fs-sml dark-txt-light-bg"
+                      >
+                        <a href="#"><i class="fab fa-google"></i></a>
+                      </button>
+                      <button
+                        aria-label="apple login"
+                        class="btn btn-outlined avatar avatar-xsml avatar-text fs-sml dark-txt-light-bg"
+                      >
+                        <a href="#"><i class="fab fa-apple"></i></a>
+                      </button>
+                    </div>
+                    <h4 class="text-align-center">Or</h4>
+                    <form action="#">
+                      <div class="form-field">
+                        <label for="email-input" class="input-lbl "
+                          >Email
+                        </label>
+                        <input
+                          name="email-input"
+                          class="form-input"
+                          id="email-input"
+                          required
+                          aria-required="true"
+                          autocomplete="off"
+                          type="email"
+                        />
+                      </div>
+                      <div class="form-field">
+                        <label for="password-input" class="input-lbl"
+                          >Password
+                        </label>
+                        <input
+                          name="password-input"
+                          class="form-input"
+                          id="password-input"
+                          required
+                          aria-required="true"
+                          autocomplete="off"
+                          type="password"
+                        />
+                      </div>
+                      <button class="btn btn-cta">Login</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="code-demo">
+              <iframe
+                src="https://carbon.now.sh/embed/2H2EJByKiP2B2zhNCpwf"
+                class="text-align-center"
+                style="
+                  width: 100%;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <div id="navigation">
+          <div class="content-intro">
+            <h3 class="fs-lrg">Navigation</h3>
+            <h5>
+              Navigation bar is used to navigate to different pages of a web app
+            </h5>
+          </div>
+          <div class="content-showcase">
+            <h4 class="fs-mdm">Usage</h4>
+            <p>Copy the code snippet and modify it according to your requirements</p>
+            <div class="component-display">
+              <div class="avatar-container">
+                <nav class="nav-bar">
+                  <button class="btn pc-tab-display-none" id="btn-nav-toggle">
+                    <i class="fas fa-bars"></i>
+                  </button>
+                  <ul class="flex-gap-mdm">
+                    <li class="nav-image-container">
+                      <img
+                        class="image-resp border-rad-20"
+                        src="/assets/prefix (1).png"
+                        alt="logo"
+                      />
+                    </li>
+                    <li>
+                      <input
+                        type="search"
+                        name=""
+                        class="form-input fluid-width"
+                        placeholder="Search"
+                        id=""
+                      />
+                    </li>
+                  </ul>
+                  <ul class="flex-spc-btwn mob-display-none">
+                    <li><a href="#" class="cta-text-hover">Explore</a></li>
+                    <li><a href="#" class="cta-text-hover">Pricing</a></li>
+                    <li><a href="#" class="cta-text-hover">Partners</a></li>
+                  </ul>
+                  <ul class="flex-spc-btwn">
+                    <li>
+                      <a
+                        href="#"
+                        class="icon-wrapper icon-wrapper-sml mob-display-none"
+                        ><i class="fas fa-bell"></i
+                        ><span class="badge badge-notification"></span
+                      ></a>
+                    </li>
+                    <li>
+                      <a class="btn-icon alert-text"
+                        ><i class="fas fa-shopping-cart"></i
+                      ></a>
+                    </li>
+                    <li class="mob-display-none">
+                      <img
+                        src="../Components/Avatar-Badge/assets/dan-abramov.jpg"
+                        class="avatar avatar-xsml"
+                        alt="Dan Abramov"
+                      />
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="code-demo">
+              <iframe
+                src="https://carbon.now.sh/embed/C4rlD9QJOJDNhGaeVnHl"
+                class="text-align-center"
+                style="
+                  width: 100%;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <div id="text-utils">
+          <div class="content-intro">
+            <h3 class="fs-lrg">Typography</h3>
+            <h5>
+              Typography is the art and technique of arranging type to make written language legible, readable and appealing when displayed
+            </h5>
+          </div>
+          <div class="content-showcase">
+            <h4 class="fs-mdm">Usage</h4>
+            <p>Copy the code snippet and use the text size according to your requirements</p>
+            <div class="component-display">
+              <div class="avatar-container flex-column">
+                <div class="heading-lrg">Heading Text</div>
+                <div class="heading-mdm">Heading Text</div>
+                <div class="heading-sml">Heading Text</div>
+                <div class="fs-sml">small text</div>
+                <div class="fs-xsml">extra small text</div>
+                <div class="grey-text-color">Grey Text Color</div>
+                <div class="text-align-center">Centered Text</div>
+              </div>
+            </div>
+            <div class="code-demo">
+              <iframe
+                src="https://carbon.now.sh/embed/AQzGsQWZvCfyqG5Oi9gO"
+                class="text-align-center"
+                style="
+                  width: 100%;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      
+      </main>
+    </div>
+  </body>
+</html>

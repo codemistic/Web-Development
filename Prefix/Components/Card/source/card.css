@@ -1,0 +1,156 @@
+@import url("../../../global.css");
+
+.card-container {
+  width: 30rem;
+  height: min-content;
+  position: relative;
+
+  padding: 1em;
+  background-color: var(--background-theme);
+  display: flex;
+
+  box-shadow: var(--universal-box-shadow);
+}
+
+.card-btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background: red; */
+  flex-basis: 3rem;
+}
+.card-showcase {
+  box-shadow: var(--universal-box-shadow);
+}
+
+.image-container {
+  position: relative;
+}
+
+.card-content {
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-left: 1em;
+}
+.text-btn {
+  display: flex;
+
+  justify-content: space-around;
+
+  gap: 0.5rem;
+}
+
+.card-subtitle {
+  font-size: 0.875em;
+  line-height: 1.375em;
+  font-weight: var(--font-weight-light);
+  letter-spacing: 0.0071428571em;
+  color: var(--thin-text-color);
+}
+.card-subtitle:hover {
+  box-shadow: var(--universal-box-shadow);
+}
+/* test overflow elipses */
+
+.headline-typography {
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 0.0125em;
+  margin-bottom: 0;
+}
+
+.image-child {
+  /* max-width: 100%;
+      max-height: 100%; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fi-btn-container {
+  padding: 0.2em 0;
+  flex-grow: 1;
+}
+
+.heading-text-decoration {
+  text-decoration: underline overline var(--thin-text-color);
+}
+
+.card-container .overlay-wrapper:hover {
+  opacity: 0.7;
+}
+
+.fs-lrg {
+  font-size: 2em;
+}
+
+.text-badge {
+  padding: 0.2em;
+  background-color: var(--cta-background-color);
+  color: var(--light-text-color);
+  font-size: 100%;
+  z-index: 5;
+
+  border-radius: 0.2em;
+}
+
+.card-info {
+  background-color: var(--light-text-color);
+}
+
+.overlay-fix {
+  opacity: 0.7;
+  background-color: gray;
+  z-index: 8;
+}
+
+.red-text-color {
+  color: var(--red-variant);
+}
+
+.red-text-color:hover {
+  background-color: var(--red-variant);
+  color: var(--light-text-color);
+}
+
+.card-container-text {
+  flex-direction: column;
+}
+
+.flex-f-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2em;
+}
+
+.flex-f-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2em;
+}
+
+.preview-grid-wrapper {
+  display: grid;
+  place-items: center;
+}
+
+@media screen and (max-width: 757px) {
+  .card-container {
+    width: 100%;
+  }
+  .card-showcase {
+    flex-basis: 76%;
+  }
+}
+
+@media screen and (max-width: 482px) {
+  .fi-btn-container {
+    flex-wrap: wrap;
+  }
+}
